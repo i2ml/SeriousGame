@@ -1,0 +1,35 @@
+{
+  "enonce": "",
+  "arguments": {
+    "1": {
+      "enonce": "",
+      "motivationneeded": 0,
+      "motivationpenality": 0,
+      "success": {
+        "frustration": 0,
+        "equilibrealim": 0,
+        "sante": 0
+      },
+      "failure": {
+        "frustration": 0,
+        "equilibrealim": 0,
+        "sante": 0
+      }
+    },
+    "2": {
+      "enonce": "",
+      "motivationneeded": 0,
+      "motivationpenality": 0,
+      "success": {
+        "frustration": 0,
+        "equilibrealim": 0,
+        "sante": 0
+      },
+      "failure": {
+        "frustration": 0,
+        "equilibrealim": 0,
+        "sante": 0
+      }
+    }
+  }
+}
