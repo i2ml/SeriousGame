@@ -1,14 +1,14 @@
 {
-  "enonce": "Il est 13 heure, Arthur sort de table, après son fromage il lui reste une petite place pour un dessert. Penché au dessus de son frigo il hésite entre plusieurs option : ",
+  "enonce": "En hivers Arthur se rend au marché, quel panier choisis t’il pour ses repas de la semaine ? ",
   "arguments": {
     "1": {
-      "enonce": "Il prend un fruit  et un yaourt ",
+      "enonce": "carotte, oignon, brocolis, choux rouge, courge, butternut, panais, betterave, poireau  ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
         "frustration": 0,
-        "equilibrealim": -5,
-        "sante": -5
+        "equilibrealim": 10,
+        "sante": 10
       },
       "failure": {
         "motivationpenality": 0,
@@ -18,13 +18,13 @@
       }
     },
     "2": {
-      "enonce": "Il prend un fruit ",
+      "enonce": "tomate, aubergine, courgette, melon, fraise ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": 0,
-        "equilibrealim": 5,
-        "sante": 5
+        "frustration": -5,
+        "equilibrealim": 0,
+        "sante": 0
       },
       "failure": {
         "motivationpenality": 0,
@@ -34,13 +34,13 @@
       }
     },
     "3": {
-      "enonce": "Il prend un yaourt ",
+      "enonce": "Haricot vert, petit pois, épinard, courgette, poivron ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
         "frustration": 0,
-        "equilibrealim": -5,
-        "sante": -5
+        "equilibrealim": 0,
+        "sante": 0
       },
       "failure": {
         "motivationpenality": 0,
@@ -50,12 +50,12 @@
       }
     },
     "4": {
-      "enonce": "Il ne prend rien ",
+      "enonce": "pomme de terre, oignon, échalote et champignon",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": 5,
-        "equilibrealim": -5,
+        "frustration": -5,
+        "equilibrealim": 0,
         "sante": -5
       },
       "failure": {
@@ -66,13 +66,13 @@
       }
     },
     "5": {
-      "enonce": "Il finit la part de tarte au citron meringuée qui reste dans le frigo ",
+      "enonce": "pfff la flemme, je prendrais des légume en conserve quand j'irai au supermarché. ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": -10,
-        "equilibrealim": -5,
-        "sante": -5
+        "frustration": -5,
+        "equilibrealim": -10,
+        "sante": -10
       },
       "failure": {
         "motivationpenality": 0,
