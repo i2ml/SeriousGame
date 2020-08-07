@@ -1,12 +1,12 @@
 {
-  "enonce": "Il est 13 heure, Arthur sort de table, après son fromage il lui reste une petite place pour un dessert. Penché au dessus de son frigo il hésite entre plusieurs option : ",
+  "enonce": "Arthur se rend en réunion chez un client, celui ci lui propose comme souvent un goûter composé d’une viennoiserie et d’un café, que fait il ? ",
   "arguments": {
     "1": {
-      "enonce": "Il prend un fruit  et un yaourt ",
+      "enonce": "il accepte de prendre un viennoiserie, même si c’est la 4eme cette semaine. il ne faut pas vexer son client ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": 0,
+        "frustration": -5,
         "equilibrealim": -5,
         "sante": -5
       },
@@ -18,7 +18,7 @@
       }
     },
     "2": {
-      "enonce": "Il prend un fruit ",
+      "enonce": "il a l’habitude il a un fruit et des oléagineux dans sa malette",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
@@ -34,23 +34,7 @@
       }
     },
     "3": {
-      "enonce": "Il prend un yaourt ",
-      "motivationneeded": 0,
-      "success": {
-        "motivationpenality": 0,
-        "frustration": 0,
-        "equilibrealim": -5,
-        "sante": -5
-      },
-      "failure": {
-        "motivationpenality": 0,
-        "frustration": 0,
-        "equilibrealim": 0,
-        "sante": 0
-      }
-    },
-    "4": {
-      "enonce": "Il ne prend rien ",
+      "enonce": "Il ne prend qu’ un café (sucré), le goûté c'est pour les enfant. ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
@@ -65,13 +49,29 @@
         "sante": 0
       }
     },
-    "5": {
-      "enonce": "Il finit la part de tarte au citron meringuée qui reste dans le frigo ",
+    "4": {
+      "enonce": "un verre d’eau suffira, merci ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": -10,
-        "equilibrealim": -5,
+        "frustration": 5,
+        "equilibrealim": 0,
+        "sante": -5
+      },
+      "failure": {
+        "motivationpenality": 0,
+        "frustration": 0,
+        "equilibrealim": 0,
+        "sante": 0
+      }
+    },
+    "5": {
+      "enonce": "Elle sont vraiment bonne ses viennoiserie, j’en prend un seconde.",
+      "motivationneeded": 0,
+      "success": {
+        "motivationpenality": 0,
+        "frustration": -5,
+        "equilibrealim": -10,
         "sante": -5
       },
       "failure": {
