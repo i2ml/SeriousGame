@@ -1,14 +1,14 @@
 {
-  "enonce": "Il est 13 heure, Arthur sort de table, après son fromage il lui reste une petite place pour un dessert. Penché au dessus de son frigo il hésite entre plusieurs option : ",
+  "enonce": "Arthur est dans son supermarché et doit acheter du jambon cuit pour les amis qui viennent dîner chez lui le soir même. Malheureusement il ne sait pas quel jambon choisir et ne parviens pas à lire les étiquettes à cause de sa conjonctivite...",
   "arguments": {
     "1": {
-      "enonce": "Il prend un fruit  et un yaourt ",
+      "enonce": "Il sort son téléphone avec une appli de type yuka ou open food fact..",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": 0,
-        "equilibrealim": -5,
-        "sante": -5
+        "frustration": 5,
+        "equilibrealim": 0,
+        "sante": 0
       },
       "failure": {
         "motivationpenality": 0,
@@ -18,13 +18,13 @@
       }
     },
     "2": {
-      "enonce": "Il prend un fruit ",
+      "enonce": "Il prend le jambon bio pour être sûr de la qualité du produit ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
         "frustration": 0,
-        "equilibrealim": 5,
-        "sante": 5
+        "equilibrealim": 0,
+        "sante": 10
       },
       "failure": {
         "motivationpenality": 0,
@@ -34,12 +34,12 @@
       }
     },
     "3": {
-      "enonce": "Il prend un yaourt ",
+      "enonce": "Il prend le jambon plus cher pour être sûr de la qualité du produit ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
         "frustration": 0,
-        "equilibrealim": -5,
+        "equilibrealim": 0,
         "sante": -5
       },
       "failure": {
@@ -50,12 +50,12 @@
       }
     },
     "4": {
-      "enonce": "Il ne prend rien ",
+      "enonce": "Il prend le premier prix, de toute façon cela ne change rien.",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": 5,
-        "equilibrealim": -5,
+        "frustration": 0,
+        "equilibrealim": 0,
         "sante": -5
       },
       "failure": {
@@ -66,19 +66,19 @@
       }
     },
     "5": {
-      "enonce": "Il finit la part de tarte au citron meringuée qui reste dans le frigo ",
-      "motivationneeded": 0,
+      "enonce": "huile de tournesol bio non raffinée ",
+      "motivationneeded": 50,
       "success": {
-        "motivationpenality": 0,
-        "frustration": -10,
-        "equilibrealim": -5,
-        "sante": -5
+        "motivationpenality": -10,
+        "frustration": -5,
+        "equilibrealim": 5,
+        "sante": 5
       },
       "failure": {
-        "motivationpenality": 0,
-        "frustration": 0,
+        "motivationpenality": -10,
+        "frustration": 5,
         "equilibrealim": 0,
-        "sante": 0
+        "sante": -5
       }
     }
   }

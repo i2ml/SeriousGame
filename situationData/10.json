@@ -1,56 +1,8 @@
 {
-  "enonce": "Il est 13 heure, Arthur sort de table, après son fromage il lui reste une petite place pour un dessert. Penché au dessus de son frigo il hésite entre plusieurs option : ",
+  "enonce": "Arthur rentre du boulot et fatigué, il n’a pas le courage de faire le repas.",
   "arguments": {
     "1": {
-      "enonce": "Il prend un fruit  et un yaourt ",
-      "motivationneeded": 0,
-      "success": {
-        "motivationpenality": 0,
-        "frustration": 0,
-        "equilibrealim": -5,
-        "sante": -5
-      },
-      "failure": {
-        "motivationpenality": 0,
-        "frustration": 0,
-        "equilibrealim": 0,
-        "sante": 0
-      }
-    },
-    "2": {
-      "enonce": "Il prend un fruit ",
-      "motivationneeded": 0,
-      "success": {
-        "motivationpenality": 0,
-        "frustration": 0,
-        "equilibrealim": 5,
-        "sante": 5
-      },
-      "failure": {
-        "motivationpenality": 0,
-        "frustration": 0,
-        "equilibrealim": 0,
-        "sante": 0
-      }
-    },
-    "3": {
-      "enonce": "Il prend un yaourt ",
-      "motivationneeded": 0,
-      "success": {
-        "motivationpenality": 0,
-        "frustration": 0,
-        "equilibrealim": -5,
-        "sante": -5
-      },
-      "failure": {
-        "motivationpenality": 0,
-        "frustration": 0,
-        "equilibrealim": 0,
-        "sante": 0
-      }
-    },
-    "4": {
-      "enonce": "Il ne prend rien ",
+      "enonce": "Je vais réchauffer un plat cuisiné au micro-onde (sauté de veau et purée) ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
@@ -65,14 +17,62 @@
         "sante": 0
       }
     },
+    "2": {
+      "enonce": "je fais un simple plat de pâtes à la crème, 12 min montre en main ",
+      "motivationneeded": 0,
+      "success": {
+        "motivationpenality": 0,
+        "frustration": 0,
+        "equilibrealim": -5,
+        "sante": 0
+      },
+      "failure": {
+        "motivationpenality": 0,
+        "frustration": 0,
+        "equilibrealim": 0,
+        "sante": 0
+      }
+    },
+    "3": {
+      "enonce": "Aller courage je prend sur moi et je vais faire un vrai repas, j’ai des restes du repas d’hier (ratatouille) avec une omelette et un peu de salade ça fera l’affaire.",
+      "motivationneeded": 50,
+      "success": {
+        "motivationpenality": -10,
+        "frustration": 0,
+        "equilibrealim": 10,
+        "sante": 5
+      },
+      "failure": {
+        "motivationpenality": -10,
+        "frustration": 0,
+        "equilibrealim": -5,
+        "sante": 0
+      }
+    },
+    "4": {
+      "enonce": "Deliveroo, Hum un Bò bún !",
+      "motivationneeded": 0,
+      "success": {
+        "motivationpenality": 0,
+        "frustration": -5,
+        "equilibrealim": 5,
+        "sante": 5
+      },
+      "failure": {
+        "motivationpenality": 0,
+        "frustration": 0,
+        "equilibrealim": 0,
+        "sante": 0
+      }
+    },
     "5": {
-      "enonce": "Il finit la part de tarte au citron meringuée qui reste dans le frigo ",
+      "enonce": "Mac drive, menu maxi best of big mac avec des nuggets.",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
         "frustration": -10,
-        "equilibrealim": -5,
-        "sante": -5
+        "equilibrealim": -10,
+        "sante": -10
       },
       "failure": {
         "motivationpenality": 0,
