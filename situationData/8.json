@@ -1,14 +1,14 @@
 {
-  "enonce": "Il est 13 heure, Arthur sort de table, après son fromage il lui reste une petite place pour un dessert. Penché au dessus de son frigo il hésite entre plusieurs option : ",
+  "enonce": "Arthur reçoit c'est copain végétarien il se demande comment remplacer les protéines de la viande.",
   "arguments": {
     "1": {
-      "enonce": "Il prend un fruit  et un yaourt ",
+      "enonce": "Il lui fait des lasagne au légumes",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": 0,
-        "equilibrealim": -5,
-        "sante": -5
+        "frustration": -5,
+        "equilibrealim": 0,
+        "sante": 0
       },
       "failure": {
         "motivationpenality": 0,
@@ -18,11 +18,11 @@
       }
     },
     "2": {
-      "enonce": "Il prend un fruit ",
+      "enonce": "Il lui fait chilli sin carne ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": 0,
+        "frustration": 5,
         "equilibrealim": 5,
         "sante": 5
       },
@@ -34,13 +34,13 @@
       }
     },
     "3": {
-      "enonce": "Il prend un yaourt ",
+      "enonce": "il achète un steak végétal",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": 0,
+        "frustration": 10,
         "equilibrealim": -5,
-        "sante": -5
+        "sante": 0
       },
       "failure": {
         "motivationpenality": 0,
@@ -50,13 +50,13 @@
       }
     },
     "4": {
-      "enonce": "Il ne prend rien ",
+      "enonce": "Il lui fait une omelette ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": 5,
-        "equilibrealim": -5,
-        "sante": -5
+        "frustration": 0,
+        "equilibrealim": 0,
+        "sante": 5
       },
       "failure": {
         "motivationpenality": 0,
@@ -66,13 +66,13 @@
       }
     },
     "5": {
-      "enonce": "Il finit la part de tarte au citron meringuée qui reste dans le frigo ",
+      "enonce": "il fait un wok de légume au tofu  ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": -10,
-        "equilibrealim": -5,
-        "sante": -5
+        "frustration": 5,
+        "equilibrealim": 0,
+        "sante": 0
       },
       "failure": {
         "motivationpenality": 0,

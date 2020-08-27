@@ -1,13 +1,13 @@
 {
-  "enonce": "Il est 13 heure, Arthur sort de table, après son fromage il lui reste une petite place pour un dessert. Penché au dessus de son frigo il hésite entre plusieurs option : ",
+  "enonce": ": Il est chez son poissonnier pour prendre du poisson, quoi choisir ?",
   "arguments": {
     "1": {
-      "enonce": "Il prend un fruit  et un yaourt ",
+      "enonce": "un peu de saumon il parait que c’est riche en oméga 3 ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
         "frustration": 0,
-        "equilibrealim": -5,
+        "equilibrealim": 5,
         "sante": -5
       },
       "failure": {
@@ -18,12 +18,12 @@
       }
     },
     "2": {
-      "enonce": "Il prend un fruit ",
+      "enonce": "Maquereau, sardine c’est riche en oméga 3 mais meilleur pour la santé que le saumon !",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
         "frustration": 0,
-        "equilibrealim": 5,
+        "equilibrealim": 10,
         "sante": 5
       },
       "failure": {
@@ -34,13 +34,13 @@
       }
     },
     "3": {
-      "enonce": "Il prend un yaourt ",
+      "enonce": "un bon aïoli ca fait plaisir ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": 0,
-        "equilibrealim": -5,
-        "sante": -5
+        "frustration": -10,
+        "equilibrealim": 5,
+        "sante": 5
       },
       "failure": {
         "motivationpenality": 0,
@@ -50,11 +50,11 @@
       }
     },
     "4": {
-      "enonce": "Il ne prend rien ",
+      "enonce": "une sol meunière avec double dose de beurre ",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": 5,
+        "frustration": -5,
         "equilibrealim": -5,
         "sante": -5
       },
@@ -66,13 +66,13 @@
       }
     },
     "5": {
-      "enonce": "Il finit la part de tarte au citron meringuée qui reste dans le frigo ",
+      "enonce": "une papillotte  aux petit légume du soleil.",
       "motivationneeded": 0,
       "success": {
         "motivationpenality": 0,
-        "frustration": -10,
-        "equilibrealim": -5,
-        "sante": -5
+        "frustration": 0,
+        "equilibrealim": 5,
+        "sante": 5
       },
       "failure": {
         "motivationpenality": 0,
