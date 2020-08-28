@@ -2,7 +2,7 @@ var situations =
 {
     1:
     {
-        "enonce": "Il est 13 heure, Arthur sort de table, après son fromage il lui reste une petite place pour un dessert. Penché au dessus de son frigo il hésite entre plusieurs option : ",
+        "enonce": "Il est 13 heure, Arthur sort de table, après son fromage il lui reste une petite place pour un dessert. Penché au dessus de son frigo il hésite entre plusieurs options : ",
         "arguments": {
             "1": {
                 "enonce": "Il prend un fruit  et un yaourt ",
