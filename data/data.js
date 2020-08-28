@@ -138,7 +138,7 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "FORMULE DU JOUR : entré plat / plat dessert (salade de pousse d’épinard, filet de dorade, riz & julienne de légumes de saison, salade de fruit) ",
+                "enonce": "Formule du jour : entré plat / plat dessert (salade de pousse d’épinard, filet de dorade, riz & julienne de légumes de saison, salade de fruit) ",
                 "motivationneeded": 0,
                 "success": {
                     "motivationPenality": 0,
@@ -154,7 +154,7 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "Formule du jour (terrine de campagne, entrecôte frite sauce roquefort , pana cotta)",
+                "enonce": "Formule du jour : (terrine de campagne, entrecôte frite sauce roquefort , pana cotta)",
                 "motivationneeded": 0,
                 "success": {
                     "motivationPenality": 0,
