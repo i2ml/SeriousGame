@@ -1,11 +1,12 @@
 class Situation {
 
     constructor(id) {
-        this.enonce = "";
+        console.log(situations[id].arguments)
+        this.enonce = situations[id].enonce;
         this.arguments = new Array();
-        array.forEach(element => {
-            this.arguments.push(new Argument(id,));
-        });
+        for (const argumentId in situations[id].arguments) {
+            this.arguments.push(new Argument(id, argumentId));
+        };
     }
 
 }
