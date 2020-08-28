@@ -1,5 +1,4 @@
 let situation = new Situation(2)
-console.log(situation)
 $("#enonce").html(situation.enonce);
 for (const argumentId in situation.arguments) {
     $('<div/>', {
