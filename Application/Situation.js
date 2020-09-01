@@ -1,6 +1,7 @@
 class Situation {
 
     constructor(id) {
+        this.id = id;
         this.enonce = situations[id].enonce;
         this.arguments = new Array();
         for (const argumentId in situations[id].arguments) {
