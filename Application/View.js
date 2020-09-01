@@ -6,6 +6,8 @@ class View {
      */
     displaySituation(situation) {
         $("#enonce").html(situation.enonce);
+        $(".oneargumentList").empty();
+        $(".twoargumentList").empty();
         for (const argumentId in situation.arguments) {
             $('<div/>', {
                 'class': 'custom-control custom-checkbox',

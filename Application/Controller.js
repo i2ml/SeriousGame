@@ -5,10 +5,14 @@ class Controller {
     }
 
     startGame() {
-        let situation = new Situation(1);
-        this.view.displaySituation(situation);
+        this.view.displaySituation(this.model.situation);
     }
 }
 
 let app = new Controller(new Model(), new View());
 app.startGame();
+
+$("#valider").click(function () {
+    app.model.loadNextSituation()
+    app.view.displaySituation(app.model.situation);
+})
