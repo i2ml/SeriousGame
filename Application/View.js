@@ -4,7 +4,7 @@ class View {
     /**
      * Permet d'afficher une situation
      */
-    displaySituation() {
+    displaySituation(situation) {
         $("#enonce").html(situation.enonce);
         for (const argumentId in situation.arguments) {
             $('<div/>', {

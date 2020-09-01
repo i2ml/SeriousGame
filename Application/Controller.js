@@ -5,6 +5,10 @@ class Controller {
     }
 
     startGame() {
-        this.view.displaySituation();
+        let situation = new Situation(1);
+        this.view.displaySituation(situation);
     }
 }
+
+let app = new Controller(new Model(), new View());
+app.startGame();

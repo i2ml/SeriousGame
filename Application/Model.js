@@ -1,6 +1,6 @@
 class Model {
 
     constructor() {
-        this.Player();
+        this.Player = new Player();
     }
 }
