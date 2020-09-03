@@ -12,6 +12,9 @@ class Controller {
 let app = new Controller(new Model(), new View());
 app.startGame();
 
+/** 
+ * écoute le click sur le bouton valider 
+ */
 $("#valider").click(function () {
     if ($("#valider").hasClass("disabled")) {
         return;
@@ -20,6 +23,9 @@ $("#valider").click(function () {
     app.view.displaySituation(app.model.situation);
 })
 
+/**
+ * Désactive le bouton valider si les choix n'ont pas été fait
+ */
 $("input").click(function () {
     const inputList = $("input")
     let first = 0, second = 0;
