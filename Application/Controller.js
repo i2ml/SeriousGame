@@ -4,6 +4,9 @@ class Controller {
         this.view = view;
     }
 
+    /**
+     * Start the game
+     */
     startGame() {
         this.view.displaySituation(this.model.situation);
     }
@@ -12,21 +15,11 @@ class Controller {
 let app = new Controller(new Model(), new View());
 app.startGame();
 
-/** 
- * écoute le click sur le bouton valider 
- */
-$("#valider").click(function () {
-    if ($("#valider").hasClass("disabled")) {
-        return;
-    }
-    app.model.loadNextSituation()
-    app.view.displaySituation(app.model.situation);
-})
-
 /**
  * Désactive le bouton valider si les choix n'ont pas été fait
  */
-$("input").click(function () {
+$(document).on('click', 'input', function () {
+    console.log("banane")
     const inputList = $("input")
     let first = 0, second = 0;
     const numberOfArguments = inputList.length / 2;
@@ -39,5 +32,24 @@ $("input").click(function () {
         }
     }
     (first > 0 && second > 0) ? $("#valider").removeClass("disabled") : $("#valider").addClass("disabled");
+});
+
+/** 
+ * écoute le click sur le bouton valider 
+ */
+$("#valider").click(function () {
+    if ($("#valider").hasClass("disabled")) {
+        return;
+    }
+    $('#resumeModal').modal('show');
+    $("#valider").addClass("disabled");
+    $("input").click(function () {
+        app.checkConfirmOppening()
+    });
+    app.model.loadNextSituation()
+    app.view.displaySituation(app.model.situation);
 })
+
+
+
 
