@@ -5,6 +5,9 @@ class Model {
         this.situation = new Situation(1);
     }
 
+    /**
+     * Charge la situation suivante
+     */
     loadNextSituation() {
         const argumentToLoad = this.choseFinalArgumentId();
         console.log("The chosen argument is " + argumentToLoad)
@@ -12,6 +15,9 @@ class Model {
         this.situation = new Situation(this.situation.id++);
     }
 
+    /**
+     * Choisi aléatoirement un argument parmis ceux selectionnés.
+     */
     choseFinalArgumentId() {
         const inputList = $("input")
         let argumentsList = new Array();
