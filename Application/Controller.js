@@ -14,6 +14,7 @@ class Controller {
 
 let app = new Controller(new Model(), new View());
 app.startGame();
+$('#resumeModal').modal('show');
 
 /**
  * Désactive le bouton valider si les choix n'ont pas été fait
