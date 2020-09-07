@@ -6,11 +6,18 @@ class Model {
     }
 
     /**
+     * Return the argument that has been selected by the teams
+     */
+    getSelectedArgument() {
+        const argumentToLoad = this.choseFinalArgumentId();
+        console.log("The chosen argument is " + argumentToLoad)
+        return new Argument(this.situation.id, argumentToLoad);
+    }
+
+    /**
      * Charge la situation suivante
      */
     loadNextSituation() {
-        const argumentToLoad = this.choseFinalArgumentId();
-        console.log("The chosen argument is " + argumentToLoad)
         console.log("loading the situation : " + this.situation.id++)
         this.situation = new Situation(this.situation.id++);
     }
