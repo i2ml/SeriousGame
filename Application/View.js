@@ -40,4 +40,13 @@ class View {
         };
     }
 
+    /**
+     * Permet d'afficher un argument entre 2 situations
+     */
+    displaySelectedArgument(argument) {
+        $("#argEnonce").html(argument.enonce);
+        $("#frustrationValue").html(argument.enonce);
+        return;
+    }
+
 }
