@@ -20,7 +20,7 @@ class View {
             }).appendTo('#onedivArgument' + argumentId);
             $('<label/>', {
                 'for': 'oneargument' + argumentId,
-                'class': 'custom-control-label',
+                'class': 'custom-control-label text-gray-900',
                 'text': situation.arguments[argumentId].enonce,
             }).appendTo('#onedivArgument' + argumentId);
             $('<div/>', {
@@ -34,7 +34,7 @@ class View {
             }).appendTo('#twodivArgument' + argumentId);
             $('<label/>', {
                 'for': 'twoargument' + argumentId,
-                'class': 'custom-control-label',
+                'class': 'custom-control-label text-gray-900',
                 'text': situation.arguments[argumentId].enonce,
             }).appendTo('#twodivArgument' + argumentId);
         };
