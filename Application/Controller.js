@@ -48,8 +48,9 @@ $("#valider").click(function () {
         app.checkConfirmOppening()
     });
     const selectedArgument = app.model.getSelectedArgument();
+    const elementState = app.model.applyArgument(selectedArgument);
     app.model.loadNextSituation();
-    app.view.displaySelectedArgument(selectedArgument);
+    app.view.displaySelectedArgument(selectedArgument, elementState);
     app.view.displaySituation(app.model.situation);
 })
 

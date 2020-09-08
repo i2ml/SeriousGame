@@ -42,4 +42,24 @@ class Model {
         return argumentsList[Math.floor(Math.random() * argumentsList.length)];
     }
 
+    /**
+     * apply the effects of an argument over the player.
+     */
+    applyArgument(argument) {
+        let impact;
+        console.log(argument)
+        if (this.player.motivation >= argument.motivationNeeded) {
+            console.log("success of the argument");
+            impact = argument.success;
+        } else {
+            console.log("failure of the argument");
+            impact = argument.failure;
+        }
+        console.log(this.player)
+        this.player.applyStats(impact);
+        console.log(this.player)
+        console.log(impact)
+        return impact;
+    }
+
 }
