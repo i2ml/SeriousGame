@@ -3,6 +3,7 @@ class Model {
     constructor() {
         this.player = new Player();
         this.situation = new Situation(1);
+        this.chart = getChart();
     }
 
     /**
@@ -18,8 +19,13 @@ class Model {
      * Charge la situation suivante
      */
     loadNextSituation() {
-        console.log("loading the situation : " + this.situation.id++)
-        this.situation = new Situation(this.situation.id++);
+        const idSituationToLoad = this.situation.id + 1;
+        this.situation = new Situation(idSituationToLoad);
+        console.log(this.chart)
+        if (this.situation.id > 3) {
+            this.chart.data.labels.push("Situation " + this.situation.id);
+            this.chart.update();
+        }
     }
 
     /**
