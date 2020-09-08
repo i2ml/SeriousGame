@@ -43,9 +43,76 @@ class View {
     /**
      * Permet d'afficher un argument entre 2 situations
      */
-    displaySelectedArgument(argument) {
+    displaySelectedArgument(argument, impact) {
+
+        //display raw values
+        const motivationValue = impact.motivationPenality + 5;
         $("#argEnonce").html(argument.enonce);
-        $("#frustrationValue").html(argument.enonce);
+        $("#frustrationValue").html(impact.frustration);
+        $("#motivationValue").html(motivationValue);
+        $("#healthValue").html(impact.sante);
+        $("#balanceValue").html(impact.equilibreAlim);
+
+        //reset colors
+        let classes = ["border-left-danger", "border-left-success", "border-left-info", "text-danger", "text-success", "text-info"];
+        $("#frustrationCard").removeClass(classes);
+        $("#motivationCard").removeClass(classes);
+        $("#santeCard").removeClass(classes);
+        $("#equilibreAlimCard").removeClass(classes);
+        $("#frustrationText").removeClass(classes);
+        $("#motivationText").removeClass(classes);
+        $("#santeText").removeClass(classes);
+        $("#equilibreAlimText").removeClass(classes);
+
+        //display color
+        if (impact.frustration > 0) {
+            $("#frustrationCard").addClass("border-left-danger");
+            $("#frustrationText").addClass("text-danger");
+        };
+        if (impact.frustration < 0) {
+            $("#frustrationCard").addClass("border-left-success");
+            $("#frustrationText").addClass("text-success");
+        };
+        if (impact.frustration == 0) {
+            $("#frustrationCard").addClass("border-left-info");
+            $("#frustrationText").addClass("text-info");
+        };
+        if (motivationValue < 0) {
+            $("#motivationCard").addClass("border-left-danger");
+            $("#motivationText").addClass("text-danger");
+        };
+        if (motivationValue > 0) {
+            $("#motivationCard").addClass("border-left-success");
+            $("#motivationText").addClass("text-success");
+        };
+        if (motivationValue == 0) {
+            $("#motivationCard").addClass("border-left-info");
+            $("#motivationText").addClass("text-info");
+        };
+        if (impact.sante < 0) {
+            $("#santeCard").addClass("border-left-danger");
+            $("#santeText").addClass("text-danger");
+        };
+        if (impact.sante > 0) {
+            $("#santeCard").addClass("border-left-success");
+            $("#santeText").addClass("text-success");
+        };
+        if (impact.sante == 0) {
+            $("#santeCard").addClass("border-left-info");
+            $("#santeText").addClass("text-info");
+        };
+        if (impact.equilibreAlim < 0) {
+            $("#equilibreAlimCard").addClass("border-left-danger");
+            $("#equilibreAlimText").addClass("text-danger");
+        };
+        if (impact.equilibreAlim > 0) {
+            $("#equilibreAlimCard").addClass("border-left-success");
+            $("#equilibreAlimText").addClass("text-success");
+        };
+        if (impact.equilibreAlim == 0) {
+            $("#equilibreAlimCard").addClass("border-left-info");
+            $("#equilibreAlimText").addClass("text-info");
+        };
         return;
     }
 
