@@ -127,41 +127,62 @@ class View {
         $("#santeBar").removeClass(classes);
         $("#equilibreAlimBar").removeClass(classes);
 
+        let bad = 0;
+        let good = 0;
         if (player.frustration < 40) {
+            good++;
             $("#frustrationBar").addClass("bg-success").css({ width: player.frustration + '%' });
         };
         if (player.frustration >= 40 && player.frustration <= 60) {
             $("#frustrationBar").addClass("bg-warning").css({ width: player.frustration + '%' });
         };
         if (player.frustration > 60) {
+            bad++;
             $("#frustrationBar").addClass("bg-danger").css({ width: player.frustration + '%' });
         };
         if (player.motivation < 40) {
+            bad++;
             $("#motivationBar").addClass("bg-danger").css({ width: player.motivation + '%' });
         };
         if (player.motivation >= 40 && player.motivation <= 60) {
             $("#motivationBar").addClass("bg-warning").css({ width: player.motivation + '%' });
         };
         if (player.motivation > 60) {
+            good++;
             $("#motivationBar").addClass("bg-success").css({ width: player.motivation + '%' });
         };
         if (player.sante < 40) {
+            bad++;
             $("#santeBar").addClass("bg-danger").css({ width: player.sante + '%' });
         };
         if (player.sante >= 40 && player.sante <= 60) {
             $("#santeBar").addClass("bg-warning").css({ width: player.sante + '%' });
         };
         if (player.sante > 60) {
+            good++;
             $("#santeBar").addClass("bg-success").css({ width: player.sante + '%' });
         };
         if (player.equilibreAlim < 40) {
+            bad++;
             $("#equilibreAlimBar").addClass("bg-danger").css({ width: player.equilibreAlim + '%' });
         };
         if (player.equilibreAlim >= 40 && player.equilibreAlim <= 60) {
             $("#equilibreAlimBar").addClass("bg-warning").css({ width: player.equilibreAlim + '%' });
         };
         if (player.equilibreAlim > 60) {
+            good++;
             $("#equilibreAlimBar").addClass("bg-success").css({ width: player.equilibreAlim + '%' });
         };
+
+        if (bad > 0) {
+            $("#profilIllu").attr("src", "img/Triste.png");
+        } else {
+            if (good >= 2) {
+                $("#profilIllu").attr("src", "img/Heureux.png");
+            } else {
+                $("#profilIllu").attr("src", "img/Normal.png");
+            }
+        }
+
     }
 }
