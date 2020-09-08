@@ -50,8 +50,8 @@ class View {
         $("#argEnonce").html(argument.enonce);
         $("#frustrationValue").html(impact.frustration);
         $("#motivationValue").html(motivationValue);
-        $("#healthValue").html(impact.sante);
-        $("#balanceValue").html(impact.equilibreAlim);
+        $("#santeValue").html(impact.sante);
+        $("#equilibreAlimValue").html(impact.equilibreAlim);
 
         //reset colors
         let classes = ["border-left-danger", "border-left-success", "border-left-info", "text-danger", "text-success", "text-info"];
@@ -113,7 +113,54 @@ class View {
             $("#equilibreAlimCard").addClass("border-left-info");
             $("#equilibreAlimText").addClass("text-info");
         };
-        return;
     }
 
+    /**
+     * Display information about the player
+     */
+    updatePlayerInfo(player) {
+        console.log(player)
+        let classes = ["bg-success", "bg-warning", "bg-danger"];
+        $("#frustrationBar").removeClass(classes);
+        $("#motivationBar").removeClass(classes);
+        $("#santeBar").removeClass(classes);
+        $("#equilibreAlimBar").removeClass(classes);
+
+        if (player.frustration < 40) {
+            $("#frustrationBar").addClass("bg-success").css({ width: player.frustration + '%' });
+        };
+        if (player.frustration >= 40 && player.frustration <= 60) {
+            $("#frustrationBar").addClass("bg-warning").css({ width: player.frustration + '%' });
+        };
+        if (player.frustration > 60) {
+            $("#frustrationBar").addClass("bg-danger").css({ width: player.frustration + '%' });
+        };
+        if (player.motivation < 40) {
+            $("#motivationBar").addClass("bg-danger").css({ width: player.motivation + '%' });
+        };
+        if (player.motivation >= 40 && player.motivation <= 60) {
+            $("#motivationBar").addClass("bg-warning").css({ width: player.motivation + '%' });
+        };
+        if (player.motivation > 60) {
+            $("#motivationBar").addClass("bg-success").css({ width: player.motivation + '%' });
+        };
+        if (player.sante < 40) {
+            $("#santeBar").addClass("bg-danger").css({ width: player.sante + '%' });
+        };
+        if (player.sante >= 40 && player.sante <= 60) {
+            $("#santeBar").addClass("bg-warning").css({ width: player.sante + '%' });
+        };
+        if (player.sante > 60) {
+            $("#santeBar").addClass("bg-success").css({ width: player.sante + '%' });
+        };
+        if (player.equilibreAlim < 40) {
+            $("#equilibreAlimBar").addClass("bg-danger").css({ width: player.equilibreAlim + '%' });
+        };
+        if (player.equilibreAlim >= 40 && player.equilibreAlim <= 60) {
+            $("#equilibreAlimBar").addClass("bg-warning").css({ width: player.equilibreAlim + '%' });
+        };
+        if (player.equilibreAlim > 60) {
+            $("#equilibreAlimBar").addClass("bg-success").css({ width: player.equilibreAlim + '%' });
+        };
+    }
 }

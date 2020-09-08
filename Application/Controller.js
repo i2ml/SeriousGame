@@ -14,13 +14,19 @@ class Controller {
 
 let app = new Controller(new Model(), new View());
 app.startGame();
-$('#resumeModal').modal('show');
+//$('#resumeModal').modal('show');
+
+/**
+ * écoute le click sur le bouton voir le profil
+ */
+$("#voirProfil").click(function () {
+    app.view.updatePlayerInfo(app.model.player);
+});
 
 /**
  * Désactive le bouton valider si les choix n'ont pas été fait
  */
 $(document).on('click', 'input', function () {
-    console.log("banane")
     const inputList = $("input")
     let first = 0, second = 0;
     const numberOfArguments = inputList.length / 2;
