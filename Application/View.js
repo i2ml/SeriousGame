@@ -5,6 +5,9 @@ class View {
      * Permet d'afficher une situation
      */
     displaySituation(situation) {
+        const progress = (situation.id - 1) * (100 / 12);
+        console.log("progress is :" + progress)
+        $("#mainBar").css({ width: progress + '%' });
         $("#enonce").html(situation.enonce);
         $("#situationIllu").attr("src", "img/situations/" + situation.id + ".png");
         $(".oneargumentList").empty();
