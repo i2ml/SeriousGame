@@ -6,7 +6,7 @@ var situations =
         "arguments": {
             "1": {
                 "enonce": "Il prend un fruit  et un yaourt ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -22,7 +22,7 @@ var situations =
             },
             "2": {
                 "enonce": "Il prend un fruit ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -38,7 +38,7 @@ var situations =
             },
             "3": {
                 "enonce": "Il prend un yaourt ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -54,7 +54,7 @@ var situations =
             },
             "4": {
                 "enonce": "Il ne prend rien ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 5,
@@ -70,7 +70,7 @@ var situations =
             },
             "5": {
                 "enonce": "Il finit la part de tarte au citron meringuée qui reste dans le frigo ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -10,
@@ -91,7 +91,7 @@ var situations =
         "arguments": {
             "1": {
                 "enonce": "Formule du jour complète (salade de pousse d’épinard, filet de dorade, riz & julienne de légumes de saison, salade de fruit)",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -107,7 +107,7 @@ var situations =
             },
             "2": {
                 "enonce": "Plat unique : salade césar ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 5,
@@ -123,7 +123,7 @@ var situations =
             },
             "3": {
                 "enonce": "Entrecôte, frite & sauce roquefort",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -5,
@@ -139,7 +139,7 @@ var situations =
             },
             "4": {
                 "enonce": "Formule du jour : entré plat / plat dessert (salade de pousse d’épinard, filet de dorade, riz & julienne de légumes de saison, salade de fruit) ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -155,7 +155,7 @@ var situations =
             },
             "5": {
                 "enonce": "Formule du jour : (terrine de campagne, entrecôte frite sauce roquefort , pana cotta)",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -10,
@@ -176,7 +176,7 @@ var situations =
         "arguments": {
             "1": {
                 "enonce": "Pas de yaourt au petit déjeuner, le jeu n’en vaut pas la chandelle.",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 5,
@@ -192,7 +192,7 @@ var situations =
             },
             "2": {
                 "enonce": "Tant pis pour les inconfort, un pack de petit suisse comme à l’époque.",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -10,
@@ -208,7 +208,7 @@ var situations =
             },
             "3": {
                 "enonce": "Il a lu dans un article que le lait de brebis était plus simple à digérer, il va donc tenter d’adapter sa recette avec un yaourt au lait de brebis ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": -20,
                     "frustration": 0,
@@ -224,7 +224,7 @@ var situations =
             },
             "4": {
                 "enonce": "Ce même article présenter les bénéfices sur la digestibilité  d’une consommation de produits issus du lait de montagne. ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": -10,
                     "frustration": -5,
@@ -240,7 +240,7 @@ var situations =
             },
             "5": {
                 "enonce": "Dommage pour la nostalgie il y a d’autre produit laitiers, je mangerai du fromage.",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 10,
@@ -261,7 +261,7 @@ var situations =
         "arguments": {
             "1": {
                 "enonce": "Arthur décide de laisser tomber son potager. Et de faire confiance aux producteurs locaux",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 5,
@@ -277,7 +277,7 @@ var situations =
             },
             "2": {
                 "enonce": "Arthur se laisse convaincre par son amis mais souhaite poursuivre et étendre ses cultures. Il ne va donc acheter que ce qu’il ne fait pas lui même et continue de se dépenser dans son jardin.",
-                "motivationneeded": 50,
+                "motivationNeeded": 50,
                 "success": {
                     "motivationPenality": -20,
                     "frustration": -10,
@@ -293,7 +293,7 @@ var situations =
             },
             "3": {
                 "enonce": "Arthur continue à faire son potager modérément comme actuellement et se servir en bio au supermarché et chez les producteurs locaux pour compléter.",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -309,7 +309,7 @@ var situations =
             },
             "4": {
                 "enonce": "le potager c’est trop d’investissement personnel, le bio du supermarché suffit.",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -325,7 +325,7 @@ var situations =
             },
             "5": {
                 "enonce": "Pourquoi se casser la tête un légume est un légume...",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -346,7 +346,7 @@ var situations =
         "arguments": {
             "1": {
                 "enonce": "un peu de saumon il parait que c’est riche en oméga 3 ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -362,7 +362,7 @@ var situations =
             },
             "2": {
                 "enonce": "Maquereau, sardine c’est riche en oméga 3 mais meilleur pour la santé que le saumon !",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -378,7 +378,7 @@ var situations =
             },
             "3": {
                 "enonce": "un bon aïoli ca fait plaisir ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -10,
@@ -394,7 +394,7 @@ var situations =
             },
             "4": {
                 "enonce": "une sol meunière avec double dose de beurre ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -5,
@@ -410,7 +410,7 @@ var situations =
             },
             "5": {
                 "enonce": "une papillotte  aux petit légume du soleil.",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -431,7 +431,7 @@ var situations =
         "arguments": {
             "1": {
                 "enonce": "beurre",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -5,
@@ -447,7 +447,7 @@ var situations =
             },
             "2": {
                 "enonce": "huile d’arachide ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -463,7 +463,7 @@ var situations =
             },
             "3": {
                 "enonce": "huile d’olive extra ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -5,
@@ -479,7 +479,7 @@ var situations =
             },
             "4": {
                 "enonce": "huile de tournesol raffinée bio ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -495,7 +495,7 @@ var situations =
             },
             "5": {
                 "enonce": "huile de tournesol bio non raffinée ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -516,7 +516,7 @@ var situations =
         "arguments": {
             "1": {
                 "enonce": "Il sort son téléphone avec une appli de type yuka ou open food fact..",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 5,
@@ -532,7 +532,7 @@ var situations =
             },
             "2": {
                 "enonce": "Il prend le jambon bio pour être sûr de la qualité du produit ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -548,7 +548,7 @@ var situations =
             },
             "3": {
                 "enonce": "Il prend le jambon plus cher pour être sûr de la qualité du produit ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -564,7 +564,7 @@ var situations =
             },
             "4": {
                 "enonce": "Il prend le premier prix, de toute façon cela ne change rien.",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -580,7 +580,7 @@ var situations =
             },
             "5": {
                 "enonce": "huile de tournesol bio non raffinée ",
-                "motivationneeded": 50,
+                "motivationNeeded": 50,
                 "success": {
                     "motivationPenality": -10,
                     "frustration": -5,
@@ -601,7 +601,7 @@ var situations =
         "arguments": {
             "1": {
                 "enonce": "Il lui fait des lasagne au légumes",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -5,
@@ -617,7 +617,7 @@ var situations =
             },
             "2": {
                 "enonce": "Il lui fait chilli sin carne ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 5,
@@ -633,7 +633,7 @@ var situations =
             },
             "3": {
                 "enonce": "il achète un steak végétal",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 10,
@@ -649,7 +649,7 @@ var situations =
             },
             "4": {
                 "enonce": "Il lui fait une omelette ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -665,7 +665,7 @@ var situations =
             },
             "5": {
                 "enonce": "il fait un wok de légume au tofu  ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 5,
@@ -686,7 +686,7 @@ var situations =
         "arguments": {
             "1": {
                 "enonce": "il accepte de prendre un viennoiserie, même si c’est la 4eme cette semaine. il ne faut pas vexer son client ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -5,
@@ -702,7 +702,7 @@ var situations =
             },
             "2": {
                 "enonce": "il a l’habitude il a un fruit et des oléagineux dans sa malette",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -718,7 +718,7 @@ var situations =
             },
             "3": {
                 "enonce": "Il ne prend qu’ un café (sucré), le goûté c'est pour les enfant. ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 5,
@@ -734,7 +734,7 @@ var situations =
             },
             "4": {
                 "enonce": "un verre d’eau suffira, merci ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 5,
@@ -750,7 +750,7 @@ var situations =
             },
             "5": {
                 "enonce": "Elle sont vraiment bonne ses viennoiserie, j’en prend un seconde.",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -5,
@@ -771,7 +771,7 @@ var situations =
         "arguments": {
             "1": {
                 "enonce": "Je vais réchauffer un plat cuisiné au micro-onde (sauté de veau et purée) ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 5,
@@ -787,7 +787,7 @@ var situations =
             },
             "2": {
                 "enonce": "je fais un simple plat de pâtes à la crème, 12 min montre en main ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -803,7 +803,7 @@ var situations =
             },
             "3": {
                 "enonce": "Aller courage je prend sur moi et je vais faire un vrai repas, j’ai des restes du repas d’hier (ratatouille) avec une omelette et un peu de salade ça fera l’affaire.",
-                "motivationneeded": 50,
+                "motivationNeeded": 50,
                 "success": {
                     "motivationPenality": -10,
                     "frustration": 0,
@@ -819,7 +819,7 @@ var situations =
             },
             "4": {
                 "enonce": "Deliveroo, Hum un Bò bún !",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -5,
@@ -835,7 +835,7 @@ var situations =
             },
             "5": {
                 "enonce": "Mac drive, menu maxi best of big mac avec des nuggets.",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -10,
@@ -856,7 +856,7 @@ var situations =
         "arguments": {
             "1": {
                 "enonce": "A partir de maintenant, Arthur ira au travail à vélo ou à pied (10/30 minutes de trajet)",
-                "motivationneeded": 50,
+                "motivationNeeded": 50,
                 "success": {
                     "motivationPenality": -20,
                     "frustration": -5,
@@ -872,7 +872,7 @@ var situations =
             },
             "2": {
                 "enonce": "Arthur téléphone à une salle de sport pour faire des séances après le boulot (3 h par semaine)",
-                "motivationneeded": 50,
+                "motivationNeeded": 50,
                 "success": {
                     "motivationPenality": -50,
                     "frustration": 10,
@@ -888,7 +888,7 @@ var situations =
             },
             "3": {
                 "enonce": "Arthur décide qu’à partir de maintenant, il fera un footing tous les samedis matin.",
-                "motivationneeded": 50,
+                "motivationNeeded": 50,
                 "success": {
                     "motivationPenality": -30,
                     "frustration": 5,
@@ -904,7 +904,7 @@ var situations =
             },
             "4": {
                 "enonce": "Arthur prend désormais les escalier et favorise la marche quand il le peut. ",
-                "motivationneeded": 50,
+                "motivationNeeded": 50,
                 "success": {
                     "motivationPenality": -10,
                     "frustration": -5,
@@ -920,7 +920,7 @@ var situations =
             },
             "5": {
                 "enonce": "l’activité physique, c’est surfait, très peu pour moi.",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -5,
@@ -941,7 +941,7 @@ var situations =
         "arguments": {
             "1": {
                 "enonce": "carotte, oignon, brocolis, choux rouge, courge, butternut, panais, betterave, poireau  ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -957,7 +957,7 @@ var situations =
             },
             "2": {
                 "enonce": "tomate, aubergine, courgette, melon, fraise ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -5,
@@ -973,7 +973,7 @@ var situations =
             },
             "3": {
                 "enonce": "Haricot vert, petit pois, épinard, courgette, poivron ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": 0,
@@ -989,7 +989,7 @@ var situations =
             },
             "4": {
                 "enonce": "pomme de terre, oignon, échalote et champignon",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -5,
@@ -1005,7 +1005,7 @@ var situations =
             },
             "5": {
                 "enonce": "pfff la flemme, je prendrais des légume en conserve quand j'irai au supermarché. ",
-                "motivationneeded": 0,
+                "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
                     "frustration": -5,
