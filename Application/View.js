@@ -6,6 +6,7 @@ class View {
      */
     displaySituation(situation) {
         $("#enonce").html(situation.enonce);
+        $("#situationIllu").attr("src", "img/situations/" + situation.id + ".png");
         $(".oneargumentList").empty();
         $(".twoargumentList").empty();
         for (const argumentId in situation.arguments) {
