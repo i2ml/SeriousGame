@@ -45,6 +45,17 @@ class View {
     }
 
     /**
+     * Permet d'afficher l'écran de fin
+     */
+    displayEndGame() {
+        $("#mainBar").css({ width: '100%' });
+        $("#enonce").html("Félicitation ! Vous avez atteint la fin du jeu !");
+        $("#situationIllu").attr("src", "img/situations/end.png");
+        $(".oneargumentList").empty();
+        $(".twoargumentList").empty();
+    }
+
+    /**
      * Permet d'afficher un argument entre 2 situations
      */
     displaySelectedArgument(argument, impact) {
