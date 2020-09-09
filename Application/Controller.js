@@ -55,9 +55,13 @@ $("#valider").click(function () {
     });
     const selectedArgument = app.model.getSelectedArgument();
     const elementState = app.model.applyArgument(selectedArgument);
-    app.model.loadNextSituation();
     app.view.displaySelectedArgument(selectedArgument, elementState);
-    app.view.displaySituation(app.model.situation);
+    if (app.model.situation.id == 11) {
+        app.view.displayEndGame();
+    } else {
+        app.model.loadNextSituation();
+        app.view.displaySituation(app.model.situation);
+    }
 })
 
 
