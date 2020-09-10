@@ -41,7 +41,7 @@ class Model {
             'Novembre',
             'Décembre'
         );
-        this.chart.data.labels.push(months[this.situation.id - 2]);
+        this.chart.data.labels.push(months[this.situation.id - 1]);
         this.chart.update();
     }
 
