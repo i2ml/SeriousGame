@@ -14,3 +14,7 @@
 .modal-content {
 	min-height: 1000px;
 }
+
+#profilIllu {
+	max-width: 175px;
+}
