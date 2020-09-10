@@ -56,7 +56,7 @@ $("#valider").click(function () {
     const selectedArgument = app.model.getSelectedArgument();
     const elementState = app.model.applyArgument(selectedArgument);
     app.view.displaySelectedArgument(selectedArgument, elementState);
-    if (app.model.situation.id == 12) {
+    if (app.model.situation.id == 1) {
         app.view.displayEndGame();
     } else {
         app.model.loadNextSituation();
