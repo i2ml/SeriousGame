@@ -58,32 +58,32 @@ class View {
      */
     displaySelectedArgument(argument, impact) {
 
-        let énergieValue;
+        let energieValue;
         //display raw values
         if (impact.frustration <= 0) {
-            énergieValue = impact.énergiePenality + 5;
+            energieValue = impact.energiePenality + 5;
             if (impact.frustration < 0) { //additional bonus if frustration is going down
-                énergieValue += 5;
+                energieValue += 5;
             }
         }
         else { //no bonus if frustration is going up
-            énergieValue = impact.énergiePenality;
+            energieValue = impact.energiePenality;
         }
         $("#argEnonce").html(argument.enonce);
         $("#impactText").html(impact.text);
         $("#frustrationValue").html(impact.frustration);
-        $("#énergieValue").html(énergieValue);
+        $("#energieValue").html(energieValue);
         $("#santeValue").html(impact.sante);
         $("#equilibreAlimValue").html(impact.equilibreAlim);
 
         //reset colors
         let classes = ["border-left-danger", "border-left-success", "border-left-info", "text-danger", "text-success", "text-info"];
         $("#frustrationCard").removeClass(classes);
-        $("#énergieCard").removeClass(classes);
+        $("#energieCard").removeClass(classes);
         $("#santeCard").removeClass(classes);
         $("#equilibreAlimCard").removeClass(classes);
         $("#frustrationText").removeClass(classes);
-        $("#énergieText").removeClass(classes);
+        $("#energieText").removeClass(classes);
         $("#santeText").removeClass(classes);
         $("#equilibreAlimText").removeClass(classes);
 
@@ -100,17 +100,17 @@ class View {
             $("#frustrationCard").addClass("border-left-info");
             $("#frustrationText").addClass("text-info");
         };
-        if (énergieValue < 0) {
-            $("#énergieCard").addClass("border-left-danger");
-            $("#énergieText").addClass("text-danger");
+        if (energieValue < 0) {
+            $("#energieCard").addClass("border-left-danger");
+            $("#energieText").addClass("text-danger");
         };
-        if (énergieValue > 0) {
-            $("#énergieCard").addClass("border-left-success");
-            $("#énergieText").addClass("text-success");
+        if (energieValue > 0) {
+            $("#energieCard").addClass("border-left-success");
+            $("#energieText").addClass("text-success");
         };
-        if (énergieValue == 0) {
-            $("#énergieCard").addClass("border-left-info");
-            $("#énergieText").addClass("text-info");
+        if (energieValue == 0) {
+            $("#energieCard").addClass("border-left-info");
+            $("#energieText").addClass("text-info");
         };
         if (impact.sante < 0) {
             $("#santeCard").addClass("border-left-danger");
@@ -145,9 +145,45 @@ class View {
         console.log(player)
         let classes = ["bg-success", "bg-warning", "bg-danger"];
         $("#frustrationBar").removeClass(classes);
-        $("#énergieBar").removeClass(classes);
+        $("#energieBar").removeClass(classes);
         $("#santeBar").removeClass(classes);
         $("#equilibreAlimBar").removeClass(classes);
+        if ($("#frustrationValue").text() < 0) {
+            $("#frustrationSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
+        };
+        if ($("#frustrationValue").text() == 0) {
+            $("#frustrationSpan").html(`<i class="fas fa-grip-lines"></i> Stable.`);
+        };
+        if ($("#frustrationValue").text() > 0) {
+            $("#frustrationSpan").html(`<i class="fas fa-chevron-up"></i> En augmentation.`);
+        };
+        if ($("#energieValue").text() < 0) {
+            $("#energieSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
+        };
+        if ($("#energieValue").text() == 0) {
+            $("#energieSpan").html(`<i class="fas fa-grip-lines"></i> Stable.`);
+        };
+        if ($("#energieValue").text() > 0) {
+            $("#energieSpan").html(`<i class="fas fa-chevron-up"></i> En augmentation.`);
+        };
+        if ($("#santeValue").text() < 0) {
+            $("#santeSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
+        };
+        if ($("#santeValue").text() == 0) {
+            $("#santeSpan").html(`<i class="fas fa-grip-lines"></i> Stable.`);
+        };
+        if ($("#santeValue").text() > 0) {
+            $("#santeSpan").html(`<i class="fas fa-chevron-up"></i> En augmentation.`);
+        };
+        if ($("#equilibreAlimValue").text() < 0) {
+            $("#equilibreAlimSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
+        };
+        if ($("#equilibreAlimValue").text() == 0) {
+            $("#equilibreAlimSpan").html(`<i class="fas fa-grip-lines"></i> Stable.`);
+        };
+        if ($("#equilibreAlimValue").text() > 0) {
+            $("#equilibreAlimSpan").html(`<i class="fas fa-chevron-up"></i> En augmentation.`);
+        };
 
         let bad = 0;
         let good = 0;
@@ -162,16 +198,16 @@ class View {
             bad++;
             $("#frustrationBar").addClass("bg-danger").css({ width: player.frustration + '%' });
         };
-        if (player.énergie < 40) {
+        if (player.energie < 40) {
             bad++;
-            $("#énergieBar").addClass("bg-danger").css({ width: player.énergie + '%' });
+            $("#energieBar").addClass("bg-danger").css({ width: player.energie + '%' });
         };
-        if (player.énergie >= 40 && player.énergie <= 60) {
-            $("#énergieBar").addClass("bg-warning").css({ width: player.énergie + '%' });
+        if (player.energie >= 40 && player.energie <= 60) {
+            $("#energieBar").addClass("bg-warning").css({ width: player.energie + '%' });
         };
-        if (player.énergie > 60) {
+        if (player.energie > 60) {
             good++;
-            $("#énergieBar").addClass("bg-success").css({ width: player.énergie + '%' });
+            $("#energieBar").addClass("bg-success").css({ width: player.energie + '%' });
         };
         if (player.sante < 40) {
             bad++;
