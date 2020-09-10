@@ -21,7 +21,12 @@ class Model {
     loadNextSituation() {
         const idSituationToLoad = this.situation.id + 1;
         this.situation = new Situation(idSituationToLoad);
-        console.log(this.chart)
+    }
+
+    /**
+     * Allow to add the current weight to the chart
+     */
+    updateChart() {
         const months = new Array(
             'Janvier',
             'Février',
@@ -38,7 +43,6 @@ class Model {
         );
         this.chart.data.labels.push(months[this.situation.id - 2]);
         this.chart.update();
-
     }
 
     /**
@@ -66,7 +70,6 @@ class Model {
      */
     applyArgument(argument) {
         let impact;
-        console.log(argument)
         if (this.player.motivation >= argument.motivationNeeded) {
             console.log("success of the argument");
             impact = argument.success;
@@ -74,10 +77,8 @@ class Model {
             console.log("failure of the argument");
             impact = argument.failure;
         }
-        console.log(this.player)
         this.player.applyStats(impact);
-        console.log(this.player)
-        console.log(impact)
+        this.updateChart();
         return impact;
     }
 
