@@ -58,32 +58,32 @@ class View {
      */
     displaySelectedArgument(argument, impact) {
 
-        let motivationValue;
+        let énergieValue;
         //display raw values
         if (impact.frustration <= 0) {
-            motivationValue = impact.motivationPenality + 5;
+            énergieValue = impact.énergiePenality + 5;
             if (impact.frustration < 0) { //additional bonus if frustration is going down
-                motivationValue += 5;
+                énergieValue += 5;
             }
         }
         else { //no bonus if frustration is going up
-            motivationValue = impact.motivationPenality;
+            énergieValue = impact.énergiePenality;
         }
         $("#argEnonce").html(argument.enonce);
         $("#impactText").html(impact.text);
         $("#frustrationValue").html(impact.frustration);
-        $("#motivationValue").html(motivationValue);
+        $("#énergieValue").html(énergieValue);
         $("#santeValue").html(impact.sante);
         $("#equilibreAlimValue").html(impact.equilibreAlim);
 
         //reset colors
         let classes = ["border-left-danger", "border-left-success", "border-left-info", "text-danger", "text-success", "text-info"];
         $("#frustrationCard").removeClass(classes);
-        $("#motivationCard").removeClass(classes);
+        $("#énergieCard").removeClass(classes);
         $("#santeCard").removeClass(classes);
         $("#equilibreAlimCard").removeClass(classes);
         $("#frustrationText").removeClass(classes);
-        $("#motivationText").removeClass(classes);
+        $("#énergieText").removeClass(classes);
         $("#santeText").removeClass(classes);
         $("#equilibreAlimText").removeClass(classes);
 
@@ -100,17 +100,17 @@ class View {
             $("#frustrationCard").addClass("border-left-info");
             $("#frustrationText").addClass("text-info");
         };
-        if (motivationValue < 0) {
-            $("#motivationCard").addClass("border-left-danger");
-            $("#motivationText").addClass("text-danger");
+        if (énergieValue < 0) {
+            $("#énergieCard").addClass("border-left-danger");
+            $("#énergieText").addClass("text-danger");
         };
-        if (motivationValue > 0) {
-            $("#motivationCard").addClass("border-left-success");
-            $("#motivationText").addClass("text-success");
+        if (énergieValue > 0) {
+            $("#énergieCard").addClass("border-left-success");
+            $("#énergieText").addClass("text-success");
         };
-        if (motivationValue == 0) {
-            $("#motivationCard").addClass("border-left-info");
-            $("#motivationText").addClass("text-info");
+        if (énergieValue == 0) {
+            $("#énergieCard").addClass("border-left-info");
+            $("#énergieText").addClass("text-info");
         };
         if (impact.sante < 0) {
             $("#santeCard").addClass("border-left-danger");
@@ -145,7 +145,7 @@ class View {
         console.log(player)
         let classes = ["bg-success", "bg-warning", "bg-danger"];
         $("#frustrationBar").removeClass(classes);
-        $("#motivationBar").removeClass(classes);
+        $("#énergieBar").removeClass(classes);
         $("#santeBar").removeClass(classes);
         $("#equilibreAlimBar").removeClass(classes);
 
@@ -162,16 +162,16 @@ class View {
             bad++;
             $("#frustrationBar").addClass("bg-danger").css({ width: player.frustration + '%' });
         };
-        if (player.motivation < 40) {
+        if (player.énergie < 40) {
             bad++;
-            $("#motivationBar").addClass("bg-danger").css({ width: player.motivation + '%' });
+            $("#énergieBar").addClass("bg-danger").css({ width: player.énergie + '%' });
         };
-        if (player.motivation >= 40 && player.motivation <= 60) {
-            $("#motivationBar").addClass("bg-warning").css({ width: player.motivation + '%' });
+        if (player.énergie >= 40 && player.énergie <= 60) {
+            $("#énergieBar").addClass("bg-warning").css({ width: player.énergie + '%' });
         };
-        if (player.motivation > 60) {
+        if (player.énergie > 60) {
             good++;
-            $("#motivationBar").addClass("bg-success").css({ width: player.motivation + '%' });
+            $("#énergieBar").addClass("bg-success").css({ width: player.énergie + '%' });
         };
         if (player.sante < 40) {
             bad++;
