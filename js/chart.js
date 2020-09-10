@@ -10,7 +10,7 @@ let getChart = function () {
   return new Chart(ctx, {
     type: 'line',
     data: {
-      labels: ["Situation 1", "Situation 2", "Situation 3"],
+      labels: ["Octobre", "Novembre", "Decembre"],
       datasets: [{
         label: "Poid",
         lineTension: 0.3,
@@ -24,7 +24,7 @@ let getChart = function () {
         pointHoverBorderColor: "rgba(78, 115, 223, 1)",
         pointHitRadius: 10,
         pointBorderWidth: 2,
-        data: [77, 80, 82, 85, 85, 88, 86, 88, 95, 97, 85],
+        data: [77, 79, 78, 77, 76, 75, 77, 78, 80, 82, 88, 95, 97, 85, 82],
       }],
     },
     options: {

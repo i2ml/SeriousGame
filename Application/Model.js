@@ -22,10 +22,23 @@ class Model {
         const idSituationToLoad = this.situation.id + 1;
         this.situation = new Situation(idSituationToLoad);
         console.log(this.chart)
-        if (this.situation.id > 3) {
-            this.chart.data.labels.push("Situation " + this.situation.id);
-            this.chart.update();
-        }
+        const months = new Array(
+            'Janvier',
+            'Février',
+            'Mars',
+            'Avril',
+            'Mai',
+            'Juin',
+            'Juillet',
+            'Août',
+            'Septembre',
+            'Octobre',
+            'Novembre',
+            'Décembre'
+        );
+        this.chart.data.labels.push(months[this.situation.id - 2]);
+        this.chart.update();
+
     }
 
     /**
