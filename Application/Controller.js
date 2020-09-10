@@ -64,6 +64,27 @@ $("#valider").click(function () {
     }
 })
 
+/** 
+ * écoute le click sur le bouton valider 
+ */
+$("#impactIllu").click(function () {
+    let backup = $("#impactIllu").attr('src');
+    let test = 0
+    // To start the loop
+    let mainLoopId = setInterval(function () {
+        let src = ($("#impactIllu").attr('src') === 'img/impacts/Marche2.png')
+            ? 'img/impacts/Marche1.png'
+            : 'img/impacts/Marche2.png';
+        $("#impactIllu").attr('src', src);
+        test++;
+        if (test > 7) {
+            clearInterval(mainLoopId);
+            $("#impactIllu").attr('src', backup);
+        }
+    }, 200);
+
+})
+
 
 
 
