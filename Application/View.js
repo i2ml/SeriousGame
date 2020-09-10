@@ -51,7 +51,6 @@ class View {
         $("#profilModal").show();
         $("#backButton").addClass("disabled");
         $("#backButton").html("Félicitation, vous avez terminé le jeu !");
-        $("#backButton").disable();
     }
 
     /**
