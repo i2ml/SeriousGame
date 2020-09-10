@@ -179,7 +179,7 @@ var situations =
                 "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
-                    "frustration": 5,
+                    "frustration": 10,
                     "equilibreAlim": -5,
                     "sante": 0
                 },
@@ -243,7 +243,7 @@ var situations =
                 "motivationNeeded": 0,
                 "success": {
                     "motivationPenality": 0,
-                    "frustration": 10,
+                    "frustration": 5,
                     "equilibreAlim": 5,
                     "sante": 5
                 },
@@ -579,7 +579,7 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "huile de tournesol bio non raffinée ",
+                "enonce": "Il se rend à la boucherie de son supermarché et achète son jambon à la découpe.",
                 "motivationNeeded": 50,
                 "success": {
                     "motivationPenality": -10,
