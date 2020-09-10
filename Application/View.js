@@ -70,6 +70,7 @@ class View {
             motivationValue = impact.motivationPenality;
         }
         $("#argEnonce").html(argument.enonce);
+        $("#impactText").html(impact.text);
         $("#frustrationValue").html(impact.frustration);
         $("#motivationValue").html(motivationValue);
         $("#santeValue").html(impact.sante);
