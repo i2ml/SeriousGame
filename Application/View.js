@@ -48,11 +48,10 @@ class View {
      * Permet d'afficher l'écran de fin
      */
     displayEndGame() {
-        $("#mainBar").css({ width: '100%' });
-        $("#enonce").html("Félicitation ! Vous avez atteint la fin du jeu !");
-        $("#situationIllu").attr("src", "img/situations/end.png");
-        $(".oneargumentList").empty();
-        $(".twoargumentList").empty();
+        $("#profilModal").show();
+        $("#backButton").addClass("disabled");
+        $("#backButton").html("Félicitation, vous avez terminé le jeu !");
+        $("#backButton").disable();
     }
 
     /**
