@@ -65,7 +65,7 @@ $("#valider").click(function () {
 })
 
 /** 
- * écoute le click sur le bouton valider 
+ * Faire danser arthur
  */
 $("#impactIllu").click(function () {
     let backup = $("#impactIllu").attr('src');
