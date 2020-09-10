@@ -70,7 +70,7 @@ class Model {
      */
     applyArgument(argument) {
         let impact;
-        if (this.player.énergie >= argument.énergieNeeded) {
+        if (this.player.energie >= argument.energieNeeded) {
             console.log("success of the argument");
             impact = argument.success;
         } else {

@@ -1,7 +1,7 @@
 class Player {
 
     constructor() {
-        this.énergie = 50;
+        this.energie = 50;
         this.frustration = 50;
         this.equilibreAlim = 50;
         this.sante = 50;
@@ -12,10 +12,10 @@ class Player {
      */
     applyStats(impact) {
         if (impact.frustration == 0)
-            this.énergie += 5;
+            this.energie += 5;
         if (impact.frustration < 0)
-            this.énergie += 10;
-        this.énergie += impact.énergiePenality;
+            this.energie += 10;
+        this.energie += impact.energiePenality;
         this.frustration += impact.frustration;
         this.equilibreAlim += impact.equilibreAlim;
         this.sante += impact.sante;
