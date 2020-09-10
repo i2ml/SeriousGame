@@ -187,12 +187,12 @@ class View {
         };
 
         if (bad > 0) {
-            $("#profilIllu").attr("src", "img/Triste.png");
+            $("#profilIllu").attr("src", "img/faces/Triste.png");
         } else {
             if (good >= 2) {
-                $("#profilIllu").attr("src", "img/Heureux.png");
+                $("#profilIllu").attr("src", "img/faces/Heureux.png");
             } else {
-                $("#profilIllu").attr("src", "img/Normal.png");
+                $("#profilIllu").attr("src", "img/faces/Normal.png");
             }
         }
 
