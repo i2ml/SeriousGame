@@ -58,8 +58,17 @@ class View {
      */
     displaySelectedArgument(argument, impact) {
 
+        let motivationValue;
         //display raw values
-        const motivationValue = impact.motivationPenality + 5;
+        if (impact.frustration <= 0) {
+            motivationValue = impact.motivationPenality + 5;
+            if (impact.frustration < 0) { //additional bonus if frustration is going down
+                motivationValue += 5;
+            }
+        }
+        else { //no bonus if frustration is going up
+            motivationValue = impact.motivationPenality;
+        }
         $("#argEnonce").html(argument.enonce);
         $("#frustrationValue").html(impact.frustration);
         $("#motivationValue").html(motivationValue);

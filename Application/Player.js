@@ -11,7 +11,10 @@ class Player {
      * Allow to apply the effects of an impact on the player
      */
     applyStats(impact) {
-        this.motivation += 5;
+        if (impact.frustration == 0)
+            this.motivation += 5;
+        if (impact.frustration < 0)
+            this.motivation += 10;
         this.motivation += impact.motivationPenality;
         this.frustration += impact.frustration;
         this.equilibreAlim += impact.equilibreAlim;
