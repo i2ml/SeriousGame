@@ -737,10 +737,10 @@ var situations =
         }
     },
     8: {
-        "enonce": "Arthur reçoit c'est copain végétarien il se demande comment remplacer les protéines de la viande.",
+        "enonce": "Arthur reçoit ses copain végétarien il se demande comment remplacer les protéines de la viande.",
         "arguments": {
             "1": {
-                "enonce": "Il lui fait des lasagne au légumes",
+                "enonce": "Il lui fait des lasagnes aux légumes",
                 "energieNeeded": 0,
                 "success": {
                     "text": "A rediger",
@@ -748,7 +748,7 @@ var situations =
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 0,
-                    "sante": 0
+                    "sante": 5
                 },
                 "failure": {
                     "text": "Issue impossible",
@@ -767,7 +767,7 @@ var situations =
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 5,
-                    "equilibreAlim": 5,
+                    "equilibreAlim": 10,
                     "sante": 5
                 },
                 "failure": {
@@ -827,8 +827,8 @@ var situations =
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 5,
-                    "equilibreAlim": 0,
-                    "sante": 0
+                    "equilibreAlim": 5,
+                    "sante": 5
                 },
                 "failure": {
                     "text": "Issue impossible",
