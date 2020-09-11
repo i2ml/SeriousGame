@@ -113,7 +113,7 @@ var situations =
                 "enonce": "Formule du jour complète (salade de pousse d’épinard, filet de dorade, riz & julienne de légumes de saison, salade de fruit)",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage mange régulièrement au restaurant. Choisir la formule complète équilibre (entrée crudité + poisson riz légume + salade de fruit) permet à notre personnage de participer à la couverture de ses besoins en respectant l’équilibre alimentaire ainsi que sa santé tout en mangeant à sa faim afin d’éviter la frustration.",
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
@@ -133,7 +133,7 @@ var situations =
                 "enonce": "Plat unique : salade césar ",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage mange régulièrement au restaurant. Choisir un plat unique léger telle qu’une salade césar ne va pas être suffisant pour couvrir ses besoins nutritionnels. A la fin du repas, le personnage aura encore faim, ce qui va donc augmenter sa frustration et faire baisser l’équilibre alimentaire.",
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 5,
@@ -153,7 +153,7 @@ var situations =
                 "enonce": "Entrecôte, frite & sauce roquefort",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage mange régulièrement au restaurant. Choisir l’entrecôte sauce roquefort avec des frites va impacter fortement son équilibre alimentaire. Ces produits sont riches en AGS et LDL cholestérols, ils favorisent la formation d’une plaque d’athérome obstruant les artères. De plus, une surconsommation de viande rouge et de graisse cuite va augmenter le risque de maladies cardiovasculaires. Cependant, sa frustration va diminuer car il va suivre ses envies.",
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -5,
@@ -173,7 +173,7 @@ var situations =
                 "enonce": "Formule du jour : entré plat / plat dessert (salade de pousse d’épinard, filet de dorade, riz & julienne de légumes de saison, salade de fruit) ",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage mange régulièrement au restaurant. Choisir une formule entrée/plat ou plat/dessert permet à notre personnage de participer à la couverture de ses besoins en respectant l’équilibre alimentaire ainsi que sa santé tout en mangeant à sa faim afin d’éviter la frustration.",
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
@@ -193,7 +193,7 @@ var situations =
                 "enonce": "Formule du jour : (terrine de campagne, entrecôte frite sauce roquefort , pana cotta)",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage mange régulièrement au restaurant. Choisir la terrine de campagne, l’entrecôte sauce roquefort avec les frites et la pana cotta vont impacter fortement l’équilibre alimentaire et la santé du personnage.Ces produits sont riches en AGS et LDL cholestérols, ils favorisent la formation d’une plaque d’athérome obstruant les artères.De plus, une surconsommation de viande rouge et de graisse cuite va augmenter le risque de maladies cardiovasculaires.De plus, manger un repas trop copieux peut engendrer des signes de fatigue au cours de l’après- midi en lien avec les variations de glycémie.Cependant, sa frustration va diminuer car il va succomber à toutes ses envies.",
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -10,
@@ -428,7 +428,7 @@ var situations =
                 "enonce": "un peu de saumon il parait que c’est riche en oméga 3 ",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. Le saumon est un poisson riche en oméga 3. Ces nutriments jouent un rôle essentiel dans le développement et l’entretient du système nerveux agissant ainsi sur la mémoire. De plus, l’apport en oméga 3 est insuffisant dans la population française, il est donc intéressant d’inclure ce type de produit dans notre alimentation. Toutefois, le saumon comme le thon et les autres gros « poissons gras » son particulièrement exposé aux polluants et métaux lourds. Si la consommation et trop fréquente elle impactera la santé. Il faudra préférer les petit poisson type maquereau ou sardine tout aussi riche en Omega 3 mais moins exposés aux xénobiotiques.",
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
@@ -448,7 +448,7 @@ var situations =
                 "enonce": "Maquereau, sardine c’est riche en oméga 3 mais meilleur pour la santé que le saumon !",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. Le maquereau et la sardine sont des poissons riches en oméga 3. Ces nutriments jouent un rôle essentiel dans le développement et l’entretient du système nerveux agissant ainsi sur la mémoire. De plus, l’apport en oméga 3 est insuffisant dans la population française, il est donc intéressant d’inclure ce type de produit dans notre alimentation. Ces poissons sont moins exposés aux polluants et métaux lourds, contrairement au saumon qui a forte consommation peut avoir des conséquences sur la santé.",
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
@@ -465,10 +465,10 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "un bon aïoli ca fait plaisir ",
+                "enonce": "De quoi faire un bon aïoli ca va faire plaisir !",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. L’aïoli est un plat équilibré composé de poisson blanc et de légumes. Il va donc participer à la couverture des besoins en protéines, en fibres et en minéraux. Les indicateurs santé et équilibre alimentaire vont être impacté positivement. De plus, l’aïoli faisant parti de ses plats préférés, sa frustration va d’autant plus diminuer.",
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -10,
@@ -488,7 +488,7 @@ var situations =
                 "enonce": "une sol meunière avec double dose de beurre ",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. La sole cuisinée façon meunière permet au personnage d’éviter la frustration. En revanche, une consommation excessive de beurre peut être néfaste car comme tous les produits d’origine animal, ils contiennent une quantité importante d’AGS. L’indicateur santé va donc être impacté.",
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -5,
@@ -508,7 +508,7 @@ var situations =
                 "enonce": "une papillotte  aux petit légume du soleil.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. Choisir la papillote aux petits légumes va contribuer à un bon équilibre alimentaire et une bonne santé. En effet, ce mode de cuisson limite l’ajout excessif de matières grasses et préserve la qualité des aliments.",
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
