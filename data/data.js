@@ -533,7 +533,7 @@ var situations =
                 "enonce": "beurre",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Il s’agit d’une cuisson à haute température le beurre, matière grasse issue du lait, contient des traces restantes de protéines. Ces éléments vont bruler à la cuisson et former des composés cancérigènes.  Les indicateurs santé et équilibre alimentaire vont donc être impactés.",
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -5,
@@ -553,7 +553,7 @@ var situations =
                 "enonce": "huile d’arachide ",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées.Allergique à l’arachide, s’il choisit d’utiliser cette huile il s’expose au risque de quelques protéines restées en suspens.Afin d’éviter les problèmes de santé il existe des alternatives.",
                     "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
