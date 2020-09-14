@@ -917,8 +917,8 @@ var situations =
                 "enonce": "Deliveroo, Hum un Bò bún !",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage n’a pas le courage de faire son repas. Commander un Bò bún évite la frustration au personnage. Il n’a pas besoin de se préparer un repas. De plus, un Bò bún reste un plat assez équilibré composé de légume cuit, féculant, protéine, et crudité. Les indicateurs santé et équilibre alimentaire vont donc augmenter.",
-                    "energiePenality": 0,
+                    "text": "Le personnage n’a pas le courage de faire son repas. Commander un Bò bún évite la frustration au personnage et ne demande que peu d'energie. Il n’a pas besoin de se préparer un repas. De plus, un Bò bún reste un plat assez équilibré composé de légume cuit, féculant, protéine, et crudité. Les indicateurs santé et équilibre alimentaire vont donc augmenter.",
+                    "energiePenality": -5,
                     "frustration": -5,
                     "equilibreAlim": 5,
                     "sante": 5
@@ -935,7 +935,7 @@ var situations =
                 "enonce": "Mac drive, menu maxi best of big mac avec des nuggets.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage n’a pas le courage de faire son repas. Prendre un mac drive évite la frustration au personnage mais a un fort impact sur l’équilibre alimentaire et la santé. En effet, les produits de fast food sont de mauvaise qualité et apportent très peu sur le plan nutritionnel. Il est donc conseillé de limiter au maximum leur consommation.",
                     "energiePenality": 0,
                     "frustration": -10,
                     "equilibreAlim": -10,
@@ -955,18 +955,18 @@ var situations =
         "enonce": "Arthur souhaite améliorer sa condition physique. Il pense qu'il devrait pratiquer une activité physique:.",
         "arguments": {
             "1": {
-                "enonce": "A partir de maintenant, Arthur ira au travail à vélo ou à pied (10/30 minutes de trajet)",
+                "enonce": "Le personnage souhaite améliorer sa condition physique. Aller au travail à vélo améliore nettement la santé du personnage tout en nécessitant peu d’énergie. En effet, l’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière.",
                 "energieNeeded": 50,
                 "success": {
                     "text": "A rediger",
-                    "energiePenality": -20,
+                    "energiePenality": -10,
                     "frustration": -5,
                     "equilibreAlim": 0,
                     "sante": 10
                 },
                 "failure": {
-                    "text": "Issue impossible",
-                    "energiePenality": -20,
+                    "text": "Le personnage souhaite améliorer sa condition physique. L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière. Malheureusement, le personnage n’a plus assez d’énergie pour réaliser une activité physique. Sa santé va donc être fortement impactée.",
+                    "energiePenality": -10,
                     "frustration": 10,
                     "equilibreAlim": 0,
                     "sante": -10
@@ -976,15 +976,15 @@ var situations =
                 "enonce": "Arthur téléphone à une salle de sport pour faire des séances après le boulot (3 h par semaine)",
                 "energieNeeded": 50,
                 "success": {
-                    "text": "A rediger",
-                    "energiePenality": -50,
+                    "text": "Le personnage souhaite améliorer sa condition physique. Aller à la salle de sport 3h/ semaine nécessite beaucoup d’énergie, ce qui impacte sur la frustration. En revanche, l’indicateur de santé va fortement augmenter. En effet, l’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière.",
+                    "energiePenality": -20,
                     "frustration": 10,
                     "equilibreAlim": 0,
                     "sante": 10
                 },
                 "failure": {
-                    "text": "Issue impossible",
-                    "energiePenality": -50,
+                    "text": "Le personnage souhaite améliorer sa condition physique. L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière. Malheureusement, le personnage n’a plus assez d’énergie pour réaliser une activité physique. Sa santé va donc être fortement impactée.",
+                    "energiePenality": -20,
                     "frustration": 10,
                     "equilibreAlim": 0,
                     "sante": -10
@@ -994,14 +994,14 @@ var situations =
                 "enonce": "Arthur décide qu’à partir de maintenant, il fera un footing tous les samedis matin.",
                 "energieNeeded": 50,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage souhaite améliorer sa condition physique. Faire un footing le samedi matin permet au personnage d’améliorer sa santé. En effet, l’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière mais cela demande beaucoup d’énergie. L’indicateur de frustration va donc augmenter.",
                     "energiePenality": -30,
                     "frustration": 5,
                     "equilibreAlim": 0,
                     "sante": 5
                 },
                 "failure": {
-                    "text": "Issue impossible",
+                    "text": "Le personnage souhaite améliorer sa condition physique. L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière. Malheureusement, le personnage n’a plus assez d’énergie pour réaliser une activité physique. Sa santé va donc être fortement impactée.",
                     "energiePenality": -30,
                     "frustration": 10,
                     "equilibreAlim": 0,
@@ -1012,14 +1012,14 @@ var situations =
                 "enonce": "Arthur prend désormais les escalier et favorise la marche quand il le peut.",
                 "energieNeeded": 50,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage souhaite améliorer sa condition physique. Prendre les escaliers et favoriser la marche quand il le peut, permet au personnage d’améliorer sa santé tout en nécessitant très peu d’énergie et sans affecter sa frustration. L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière.",
                     "energiePenality": -10,
                     "frustration": -5,
                     "equilibreAlim": 0,
                     "sante": 5
                 },
                 "failure": {
-                    "text": "Issue impossible",
+                    "text": "Le personnage souhaite améliorer sa condition physique. L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière. Malheureusement, le personnage n’a plus assez d’énergie pour réaliser une activité physique. Sa santé va donc être fortement impactée.",
                     "energiePenality": -10,
                     "frustration": 10,
                     "equilibreAlim": 0,
@@ -1030,14 +1030,14 @@ var situations =
                 "enonce": "l’activité physique, c’est surfait, très peu pour moi.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage souhaite améliorer sa condition physique. L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière. En faisant aucune activité, la santé du personnage est fortement impactée.",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 0,
                     "sante": -10
                 },
                 "failure": {
-                    "text": "Issue impossible",
+                    "text": "Le personnage souhaite améliorer sa condition physique. L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière. Malheureusement, le personnage n’a plus assez d’énergie pour réaliser une activité physique. Sa santé va donc être fortement impactée.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -1053,7 +1053,7 @@ var situations =
                 "enonce": "carotte, oignon, brocolis, choux rouge, courge, butternut, panais, betterave, poireau.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage se rend au marché pendant l’hiver. Choisir des légumes de saisons va donc lui permettre d’avoir des produits de meilleure qualité nutritionnelle et gustative. En effet, les produits de saison sont plus riches en fibres et micronutriments. Récoltés à maturité, ils possèdent un goût plus prononcé. 2 portions de fruits et 3 portions de légumes nécessaire par jour. Ces produits vont donc permettre de satisfaire les besoins métaboliques de notre personnage.Les indicateurs santé et équilibre alimentaire vont donc nettement augmenter.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 10,
@@ -1071,7 +1071,7 @@ var situations =
                 "enonce": "tomate, aubergine, courgette, melon, fraise.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage se rend au marché pendant l’hiver. Les fruits et légumes choisies ne sont pas de saison mais sont des produits qu’il affectionne particulièrement. L’indicateur de frustration va donc diminuer. Ces produits restent bons pour l’équilibre alimentaire et la santé même si leurs propriétés nutritionnelles ne sont pas à leur optimum. De plus, les produits hors saison, ont un goût beaucoup moins marqué. Toutefois, ces produits suffiront à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour.",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 0,
@@ -1089,7 +1089,7 @@ var situations =
                 "enonce": "Haricot vert, petit pois, épinard, courgette, poivron.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage se rend au marché pendant l’hiver. Les légumes choisis ne sont pas de saison. Ces produits restent bons pour l’équilibre alimentaire et la santé même si leurs propriétés nutritionnelles ne sont pas à leur maximum. De plus, les produits hors saison, ont un goût beaucoup moins marqué. Ces produits suffiront à combler les recommandations de 3 portions de légumes par jour mais pas les fruits.... Par conséquent, il y aura un impact sur son équilibre alimentaire.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -1107,7 +1107,7 @@ var situations =
                 "enonce": "pomme de terre, oignon, échalote et champignon",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage se rend au marché pendant l’hiver. Ces produits sont de saison mais considérés comme des garnitures aromatiques (oignon, échalote). Bien qu’elle soit vendu chez le maraicher, la pomme de terre est un féculent.Par conséquent, le panier de la semaine ne contient pas de réels légumes.Ces produits ne suffiront pas à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour.L’indicateur équilibre alimentaire va donc diminuer",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 0,
@@ -1125,7 +1125,7 @@ var situations =
                 "enonce": "pfff la flemme, je prendrais des légume en conserve quand j'irai au supermarché.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Les légumes frais sont à privilégier afin d’aider le personnage à couvrir au maximum ses besoins en vitamines et minéraux. En effet, lors de la mise en conserve des légumes, la chaleur du processus provoque une perte pratiquement totale des vitamines thermosensible. De plus, les minéraux contenus dans les aliments se diffuse dans l’eau, et son donc évacuer lors de l’égouttage.Ces produits ne suffiront donc pas à combler les recommandations notamment en vitamines et minéraux.Les indicateurs santé et équilibre alimentaire vont donc nettement diminuer.",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": -10,
