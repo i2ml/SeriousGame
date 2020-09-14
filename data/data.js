@@ -213,10 +213,10 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "Tant pis pour les inconfort, un pack de petit suisse comme à l’époque.",
+                "enonce": "Tant pis pour les inconfort, un pack de petits suisses comme à l’époque.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage est nostalgique de son petit-déjeuner d’enfance. Notre personnage étant sensible au lait, la prise d’un petit suisse, va provoquer des inconforts digestifs qui affectes sa santé. En revanche va frustration va nettement diminuer car il va satisfaire son envie.",
+                    "text": "Le personnage est nostalgique de son petit-déjeuner d’enfance. Notre personnage étant sensible au lait, la prise d’un petit suisse, va provoquer des inconforts digestifs qui affectes sa santé. En revanche sa frustration va nettement diminuer car il va satisfaire son envie.",
                     "energiePenality": 0,
                     "frustration": -10,
                     "equilibreAlim": 0,
