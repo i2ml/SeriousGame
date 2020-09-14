@@ -1107,7 +1107,7 @@ var situations =
                 "enonce": "pomme de terre, oignon, échalote et champignon",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage se rend au marché pendant l’hiver. Ces produits sont de saison mais considérés comme des garnitures aromatiques (oignon, échalote). Bien qu’elle soit vendu chez le maraicher, la pomme de terre est un féculent.Par conséquent, le panier de la semaine ne contient pas de réels légumes.Ces produits ne suffiront pas à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour.L’indicateur équilibre alimentaire va donc diminuer",
+                    "text": "Le personnage se rend au marché pendant l’hiver. Ces produits sont de saison mais considérés comme des garnitures aromatiques (oignon, échalote). Bien qu’elle soit vendue chez le maraicher, la pomme de terre est un féculent.Par conséquent, le panier de la semaine ne contient pas de réels légumes.Ces produits ne suffiront pas à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour.L’indicateur équilibre alimentaire va donc diminuer",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 0,
