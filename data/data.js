@@ -2,7 +2,7 @@ var situations =
 {
     1:
     {
-        "enonce": "Il est 13 heure, Arthur sort de table, après son fromage il lui reste une petite place pour un dessert. Penché au dessus de son frigo il hésite entre plusieurs options : ",
+        "enonce": "Il est 13 heures, Arthur sort de table, après son fromage il lui reste une petite place pour un dessert. Penché au dessus de son frigo il hésite entre plusieurs options : ",
         "arguments": {
             "1": {
                 "enonce": "Il prend un fruit  et un yaourt.",
@@ -97,7 +97,7 @@ var situations =
         }
     },
     2: {
-        "enonce": "Arthur est au travail, il mange au restaurant lors de sa pause dej. Il hésite entre plusieurs choix à la carte du restaurant.",
+        "enonce": "Arthur est au travail, il mange au restaurant lors de sa pause déjeuner. Il hésite entre plusieurs choix à la carte du restaurant.",
         "arguments": {
             "1": {
                 "enonce": "Formule du jour complète (salade de pousse d’épinard, filet de dorade, riz & julienne de légumes de saison, salade de fruit)",
@@ -136,7 +136,7 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "Entrecôte, frite & sauce roquefort",
+                "enonce": "Entrecôte, frite & sauce roquefort.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage mange régulièrement au restaurant. Choisir l’entrecôte sauce roquefort avec des frites va impacter fortement son équilibre alimentaire. Ces produits sont riches en AGS et LDL cholestérols, ils favorisent la formation d’une plaque d’athérome obstruant les artères. De plus, une surconsommation de viande rouge et de graisse cuite va augmenter le risque de maladies cardiovasculaires. Cependant, sa frustration va diminuer car il va suivre ses envies.",
@@ -154,7 +154,7 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "Formule du jour : entré plat / plat dessert (salade de pousse d’épinard, filet de dorade, riz & julienne de légumes de saison, salade de fruit).",
+                "enonce": "Formule du jour : entrée/plat ou plat/dessert (salade de pousse d’épinard, filet de dorade, riz & julienne de légumes de saison, salade de fruit).",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage mange régulièrement au restaurant. Choisir une formule entrée/plat ou plat/dessert permet à notre personnage de participer à la couverture de ses besoins en respectant l’équilibre alimentaire ainsi que sa santé tout en mangeant à sa faim afin d’éviter la frustration.",
@@ -172,7 +172,7 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "Formule du jour : (terrine de campagne, entrecôte frite sauce roquefort , pana cotta)",
+                "enonce": "Formule du jour : (terrine de campagne, entrecôte frite sauce roquefort, pana cotta).",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage mange régulièrement au restaurant. Choisir la terrine de campagne, l’entrecôte sauce roquefort avec les frites et la pana cotta vont impacter fortement l’équilibre alimentaire et la santé du personnage.Ces produits sont riches en AGS et LDL cholestérols, ils favorisent la formation d’une plaque d’athérome obstruant les artères.De plus, une surconsommation de viande rouge et de graisse cuite va augmenter le risque de maladies cardiovasculaires.De plus, manger un repas trop copieux peut engendrer des signes de fatigue au cours de l’après- midi en lien avec les variations de glycémie.Cependant, sa frustration va diminuer car il va succomber à toutes ses envies.",
@@ -287,7 +287,7 @@ var situations =
         }
     },
     4: {
-        "enonce": "Arthur cultive son potager , un matin un ami passe lui rendre visite et cueille une tomate, Arthur lui dit « tu peux y aller ça c'est bio ! » une discussion s’entame. Arthur a l’habitude de cultiver lui-même les légumes qu’il ne trouve pas dans son supermarché en bio. Son ami lui soutient qu’il devrait faire confiance aux producteurs locaux même si ces derniers ne sont pas labellisés.",
+        "enonce": "Arthur cultive son potager, un matin un ami passe lui rendre visite et cueille une tomate, Arthur lui dit « tu peux y aller ça c'est bio ! » une discussion s’entame. Arthur a l’habitude de cultiver lui-même les légumes qu’il ne trouve pas dans son supermarché en bio. Son ami lui soutient qu’il devrait faire confiance aux producteurs locaux même si ces derniers ne sont pas labellisés.",
         "arguments": {
             "1": {
                 "enonce": "Arthur décide de laisser tomber son potager. Et de faire confiance aux producteurs locaux",
@@ -804,7 +804,7 @@ var situations =
                 "enonce": "Il ne prend qu’un café (sucré), les goûters sont pour les enfants.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Régulièrement, les clients du personnage lui proposent une viennoiserie. Se priver de collation va provoquer chez le personnage un sentiment de frustration. Une prise de sucre isoler va impacter fortement sa glycémie poussant son corps se réguler. De plus, il risque de faire face à une hypoglycémie réactionnelle provoquant une petite faim quelques heure plus tard. Son équilibre alimentaire et sa santé seront impactés.",
+                    "text": "Régulièrement, les clients du personnage lui proposent une viennoiserie. Se priver de collation va provoquer chez le personnage un sentiment de frustration. Une prise de sucre isoler va impacter fortement sa glycémie poussant son corps se réguler. De plus, il risque de faire face à une hypoglycémie réactionnelle provoquant une petite faim quelques heures plus tard. Son équilibre alimentaire et sa santé seront impactés.",
                     "energiePenality": 0,
                     "frustration": 5,
                     "equilibreAlim": -5,
