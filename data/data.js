@@ -5,7 +5,7 @@ var situations =
         "enonce": "Il est 13 heures, Arthur sort de table, après son fromage il lui reste une petite place pour un dessert. Penché au dessus de son frigo il hésite entre plusieurs options : ",
         "arguments": {
             "1": {
-                "enonce": "Il prend un fruit  et un yaourt.",
+                "enonce": "Il prend un fruit et un yaourt.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage a pris du fromage. La consommation d’un deuxième produit laitier dans le même repas n’est donc pas adaptée, de plus notre personnage est sensible au lait qui lui crée des inconforts digestifs. Les indicateurs santé et équilibre alimentaire ont donc étés affecté par ce choix. Une consommation inadaptée de produit laitiers peut être néfaste car comme tous les produits d’origine animal, ils contiennent une quantité importante d’acides gras saturés.",
@@ -287,7 +287,7 @@ var situations =
         }
     },
     4: {
-        "enonce": "Arthur cultive son potager, un matin un ami passe lui rendre visite et cueille une tomate, Arthur lui dit « tu peux y aller ça c'est bio ! » une discussion s’entame. Arthur a l’habitude de cultiver lui-même les légumes qu’il ne trouve pas dans son supermarché en bio. Son ami lui soutient qu’il devrait faire confiance aux producteurs locaux même si ces derniers ne sont pas labellisés.",
+        "enonce": "Arthur cultive son potager, un matin un ami passe lui rendre visite et cueille une tomate, Arthur lui dit « tu peux y aller ça, c'est bio ! » une discussion s’entame. Arthur a l’habitude de cultiver lui-même les légumes qu’il ne trouve pas dans son supermarché en bio. Son ami lui soutient qu’il devrait faire confiance aux producteurs locaux même si ces derniers ne sont pas labellisés.",
         "arguments": {
             "1": {
                 "enonce": "Arthur décide de laisser tomber son potager. Et de faire confiance aux producteurs locaux",
@@ -365,7 +365,7 @@ var situations =
                 "enonce": "Pourquoi se casser la tête un légume est un légume...",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage cultive ses propres légumes s’il ne les trouve pas en supermarché bio, et son ami lui soutient de faire confiance aux producteurs locaux. Tous les aliments ne sont pas égaux sur le plan nutritionnel.Les producteurs locaux proposent des produits de saison.Consommer local permet de réduire le transport et donc de favoriser des produits intéressants sur le plan nutritionnel et organoleptique.Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux.Les indicateurs santé et équilibre alimentaire vont nettement diminuer, pénalisés par la suppression de son activité jardinage et ses choix alimentaire.",
+                    "text": "Le personnage cultive ses propres légumes s’il ne les trouve pas en supermarché bio, et son ami lui soutient de faire confiance aux producteurs locaux. Tous les aliments ne sont pas égaux sur le plan nutritionnel. Les producteurs locaux proposent des produits de saison.Consommer local permet de réduire le transport et donc de favoriser des produits intéressants sur le plan nutritionnel et organoleptique. Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux. Les indicateurs santé et équilibre alimentaire vont nettement diminuer, pénalisés par la suppression de son activité jardinage et ses choix alimentaire.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": -10,
@@ -382,13 +382,13 @@ var situations =
         }
     },
     5: {
-        "enonce": ": Il est chez son poissonnier pour prendre du poisson, quoi choisir ?",
+        "enonce": "Arthur se trouve chez son poissonnier pour prendre du poisson, il hésite entre plusieurs options...",
         "arguments": {
             "1": {
-                "enonce": "un peu de saumon il parait que c’est riche en oméga 3.",
+                "enonce": "Un peu de saumon il parait que c’est riche en oméga 3.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. Le saumon est un poisson riche en oméga 3. Ces nutriments jouent un rôle essentiel dans le développement et l’entretient du système nerveux agissant ainsi sur la mémoire. De plus, l’apport en oméga 3 est insuffisant dans la population française, il est donc intéressant d’inclure ce type de produit dans notre alimentation. Toutefois, le saumon comme le thon et les autres gros « poissons gras » son particulièrement exposé aux polluants et métaux lourds. Si la consommation et trop fréquente elle impactera la santé. Il faudra préférer les petit poisson type maquereau ou sardine tout aussi riche en Omega 3 mais moins exposés aux xénobiotiques.",
+                    "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. Le saumon est un poisson riche en oméga 3. Ces nutriments jouent un rôle essentiel dans le développement et l’entretien du système nerveux agissant ainsi sur la mémoire. De plus, l’apport en oméga 3 est insuffisant dans la population française, il est donc intéressant d’inclure ce type de produit dans notre alimentation. Toutefois, le saumon comme le thon et les autres gros « poissons gras » son particulièrement exposé aux polluants et métaux lourds. Si la consommation et trop fréquente elle impactera la santé. Il faudra préférer les petit poisson type maquereau ou sardine tout aussi riche en Omega 3 mais moins exposés aux xénobiotiques.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 5,
@@ -421,7 +421,7 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "De quoi faire un bon aïoli ca va faire plaisir !",
+                "enonce": "De quoi faire un bon aïoli, ça va faire plaisir !",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. L’aïoli est un plat équilibré composé de poisson blanc et de légumes. Il va donc participer à la couverture des besoins en protéines, en fibres et en minéraux. Les indicateurs santé et équilibre alimentaire vont être impacté positivement. De plus, l’aïoli faisant parti de ses plats préférés, sa frustration va d’autant plus diminuer.",
@@ -457,7 +457,7 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "une papillotte  aux petit légume du soleil.",
+                "enonce": "une papillotte aux petit légume du soleil.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. Choisir la papillote aux petits légumes va contribuer à un bon équilibre alimentaire et une bonne santé. En effet, ce mode de cuisson limite l’ajout excessif de matières grasses et préserve la qualité des aliments.",
@@ -477,13 +477,13 @@ var situations =
         }
     },
     6: {
-        "enonce": "Arthur réalise des pommes de terres sauté quel matière grasse vas t’il utiliser ?",
+        "enonce": "Arthur réalise des pommes de terres sautées, quelle matière grasse va-t-il utiliser ?",
         "arguments": {
             "1": {
-                "enonce": "beurre",
+                "enonce": "Beurre",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Il s’agit d’une cuisson à haute température le beurre, matière grasse issue du lait, contient des traces restantes de protéines. Ces éléments vont bruler à la cuisson et former des composés cancérigènes.  Les indicateurs santé et équilibre alimentaire vont donc être impactés.",
+                    "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Il s’agit d’une cuisson à haute température le beurre, matière grasse issue du lait, contient des traces restantes de protéines. Ces éléments vont bruler à la cuisson et former des composés cancérigènes. Les indicateurs santé et équilibre alimentaire vont donc être impactés.",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 5,
@@ -498,10 +498,10 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "huile d’arachide.",
+                "enonce": "Huile d’arachide.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées.Allergique à l’arachide, s’il choisit d’utiliser cette huile il s’expose au risque de quelques protéines restées en suspens.Afin d’éviter les problèmes de santé il existe des alternatives.",
+                    "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Allergique à l’arachide, s’il choisit d’utiliser cette huile il s’expose au risque de quelques protéines restées en suspens.Afin d’éviter les problèmes de santé il existe des alternatives.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -516,7 +516,7 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "huile d’olive extra.",
+                "enonce": "Huile d’olive extra.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. L’huile d’olive extra est composée d’acide gras mono insaturé, excellent pour la santé en utilisation à basse température, ils sont inadaptés à une cuisson sautée. De plus, l’huile extra est peu raffinée, une cuisson forte entraine la formation de composé cancérigène en brulant. L’huile extra est parfaite pour la salade mais pour les cuissons préférez une huile raffinée.",
@@ -534,7 +534,7 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "huile de tournesol raffinée bio.",
+                "enonce": "Huile de tournesol raffinée bio.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Utiliser l’huile de tournesol raffinée bio va permettre aux indicateurs santé et équilibre alimentaire d’augmenter. En effet, le raffinage permet d’éliminer les impuretés dans l’huile limitant ainsi la formation de composes cancérigène. De plus le gras captant les polluant volatile une huile bio préserve le personnage de leur exposition.",
@@ -552,7 +552,7 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "huile de tournesol bio non raffinée.",
+                "enonce": "Huile de tournesol bio non raffinée.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Utiliser l’huile de tournesol non raffinée bio va permettre à l’indicateur santé d’augmenter. Cette huile est bio, le gras captant les polluant volatile une huile bio préserve le personnage de leur exposition. En revanche, l’huile est non raffinée or le raffinage permet d’éliminer les impuretés de l’huile limitant ainsi la formation de composes cancérigène.",
@@ -670,7 +670,7 @@ var situations =
         "enonce": "Arthur reçoit des amis végétariens pour le dîner, il se demande comment remplacer les protéines de la viande dans le repas qu'il prépare.",
         "arguments": {
             "1": {
-                "enonce": "Il lui fait des lasagnes aux légumes",
+                "enonce": "Il prépare des lasagnes aux légumes",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage reçoit des amis végétariens. Il se questionne sur ce qu’il va cuisiner afin de remplacer les protéines de viande.  Faire des lasagnes aux légumes permet au personnage de ne pas se frustrer en réadaptant la recette d’un plat qu’il affectionne. De plus, la pâte à lasagne contenant des œufs et la béchamel contenant du lait il y a tout de même un apport protéique.",
@@ -688,7 +688,7 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "Il lui fait chilli sin carne.",
+                "enonce": "Il prépare du chilli sin carne.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage reçoit des amis végétariens. Il se questionne sur ce qu’il va cuisiner afin de remplacer les protéines de viande. Faire un chili sin carne est une bonne alternative aux protéines de la viande. Les céréales et légumineuses contiennent chacune des carences en acides aminés essentiels, ces derniers ne se retrouvent pas dans des proportions suffisantes. Il est donc important d’associer les céréales avec les légumineuses afin de réaliser ce qu’on appelle la « complémentarité protéique ». En complétant les carence de l’autre elles vont ensembles apporter tous les acides aminés essentiel. Le chili sin carne est un plat qui associe les haricots rouges avec du riz, ce plat est donc équilibré et permettra aux végétariens d’assurer un apport suffisant en protéines.",
@@ -724,7 +724,7 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "Il lui fait une omelette.",
+                "enonce": "Il prépare une omelette.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage reçoit des amis végétariens. Il se questionne sur ce qu’il va cuisiner afin de remplacer les protéines de viande. Faire une omelette est une bonne alternative. Basculer vers une alimentation végétarienne, si elle est mal contrôlée peut entraîner des carences. En effet, les végétariens peuvent être carencé en protéines car les protéines contenues dans les sources végétales (légumes secs, céréales complètes) sont moins assimilables que celles d’origine animale. Les protéines jouent un rôle essentiel dans la constitution du tissu musculaire. De plus, les végétariens peuvent également être en insuffisance vitaminique de B12 car on la trouve principalement dans les produits d’origine animale. La vitamine B12 participe au renouvellement des cellules et à l’érythropoïèse. Une omelette peut donc participer à la couverture des besoins à la fois en vitamine B12 et en protéines. L’indicateur santé va augmenter.",
@@ -742,7 +742,7 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "il fait un wok de légume au tofu .",
+                "enonce": "il prépare un wok de légume au tofu .",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage reçoit des amis végétariens. Il se questionne sur ce qu’il va cuisiner afin de remplacer les protéines de viande.  Cuisiner un wok de légumes au tofu permet au personnage de respecter son équilibre alimentaire et sa santé. Ce plat est équilibré et apporte des protéines végétales. Cependant, le tofu n’est pas un aliment qu’il apprécie, ce qui augmente sa frustration.",
@@ -762,10 +762,10 @@ var situations =
         }
     },
     9: {
-        "enonce": "Arthur se rend en réunion chez un client, celui ci lui propose comme souvent un goûter composé d’une viennoiserie et d’un café, que fait il ?",
+        "enonce": "Arthur se rend en réunion chez un client, celui-ci lui propose comme souvent un goûter composé d’une viennoiserie et d’un café, que fait il ?",
         "arguments": {
             "1": {
-                "enonce": "il accepte de prendre un viennoiserie, même si c’est la 4eme cette semaine. il ne faut pas vexer son client.",
+                "enonce": "il accepte de prendre une viennoiserie, même si c’est la quatrième cette semaine. il ne faut pas vexer son client.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Régulièrement, les clients du personnage lui proposent une viennoiserie. Le personnage décide d’accepter. Il est essentiel de s’accorder des plaisirs régulièrement, toutefois une consommation excessive de produits sucrés et gras peut avoir un effet néfaste sur la santé. Il est donc important que la consommation de viennoiserie reste occasionnelle. Les indicateurs santé et équilibre alimentaire vont donc être impactés négativement.",
@@ -837,7 +837,7 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "Elle sont vraiment bonne ses viennoiserie, j’en prend un seconde.",
+                "enonce": "Elle sont vraiment bonne ces viennoiserie, j’en prend une seconde.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Régulièrement, les clients du personnage lui proposent une viennoiserie. Le personnage décide d’accepter et d’en prendre plusieurs. Il est essentiel de s’accorder des plaisirs régulièrement, toutefois une consommation excessive de produits sucrés et gras peut avoir un effet néfaste sur la santé. Il est donc important que la consommation de viennoiserie reste occasionnelle. Les indicateurs santé et équilibre alimentaire vont donc être impactés très négativement.",
@@ -952,13 +952,13 @@ var situations =
         }
     },
     11: {
-        "enonce": "Arthur souhaite améliorer sa condition physique. Il pense qu'il devrait pratiquer une activité physique:.",
+        "enonce": "Arthur souhaite améliorer sa condition physique. Il pense qu'il devrait pratiquer une activité physique :",
         "arguments": {
             "1": {
-                "enonce": "Le personnage souhaite améliorer sa condition physique. Aller au travail à vélo améliore nettement la santé du personnage tout en nécessitant peu d’énergie. En effet, l’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière.",
+                "enonce": "A partir de maintenant, Arthur ira au travail à vélo ou à pied (10/30 minutes de trajet)",
                 "energieNeeded": 50,
                 "success": {
-                    "text": "A rediger",
+                    "text": "Le personnage souhaite améliorer sa condition physique. Aller au travail à vélo améliore nettement la santé du personnage tout en nécessitant peu d’énergie. En effet, l’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière.",
                     "energiePenality": -10,
                     "frustration": -5,
                     "equilibreAlim": 0,
@@ -1047,13 +1047,13 @@ var situations =
         }
     },
     12: {
-        "enonce": "En hivers Arthur se rend au marché, quel panier choisis t’il pour ses repas de la semaine ?",
+        "enonce": "En hiver Arthur se rend au marché, quel panier choisis t’il pour ses repas de la semaine ?",
         "arguments": {
             "1": {
                 "enonce": "carotte, oignon, brocolis, choux rouge, courge, butternut, panais, betterave, poireau.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage se rend au marché pendant l’hiver. Choisir des légumes de saisons va donc lui permettre d’avoir des produits de meilleure qualité nutritionnelle et gustative. En effet, les produits de saison sont plus riches en fibres et micronutriments. Récoltés à maturité, ils possèdent un goût plus prononcé. 2 portions de fruits et 3 portions de légumes nécessaire par jour. Ces produits vont donc permettre de satisfaire les besoins métaboliques de notre personnage.Les indicateurs santé et équilibre alimentaire vont donc nettement augmenter.",
+                    "text": "Le personnage se rend au marché pendant l’hiver. Choisir des légumes de saisons va donc lui permettre d’avoir des produits de meilleure qualité nutritionnelle et gustative. En effet, les produits de saison sont plus riches en fibres et micronutriments. Récoltés à maturité, ils possèdent un goût plus prononcé. 2 portions de fruits et 3 portions de légumes nécessaire par jour. Ces produits vont donc permettre de satisfaire les besoins métaboliques de notre personnage. Les indicateurs santé et équilibre alimentaire vont donc nettement augmenter.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 10,
@@ -1107,7 +1107,7 @@ var situations =
                 "enonce": "pomme de terre, oignon, échalote et champignon",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage se rend au marché pendant l’hiver. Ces produits sont de saison mais considérés comme des garnitures aromatiques (oignon, échalote). Bien qu’elle soit vendue chez le maraicher, la pomme de terre est un féculent.Par conséquent, le panier de la semaine ne contient pas de réels légumes.Ces produits ne suffiront pas à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour.L’indicateur équilibre alimentaire va donc diminuer",
+                    "text": "Le personnage se rend au marché pendant l’hiver. Ces produits sont de saison mais considérés comme des garnitures aromatiques (oignon, échalote). Bien qu’elle soit vendue chez le maraicher, la pomme de terre est un féculent.Par conséquent, le panier de la semaine ne contient pas de réels légumes.Ces produits ne suffiront pas à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour. L’indicateur équilibre alimentaire va donc diminuer",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 0,
@@ -1125,7 +1125,7 @@ var situations =
                 "enonce": "pfff la flemme, je prendrais des légume en conserve quand j'irai au supermarché.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Les légumes frais sont à privilégier afin d’aider le personnage à couvrir au maximum ses besoins en vitamines et minéraux. En effet, lors de la mise en conserve des légumes, la chaleur du processus provoque une perte pratiquement totale des vitamines thermosensible. De plus, les minéraux contenus dans les aliments se diffuse dans l’eau, et son donc évacuer lors de l’égouttage.Ces produits ne suffiront donc pas à combler les recommandations notamment en vitamines et minéraux.Les indicateurs santé et équilibre alimentaire vont donc nettement diminuer.",
+                    "text": "Les légumes frais sont à privilégier afin d’aider le personnage à couvrir au maximum ses besoins en vitamines et minéraux. En effet, lors de la mise en conserve des légumes, la chaleur du processus provoque une perte pratiquement totale des vitamines thermosensible. De plus, les minéraux contenus dans les aliments se diffuse dans l’eau, et son donc évacuer lors de l’égouttage.Ces produits ne suffiront donc pas à combler les recommandations notamment en vitamines et minéraux. Les indicateurs santé et équilibre alimentaire vont donc nettement diminuer.",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": -10,
