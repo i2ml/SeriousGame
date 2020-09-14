@@ -5,11 +5,10 @@ var situations =
         "enonce": "Il est 13 heure, Arthur sort de table, après son fromage il lui reste une petite place pour un dessert. Penché au dessus de son frigo il hésite entre plusieurs options : ",
         "arguments": {
             "1": {
-                "enonce": "Il prend un fruit  et un yaourt ",
+                "enonce": "Il prend un fruit  et un yaourt.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage a pris du fromage. La consommation d’un deuxième produit laitier dans le même repas n’est donc pas adaptée, de plus notre personnage est sensible au lait qui lui créés des inconforts digestifs.  Les indicateurs santé et équilibre alimentaire ont donc étés affecté par ce choix. Une consommation inadaptée de produit laitiers peut être néfaste car comme tous les produits d’origine animal, ils contiennent une quantité importante d’AGS.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": -5,
@@ -17,7 +16,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -25,11 +23,10 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "Il prend un fruit ",
+                "enonce": "Il prend un fruit.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage a encore une place pour un dessert. Prendre un fruit en dessert permet au personnage de participer à la couverture de ses besoins journaliers en fibres, vitamines et minéraux. Les indicateurs santé et équilibre alimentaire ont donc été impacté positivement par ce choix.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 5,
@@ -37,7 +34,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -45,11 +41,10 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "Il prend un yaourt ",
+                "enonce": "Il prend un yaourt.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage a pris du fromage. La consommation d’un deuxième produit laitier dans le même repas n’est donc pas adaptée, de plus notre personnage est sensible au lait qui lui créé des inconforts digestifs.  Les indicateurs santé et équilibre alimentaire ont donc étés affecté par ce choix. Une consommation inadaptée de produit laitiers peut être néfaste car comme tous les produits d’origine animal, ils contiennent une quantité importante d’AGS.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": -5,
@@ -57,7 +52,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -65,11 +59,10 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "Il ne prend rien ",
+                "enonce": "Il ne prend rien.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage a encore une place pour un dessert. Il est important de ressentir la satiété à la fin de chaque repas afin d’apporter à l’organisme ce dont il a besoin. La consommation d’aucun dessert augmente donc la frustration du personnage et ne permet pas d’améliorer les indicateurs santé et équilibre alimentaire. ",
-                    "imageLink": "",
+                    "text": "Le personnage a encore une place pour un dessert. Il est important de ressentir la satiété à la fin de chaque repas afin d’apporter à l’organisme ce dont il a besoin. La consommation d’aucun dessert augmente donc la frustration du personnage et ne permet pas d’améliorer les indicateurs santé et équilibre alimentaire.",
                     "energiePenality": 0,
                     "frustration": 5,
                     "equilibreAlim": -5,
@@ -77,7 +70,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -85,11 +77,10 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "Il finit la part de tarte au citron meringuée qui reste dans le frigo ",
+                "enonce": "Il finit la part de tarte au citron meringuée qui reste dans le frigo.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage a encore une place pour un dessert. Il est essentiel de s’accorder des plaisirs régulièrement, toutefois une consommation excessive de produits sucrés peut avoir un effet néfaste sur la santé. Les indicateurs de santé et d’équilibre alimentaire vont donc être impactés négativement par ce choix tandis que la frustration du personnage elle s’améliore.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -10,
                     "equilibreAlim": -5,
@@ -97,7 +88,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -107,14 +97,13 @@ var situations =
         }
     },
     2: {
-        "enonce": "Arthur est au travail, il mange au restaurant lors de sa pause dej. Il hésite entre plusieurs choix à la carte du restaurant.  ",
+        "enonce": "Arthur est au travail, il mange au restaurant lors de sa pause dej. Il hésite entre plusieurs choix à la carte du restaurant.",
         "arguments": {
             "1": {
                 "enonce": "Formule du jour complète (salade de pousse d’épinard, filet de dorade, riz & julienne de légumes de saison, salade de fruit)",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage mange régulièrement au restaurant. Choisir la formule complète équilibre (entrée crudité + poisson riz légume + salade de fruit) permet à notre personnage de participer à la couverture de ses besoins en respectant l’équilibre alimentaire ainsi que sa santé tout en mangeant à sa faim afin d’éviter la frustration.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 10,
@@ -122,7 +111,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -130,11 +118,10 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "Plat unique : salade césar ",
+                "enonce": "Plat unique : salade césar.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage mange régulièrement au restaurant. Choisir un plat unique léger telle qu’une salade césar ne va pas être suffisant pour couvrir ses besoins nutritionnels. A la fin du repas, le personnage aura encore faim, ce qui va donc augmenter sa frustration et faire baisser l’équilibre alimentaire.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 5,
                     "equilibreAlim": -5,
@@ -142,7 +129,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -154,7 +140,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage mange régulièrement au restaurant. Choisir l’entrecôte sauce roquefort avec des frites va impacter fortement son équilibre alimentaire. Ces produits sont riches en AGS et LDL cholestérols, ils favorisent la formation d’une plaque d’athérome obstruant les artères. De plus, une surconsommation de viande rouge et de graisse cuite va augmenter le risque de maladies cardiovasculaires. Cependant, sa frustration va diminuer car il va suivre ses envies.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": -10,
@@ -162,7 +147,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -170,11 +154,10 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "Formule du jour : entré plat / plat dessert (salade de pousse d’épinard, filet de dorade, riz & julienne de légumes de saison, salade de fruit) ",
+                "enonce": "Formule du jour : entré plat / plat dessert (salade de pousse d’épinard, filet de dorade, riz & julienne de légumes de saison, salade de fruit).",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage mange régulièrement au restaurant. Choisir une formule entrée/plat ou plat/dessert permet à notre personnage de participer à la couverture de ses besoins en respectant l’équilibre alimentaire ainsi que sa santé tout en mangeant à sa faim afin d’éviter la frustration.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -182,7 +165,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -194,7 +176,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage mange régulièrement au restaurant. Choisir la terrine de campagne, l’entrecôte sauce roquefort avec les frites et la pana cotta vont impacter fortement l’équilibre alimentaire et la santé du personnage.Ces produits sont riches en AGS et LDL cholestérols, ils favorisent la formation d’une plaque d’athérome obstruant les artères.De plus, une surconsommation de viande rouge et de graisse cuite va augmenter le risque de maladies cardiovasculaires.De plus, manger un repas trop copieux peut engendrer des signes de fatigue au cours de l’après- midi en lien avec les variations de glycémie.Cependant, sa frustration va diminuer car il va succomber à toutes ses envies.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -10,
                     "equilibreAlim": -10,
@@ -202,7 +183,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -219,7 +199,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage est nostalgique de son petit déjeuner d’enfance mais étant sensible au lait, il veut éviter de faire face à des inconforts digestifs. Le priver de yaourt va donc augmenter sa frustration, mais il ne subira aucun inconfort digestif ce qui n’impactera pas sur sa santé.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 10,
                     "equilibreAlim": -5,
@@ -227,7 +206,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -239,7 +217,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage est nostalgique de son petit déjeuner d’enfance. Notre personnage étant sensible au lait, la prise d’un petit suisse, va provoquer des inconforts digestifs qui affectes sa santé. En revanche va frustration va nettement diminuer car il va satisfaire son envie.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -10,
                     "equilibreAlim": 0,
@@ -247,7 +224,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -255,11 +231,10 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "Il a lu dans un article que le lait de brebis était plus simple à digérer, il va donc tenter d’adapter sa recette avec un yaourt au lait de brebis ",
+                "enonce": "Il a lu dans un article que le lait de brebis était plus simple à digérer, il va donc tenter d’adapter sa recette avec un yaourt au lait de brebis.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage est nostalgique de son petit déjeuner d’enfance mais étant sensible au lait, il veut éviter de faire face à des inconforts digestifs. Adapter sa recette avec un aliment inconnu va donc lui demander de l'energie'. Le lait de brebis lui permettra néanmoins de ne pas faire face à des inconforts digestifs. Ainsi, les indicateurs frustration, santé et équilibre alimentaire resterons donc stables.",
-                    "imageLink": "",
                     "energiePenality": -20,
                     "frustration": 0,
                     "equilibreAlim": 5,
@@ -267,7 +242,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -275,11 +249,10 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "Ce même article présenter les bénéfices sur la digestibilité  d’une consommation de produits issus du lait de montagne. ",
+                "enonce": "Ce même article présenter les bénéfices sur la digestibilité  d’une consommation de produits issus du lait de montagne.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Arthur est nostalgique de son petit déjeuner d’enfance mais étant sensible au lait, il veut éviter de faire face à des inconforts digestifs. Adapter sa recette avec un produit issu du lait de montagne plus digeste que le lait des près va donc lui demander un peu de energie mais cela lui permettra de ne pas faire face à des inconforts digestifs. Et ainsi de diminuer sa frustration, et d’augmenter les indicateurs santé et équilibre alimentaire.",
-                    "imageLink": "",
                     "energiePenality": -10,
                     "frustration": -5,
                     "equilibreAlim": 5,
@@ -287,7 +260,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -299,7 +271,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Arthur est nostalgique de son petit déjeuner d’enfance mais étant sensible au lait, il veut éviter de faire face à des inconforts digestifs. Remplacer son petit-suisse par du fromage va lui permettre de ne pas être atteint d’inconforts digestifs, mais sa frustration va d’autant plus augmenter de ne pas avoir pu répondre à ses envies.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 5,
                     "equilibreAlim": 5,
@@ -307,7 +278,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -324,7 +294,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage cultive ses propres légumes s’il ne les trouve pas en supermarché bio, et son ami lui soutient de faire confiance aux producteurs locaux. Les producteurs locaux proposent des produits de saison. Consommer local permet de réduire le transport et donc de favoriser des produits intéressants sur le plan nutritionnel et organoleptique. Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux. L’indicateur équilibre alimentaire va donc augmenter. En revanche, notre personnage prend du plaisir a cultiver son potager, l’en empêcher va donc augmenter sa frustration.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 5,
                     "equilibreAlim": 10,
@@ -332,7 +301,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -344,7 +312,6 @@ var situations =
                 "energieNeeded": 50,
                 "success": {
                     "text": "Arthur cultive ses propres légumes s’il ne les trouve pas en supermarché bio, et son ami lui soutient de faire confiance aux producteurs locaux. Étendre ses cultures va demander au personnage de l'energien, mais cela lui permettra de consommer des produits de bonne qualité dont il contrôle le procédé tout en prenant du plaisir à les faire pousser. Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux. Les indicateurs santé et équilibre alimentaire vont donc augmentés, tandis que sa frustration va diminuer.",
-                    "imageLink": "",
                     "energiePenality": -20,
                     "frustration": -10,
                     "equilibreAlim": 10,
@@ -352,7 +319,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Arthur cultive ses propres légumes s’il ne les trouve pas en supermarché bio, et son ami lui soutient de faire confiance aux producteurs locaux. Étendre ses cultures lui permettrait d’accroitre sa consommation de produits de bonne qualité. Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux. Malheureusement, le personnage n’a plus assez de energie pour étendre ses cultures, épuisé, il abandonne son potager. Par conséquent, sa frustration va augmenter alors que l’indicateur santé va être réduit par cette diminution d’activité physique.",
-                    "imageLink": "",
                     "energiePenality": -20,
                     "frustration": 5,
                     "equilibreAlim": 10,
@@ -364,7 +330,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage cultive ses propres légumes s’il ne les trouve pas en supermarché bio, et son ami lui soutient de faire confiance aux producteurs locaux. Continuer à faire son potager modérément et compléter par des produits locaux permet au personnage de consommer des produits de qualité. Consommer local permet de réduire le transport et donc de favoriser des produits intéressants sur le plan nutritionnel et organoleptique. Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux.  Par conséquent, les indicateurs santé et équilibre alimentaire vont augmenter sans pour autant impacter sa frustration.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 5,
@@ -372,7 +337,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -384,7 +348,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage cultive ses propres légumes s’il ne les trouve pas en supermarché bio, et son ami lui soutient de faire confiance aux producteurs locaux. Consommer uniquement des produits bio du supermarché ne signifie pas forcément avoir des produits de qualité. En effet, l’agriculture biologique ne possède pas la même législation en fonction des pays, certains sont plus laxistes que d’autres. De plus l’acheminement des produits vers leur destination écourte leur temps de maturation, ce qui implique une plus faible densité nutritionnelle. L’indicateur de santé va donc diminuer.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -392,7 +355,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -404,7 +366,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage cultive ses propres légumes s’il ne les trouve pas en supermarché bio, et son ami lui soutient de faire confiance aux producteurs locaux. Tous les aliments ne sont pas égaux sur le plan nutritionnel.Les producteurs locaux proposent des produits de saison.Consommer local permet de réduire le transport et donc de favoriser des produits intéressants sur le plan nutritionnel et organoleptique.Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux.Les indicateurs santé et équilibre alimentaire vont nettement diminuer, pénalisés par la suppression de son activité jardinage et ses choix alimentaire.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": -10,
@@ -412,7 +373,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -425,11 +385,10 @@ var situations =
         "enonce": ": Il est chez son poissonnier pour prendre du poisson, quoi choisir ?",
         "arguments": {
             "1": {
-                "enonce": "un peu de saumon il parait que c’est riche en oméga 3 ",
+                "enonce": "un peu de saumon il parait que c’est riche en oméga 3.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. Le saumon est un poisson riche en oméga 3. Ces nutriments jouent un rôle essentiel dans le développement et l’entretient du système nerveux agissant ainsi sur la mémoire. De plus, l’apport en oméga 3 est insuffisant dans la population française, il est donc intéressant d’inclure ce type de produit dans notre alimentation. Toutefois, le saumon comme le thon et les autres gros « poissons gras » son particulièrement exposé aux polluants et métaux lourds. Si la consommation et trop fréquente elle impactera la santé. Il faudra préférer les petit poisson type maquereau ou sardine tout aussi riche en Omega 3 mais moins exposés aux xénobiotiques.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 5,
@@ -437,7 +396,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -449,7 +407,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. Le maquereau et la sardine sont des poissons riches en oméga 3. Ces nutriments jouent un rôle essentiel dans le développement et l’entretient du système nerveux agissant ainsi sur la mémoire. De plus, l’apport en oméga 3 est insuffisant dans la population française, il est donc intéressant d’inclure ce type de produit dans notre alimentation. Ces poissons sont moins exposés aux polluants et métaux lourds, contrairement au saumon qui a forte consommation peut avoir des conséquences sur la santé.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 10,
@@ -457,7 +414,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -469,7 +425,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. L’aïoli est un plat équilibré composé de poisson blanc et de légumes. Il va donc participer à la couverture des besoins en protéines, en fibres et en minéraux. Les indicateurs santé et équilibre alimentaire vont être impacté positivement. De plus, l’aïoli faisant parti de ses plats préférés, sa frustration va d’autant plus diminuer.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -10,
                     "equilibreAlim": 5,
@@ -477,7 +432,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -485,11 +439,10 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "une sol meunière avec double dose de beurre ",
+                "enonce": "une sol meunière avec double dose de beurre.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. La sole cuisinée façon meunière permet au personnage d’éviter la frustration. En revanche, une consommation excessive de beurre peut être néfaste car comme tous les produits d’origine animal, ils contiennent une quantité importante d’AGS. L’indicateur santé va donc être impacté.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": -5,
@@ -497,7 +450,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -509,7 +461,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. Choisir la papillote aux petits légumes va contribuer à un bon équilibre alimentaire et une bonne santé. En effet, ce mode de cuisson limite l’ajout excessif de matières grasses et préserve la qualité des aliments.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 5,
@@ -517,7 +468,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -534,7 +484,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Il s’agit d’une cuisson à haute température le beurre, matière grasse issue du lait, contient des traces restantes de protéines. Ces éléments vont bruler à la cuisson et former des composés cancérigènes.  Les indicateurs santé et équilibre alimentaire vont donc être impactés.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 5,
@@ -542,7 +491,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -550,11 +498,10 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "huile d’arachide ",
+                "enonce": "huile d’arachide.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées.Allergique à l’arachide, s’il choisit d’utiliser cette huile il s’expose au risque de quelques protéines restées en suspens.Afin d’éviter les problèmes de santé il existe des alternatives.",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -562,7 +509,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -570,11 +516,10 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "huile d’olive extra ",
+                "enonce": "huile d’olive extra.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. L’huile d’olive extra est composée d’acide gras mono insaturé, excellent pour la santé en utilisation à basse température, ils sont inadaptés à une cuisson sautée. De plus, l’huile extra est peu raffinée, une cuisson forte entraine la formation de composé cancérigène en brulant. L’huile extra est parfaite pour la salade mais pour les cuissons préférez une huile raffinée.",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": -5,
@@ -582,7 +527,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -590,11 +534,10 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "huile de tournesol raffinée bio ",
+                "enonce": "huile de tournesol raffinée bio.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Utiliser l’huile de tournesol raffinée bio va permettre aux indicateurs santé et équilibre alimentaire d’augmenter. En effet, le raffinage permet d’éliminer les impuretés dans l’huile limitant ainsi la formation de composes cancérigène. De plus le gras captant les polluant volatile une huile bio préserve le personnage de leur exposition.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 5,
@@ -602,7 +545,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -610,11 +552,10 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "huile de tournesol bio non raffinée ",
+                "enonce": "huile de tournesol bio non raffinée.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Utiliser l’huile de tournesol non raffinée bio va permettre à l’indicateur santé d’augmenter. Cette huile est bio, le gras captant les polluant volatile une huile bio préserve le personnage de leur exposition. En revanche, l’huile est non raffinée or le raffinage permet d’éliminer les impuretés de l’huile limitant ainsi la formation de composes cancérigène.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": -10,
@@ -622,7 +563,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -638,8 +578,7 @@ var situations =
                 "enonce": "Il sort son téléphone avec une appli de type yuka ou open food fact..",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Les applications de nutrition peuvent apporter des informations intéressantes mais il faut tout de même garder un esprit critique. Le jambon est un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces applications permettent la mise en avant la présence d’additifs dangereux pour la santé mais certains autres paramètres peuvent être mal interprétés. Le score donné au produit est déterminé par l’application elle-même, la part de point accorder à la composition nutritionnelle, au label, ou aux présences d’additifs est donc variable il faut rester attentifs. De plus il faut replacer les notions de quantité et d’utilisation dans l’importance que l’on accorde au score.",
                     "energiePenality": 0,
                     "frustration": 5,
                     "equilibreAlim": 0,
@@ -647,7 +586,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -655,11 +593,10 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "Il prend le jambon bio pour être sûr de la qualité du produit ",
+                "enonce": "Il prend le jambon bio pour être sûr de la qualité du produit.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage ne sait pas quel jambon choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. Prendre le jambon bio, permet au personnage d’avoir un produit de qualité. Les produits bio sont donc de meilleure qualité car ils doivent respecter une règlementation plus stricte qui engage les producteurs et protège les consommateurs sur la qualité des produits. Le jambon reste un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -667,7 +604,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -675,11 +611,10 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "Il prend le jambon plus cher pour être sûr de la qualité du produit ",
+                "enonce": "Il prend le jambon plus cher pour être sûr de la qualité du produit.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage ne sait pas quel jambon choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. Prendre le jambon le plus cher n’est pas forcément gage de qualité. L’indicateur de santé va donc diminuer. Le jambon reste un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -687,7 +622,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -698,8 +632,7 @@ var situations =
                 "enonce": "Il prend le premier prix, de toute façon cela ne change rien.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage ne sait pas quel jambon choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. En prenant le jambon premier prix, le personnage aura probablement un produit de moins bonne qualité, avec une quantité plus importante d’additifs. L’indicateur santé va donc diminuer. Le jambon reste un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux. Il est donc important de faire attention à la qualité du produit afin qu’il y ait le moins d’additifs possible.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -707,7 +640,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -718,16 +650,14 @@ var situations =
                 "enonce": "Il se rend à la boucherie de son supermarché et achète son jambon à la découpe.",
                 "energieNeeded": 50,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage ne sait pas quel jambon choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. Acheter son jambon à la découpe en boucherie permet au personnage d’être mieux conseillé et d’avoir un produit de qualité, mais cela demande un peu d’énergie. Le jambon est un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux. Excellent choix !",
                     "energiePenality": -10,
                     "frustration": -5,
                     "equilibreAlim": 5,
                     "sante": 5
                 },
                 "failure": {
-                    "text": "Issue impossible",
-                    "imageLink": "",
+                    "text": "Le personnage ne sait pas quel jambon choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. Acheter son jambon à la découpe en boucherie permet au personnage d’être mieux conseillé et d’avoir un produit de qualité, mais cela demande un peu d’énergie et de motivation. Arthur n'est pas très en forme en ce moment et décide de se rabattre sur le premier prix. Le jambon est un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux.  Il est donc important de faire attention à la qualité du produit afin qu’il y ait le moins d’additifs possible.",
                     "energiePenality": -10,
                     "frustration": 5,
                     "equilibreAlim": 0,
@@ -737,14 +667,13 @@ var situations =
         }
     },
     8: {
-        "enonce": "Arthur reçoit ses copain végétarien il se demande comment remplacer les protéines de la viande.",
+        "enonce": "Arthur reçoit des amis végétariens pour le dîner, il se demande comment remplacer les protéines de la viande dans le repas qu'il prépare.",
         "arguments": {
             "1": {
                 "enonce": "Il lui fait des lasagnes aux légumes",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage reçoit des amis végétariens. Il se questionne sur ce qu’il va cuisiner afin de remplacer les protéines de viande.  Faire des lasagnes aux légumes permet au personnage de ne pas se frustrer en réadaptant la recette d’un plat qu’il affectionne. De plus, la pâte à lasagne contenant des œufs et la béchamel contenant du lait il y a tout de même un apport protéique.",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 0,
@@ -752,7 +681,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -760,11 +688,10 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "Il lui fait chilli sin carne ",
+                "enonce": "Il lui fait chilli sin carne.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage reçoit des amis végétariens. Il se questionne sur ce qu’il va cuisiner afin de remplacer les protéines de viande. Faire un chili sin carne est une bonne alternative aux protéines de la viande. Les céréales et légumineuses contiennent chacune des carences en acides aminés essentiels, ces derniers ne se retrouvent pas dans des proportions suffisantes. Il est donc important d’associer les céréales avec les légumineuses afin de réaliser ce qu’on appelle la « complémentarité protéique ». En complétant les carence de l’autre elles vont ensembles apporter tous les acides aminés essentiel. Le chili sin carne est un plat qui associe les haricots rouges avec du riz, ce plat est donc équilibré et permettra aux végétariens d’assurer un apport suffisant en protéines.",
                     "energiePenality": 0,
                     "frustration": 5,
                     "equilibreAlim": 10,
@@ -772,7 +699,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -783,8 +709,7 @@ var situations =
                 "enonce": "il achète un steak végétal",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage reçoit des amis végétariens. Il se questionne sur ce qu’il va cuisiner afin de remplacer les protéines de viande. Proposer un steak végétal va impacter sur l’équilibre alimentaire. En effet, cela reste un produit industriel transformé. Le personnage ne pourra donc pas contrôler la liste des ingrédients ainsi que la qualité des produits. Dans ce type de produit, on retrouve souvent beaucoup d’additifs et de protéines texturées, réhydratées. Ces protéines sont difficilement assimilables par notre organisme. Il est donc conseillé de le réaliser fait maison en suivant le procédé de la complémentarité protéique.  Ce procédé correspond à l’association de plusieurs céréales, ou légumineuses qui se complètent au niveau des acides aminés essentiels.",
                     "energiePenality": 0,
                     "frustration": 10,
                     "equilibreAlim": -5,
@@ -792,7 +717,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -800,11 +724,10 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "Il lui fait une omelette ",
+                "enonce": "Il lui fait une omelette.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage reçoit des amis végétariens. Il se questionne sur ce qu’il va cuisiner afin de remplacer les protéines de viande. Faire une omelette est une bonne alternative. Basculer vers une alimentation végétarienne, si elle est mal contrôlée peut entraîner des carences. En effet, les végétariens peuvent être carencé en protéines car les protéines contenues dans les sources végétales (légumes secs, céréales complètes) sont moins assimilables que celles d’origine animale. Les protéines jouent un rôle essentiel dans la constitution du tissu musculaire. De plus, les végétariens peuvent également être en insuffisance vitaminique de B12 car on la trouve principalement dans les produits d’origine animale. La vitamine B12 participe au renouvellement des cellules et à l’érythropoïèse. Une omelette peut donc participer à la couverture des besoins à la fois en vitamine B12 et en protéines. L’indicateur santé va augmenter.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -812,7 +735,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -820,11 +742,10 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "il fait un wok de légume au tofu  ",
+                "enonce": "il fait un wok de légume au tofu .",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage reçoit des amis végétariens. Il se questionne sur ce qu’il va cuisiner afin de remplacer les protéines de viande.  Cuisiner un wok de légumes au tofu permet au personnage de respecter son équilibre alimentaire et sa santé. Ce plat est équilibré et apporte des protéines végétales. Cependant, le tofu n’est pas un aliment qu’il apprécie, ce qui augmente sa frustration.",
                     "energiePenality": 0,
                     "frustration": 5,
                     "equilibreAlim": 5,
@@ -832,7 +753,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -842,14 +762,13 @@ var situations =
         }
     },
     9: {
-        "enonce": "Arthur se rend en réunion chez un client, celui ci lui propose comme souvent un goûter composé d’une viennoiserie et d’un café, que fait il ? ",
+        "enonce": "Arthur se rend en réunion chez un client, celui ci lui propose comme souvent un goûter composé d’une viennoiserie et d’un café, que fait il ?",
         "arguments": {
             "1": {
-                "enonce": "il accepte de prendre un viennoiserie, même si c’est la 4eme cette semaine. il ne faut pas vexer son client ",
+                "enonce": "il accepte de prendre un viennoiserie, même si c’est la 4eme cette semaine. il ne faut pas vexer son client.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Régulièrement, les clients du personnage lui proposent une viennoiserie. Le personnage décide d’accepter. Il est essentiel de s’accorder des plaisirs régulièrement, toutefois une consommation excessive de produits sucrés et gras peut avoir un effet néfaste sur la santé. Il est donc important que la consommation de viennoiserie reste occasionnelle. Les indicateurs santé et équilibre alimentaire vont donc être impactés négativement.",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": -5,
@@ -857,7 +776,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -866,30 +784,27 @@ var situations =
             },
             "2": {
                 "enonce": "il a l’habitude il a un fruit et des oléagineux dans sa malette",
-                "energieNeeded": 0,
+                "energieNeeded": 50,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Régulièrement, les clients du personnage lui proposent une viennoiserie. Avoir un fruit et des oléagineux dans sa mallette permet au personnage de ne pas être frustré en se privant d’une collation tout en respectant l’équilibre alimentaire et sa santé. En effet, il est essentiel de s’accorder des plaisirs régulièrement. Toutefois une consommation excessive de produits sucrés et gras peut avoir un effet néfaste sur la santé. Il est donc important que la consommation de viennoiserie reste occasionnelle. Consommer régulièrement un fruit et des oléagineux permet de participer à la couverture des besoins en vitamines, minéraux, fibres et oméga 3.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 5,
                     "sante": 5
                 },
                 "failure": {
-                    "text": "Issue impossible",
-                    "imageLink": "",
-                    "energiePenality": 0,
-                    "frustration": 0,
+                    "text": "Régulièrement, les clients du personnage lui proposent une viennoiserie. Avoir un fruit et des oléagineux dans sa mallette permet au personnage de ne pas être frustré en se privant d’une collation tout en respectant l’équilibre alimentaire et sa santé. Cela necessite cependant de l'énergie, comme Arthur ne se sont pas très motivé en ce moment, il a oublié sa collation pour cette réunion. Il est essentiel de s’accorder des plaisirs régulièrement. Toutefois une consommation excessive de produits sucrés et gras peut avoir un effet néfaste sur la santé. Il est donc important que la consommation de viennoiserie reste occasionnelle. Consommer régulièrement un fruit et des oléagineux permet de participer à la couverture des besoins en vitamines, minéraux, fibres et oméga 3.",
+                    "energiePenality": -10,
+                    "frustration": 10,
                     "equilibreAlim": 0,
                     "sante": 0
                 }
             },
             "3": {
-                "enonce": "Il ne prend qu’ un café (sucré), le goûté c'est pour les enfant. ",
+                "enonce": "Il ne prend qu’un café (sucré), les goûters sont pour les enfants.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Régulièrement, les clients du personnage lui proposent une viennoiserie. Se priver de collation va provoquer chez le personnage un sentiment de frustration. Une prise de sucre isoler va impacter fortement sa glycémie poussant son corps se réguler. De plus, il risque de faire face à une hypoglycémie réactionnelle provoquant une petite faim quelques heure plus tard. Son équilibre alimentaire et sa santé seront impactés.",
                     "energiePenality": 0,
                     "frustration": 5,
                     "equilibreAlim": -5,
@@ -897,7 +812,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -905,19 +819,17 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "un verre d’eau suffira, merci ",
+                "enonce": "un verre d’eau suffira, merci.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Régulièrement, les clients du personnage lui proposent une viennoiserie. Se priver de collation va provoquer chez le personnage un sentiment de frustration.",
                     "energiePenality": 0,
                     "frustration": 5,
                     "equilibreAlim": 0,
-                    "sante": -5
+                    "sante": 0
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -928,16 +840,14 @@ var situations =
                 "enonce": "Elle sont vraiment bonne ses viennoiserie, j’en prend un seconde.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Régulièrement, les clients du personnage lui proposent une viennoiserie. Le personnage décide d’accepter et d’en prendre plusieurs. Il est essentiel de s’accorder des plaisirs régulièrement, toutefois une consommation excessive de produits sucrés et gras peut avoir un effet néfaste sur la santé. Il est donc important que la consommation de viennoiserie reste occasionnelle. Les indicateurs santé et équilibre alimentaire vont donc être impactés très négativement.",
                     "energiePenality": 0,
-                    "frustration": -5,
+                    "frustration": -10,
                     "equilibreAlim": -10,
                     "sante": -5
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -950,11 +860,10 @@ var situations =
         "enonce": "Arthur rentre du boulot et fatigué, il n’a pas le courage de faire le repas.",
         "arguments": {
             "1": {
-                "enonce": "Je vais réchauffer un plat cuisiné au micro-onde (sauté de veau et purée) ",
+                "enonce": "Je vais réchauffer un plat cuisiné au micro-onde (sauté de veau et purée)",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage n’a pas le courage de faire son repas. Réchauffer un plat cuisiné au micro-onde a un impact négatif sur l’équilibre alimentaire et la santé. En effet, il est préférable pour le personnage de cuisiner un plat simple plutôt que de manger un plat dont il ne contrôle ni la qualité des produits ni l’équilibre nutritionnel. De plus, les plats cuisinés sont pour la plupart moins goûteux ce qui va augmenter la frustration du personnage.",
                     "energiePenality": 0,
                     "frustration": 5,
                     "equilibreAlim": -5,
@@ -962,7 +871,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -970,39 +878,35 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "je fais un simple plat de pâtes à la crème, 12 min montre en main ",
-                "energieNeeded": 0,
+                "enonce": "je fais un simple plat de pâtes à la crème, 12 min montre en main.",
+                "energieNeeded": 30,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
-                    "energiePenality": 0,
+                    "text": "Le personnage n’a pas le courage de faire son repas. Préparer un repas rapide (pâtes à la crème) lui demande de fournir peu d’énergie. De plus, il est préférable pour la santé du personnage de cuisiner. Seul l’indicateur équilibre alimentaire va diminuer. En effet, le repas cuisiné est une assiette composée principalement de glucides. Il n’est donc pas équilibré.",
+                    "energiePenality": -5,
                     "frustration": 0,
                     "equilibreAlim": -5,
                     "sante": 0
                 },
                 "failure": {
-                    "text": "Issue impossible",
-                    "imageLink": "",
-                    "energiePenality": 0,
-                    "frustration": 0,
-                    "equilibreAlim": 0,
-                    "sante": 0
+                    "text": "Le personnage n’a pas le courage de faire son repas. Cependant, même préparer un repas rapide (pâtes à la crème) lui demande de fournir un peu d’énergie. Même s'il est préférable pour sa santé de cuisiner Arthur se rabat sur le plat cuisiné à faire réchauffer. Manger un plat dont il ne contrôle ni la qualité des produits ni l’équilibre nutritionnel n'est pas la meilleure option. De plus, les plats cuisinés sont pour la plupart moins goûteux ce qui va augmenter la frustration du personnage.",
+                    "energiePenality": -5,
+                    "frustration": 5,
+                    "equilibreAlim": -5,
+                    "sante": -5
                 }
             },
             "3": {
                 "enonce": "Aller courage je prend sur moi et je vais faire un vrai repas, j’ai des restes du repas d’hier (ratatouille) avec une omelette et un peu de salade ça fera l’affaire.",
                 "energieNeeded": 50,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage est fatigué. Décider de faire un vrai repas demande une grande énergie au personnage mais cela impacte positivement sur son équilibre alimentaire et sa santé. En effet, il est préférable pour le personnage de cuisiner plutôt que de manger un plat dont il ne contrôle ni la qualité des produits ni l’équilibre de l’assiette.",
                     "energiePenality": -10,
                     "frustration": 0,
                     "equilibreAlim": 10,
                     "sante": 5
                 },
                 "failure": {
-                    "text": "Issue impossible",
-                    "imageLink": "",
+                    "text": "Le personnage est fatigué. Décider de faire un vrai repas demande une grande énergie. Malheureusement, le personnage n’en possède pas assez pour effectuer tant d’efforts. Il va donc devoir trouver une autre solution de dernière minute, qui impactera sur son équilibre alimentaire.",
                     "energiePenality": -10,
                     "frustration": 0,
                     "equilibreAlim": -5,
@@ -1013,8 +917,7 @@ var situations =
                 "enonce": "Deliveroo, Hum un Bò bún !",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "A rediger",
-                    "imageLink": "",
+                    "text": "Le personnage n’a pas le courage de faire son repas. Commander un Bò bún évite la frustration au personnage. Il n’a pas besoin de se préparer un repas. De plus, un Bò bún reste un plat assez équilibré composé de légume cuit, féculant, protéine, et crudité. Les indicateurs santé et équilibre alimentaire vont donc augmenter.",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 5,
@@ -1022,7 +925,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -1034,7 +936,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "A rediger",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -10,
                     "equilibreAlim": -10,
@@ -1042,7 +943,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -1052,14 +952,13 @@ var situations =
         }
     },
     11: {
-        "enonce": "Arthur souhaite améliorer sa condition physique. Il pense qu'il devrait pratiquer une activité physique: ",
+        "enonce": "Arthur souhaite améliorer sa condition physique. Il pense qu'il devrait pratiquer une activité physique:.",
         "arguments": {
             "1": {
                 "enonce": "A partir de maintenant, Arthur ira au travail à vélo ou à pied (10/30 minutes de trajet)",
                 "energieNeeded": 50,
                 "success": {
                     "text": "A rediger",
-                    "imageLink": "",
                     "energiePenality": -20,
                     "frustration": -5,
                     "equilibreAlim": 0,
@@ -1067,7 +966,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": -20,
                     "frustration": 10,
                     "equilibreAlim": 0,
@@ -1079,7 +977,6 @@ var situations =
                 "energieNeeded": 50,
                 "success": {
                     "text": "A rediger",
-                    "imageLink": "",
                     "energiePenality": -50,
                     "frustration": 10,
                     "equilibreAlim": 0,
@@ -1087,7 +984,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": -50,
                     "frustration": 10,
                     "equilibreAlim": 0,
@@ -1099,7 +995,6 @@ var situations =
                 "energieNeeded": 50,
                 "success": {
                     "text": "A rediger",
-                    "imageLink": "",
                     "energiePenality": -30,
                     "frustration": 5,
                     "equilibreAlim": 0,
@@ -1107,7 +1002,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": -30,
                     "frustration": 10,
                     "equilibreAlim": 0,
@@ -1115,11 +1009,10 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "Arthur prend désormais les escalier et favorise la marche quand il le peut. ",
+                "enonce": "Arthur prend désormais les escalier et favorise la marche quand il le peut.",
                 "energieNeeded": 50,
                 "success": {
                     "text": "A rediger",
-                    "imageLink": "",
                     "energiePenality": -10,
                     "frustration": -5,
                     "equilibreAlim": 0,
@@ -1127,7 +1020,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": -10,
                     "frustration": 10,
                     "equilibreAlim": 0,
@@ -1139,7 +1031,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "A rediger",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 0,
@@ -1147,7 +1038,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -1157,14 +1047,13 @@ var situations =
         }
     },
     12: {
-        "enonce": "En hivers Arthur se rend au marché, quel panier choisis t’il pour ses repas de la semaine ? ",
+        "enonce": "En hivers Arthur se rend au marché, quel panier choisis t’il pour ses repas de la semaine ?",
         "arguments": {
             "1": {
-                "enonce": "carotte, oignon, brocolis, choux rouge, courge, butternut, panais, betterave, poireau  ",
+                "enonce": "carotte, oignon, brocolis, choux rouge, courge, butternut, panais, betterave, poireau.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "A rediger",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 10,
@@ -1172,7 +1061,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -1180,11 +1068,10 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "tomate, aubergine, courgette, melon, fraise ",
+                "enonce": "tomate, aubergine, courgette, melon, fraise.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "A rediger",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 0,
@@ -1192,7 +1079,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -1200,11 +1086,10 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "Haricot vert, petit pois, épinard, courgette, poivron ",
+                "enonce": "Haricot vert, petit pois, épinard, courgette, poivron.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "A rediger",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -1212,7 +1097,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -1224,7 +1108,6 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "A rediger",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 0,
@@ -1232,7 +1115,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -1240,11 +1122,10 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "pfff la flemme, je prendrais des légume en conserve quand j'irai au supermarché. ",
+                "enonce": "pfff la flemme, je prendrais des légume en conserve quand j'irai au supermarché.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "A rediger",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": -10,
@@ -1252,7 +1133,6 @@ var situations =
                 },
                 "failure": {
                     "text": "Issue impossible",
-                    "imageLink": "",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
