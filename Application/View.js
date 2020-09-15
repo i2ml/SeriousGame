@@ -118,7 +118,6 @@ class View {
      * Display information about the player
      */
     updatePlayerInfo(player) {
-        console.log(player)
         let classes = ["bg-success", "bg-warning", "bg-danger"];
         $("#frustrationBar").removeClass(classes);
         $("#energieBar").removeClass(classes);

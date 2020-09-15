@@ -33,7 +33,6 @@ $(document).on('click', 'input', function () {
         if (inputList.hasOwnProperty(key)) {
             const element = inputList[key];
             if ($(element).is(":checked")) {
-                console.log((key + 1));
                 (parseInt(key) + 1) % 2 == 0 ? first++ : second++;
             }
         }
@@ -50,9 +49,6 @@ $("#valider").click(function () {
     }
     $('#resumeModal').modal('show');
     $("#valider").addClass("disabled");
-    $("input").click(function () {
-        app.checkConfirmOppening()
-    });
     const selectedArgument = app.model.getSelectedArgument();
     const elementState = app.model.applyArgument(selectedArgument);
     app.view.displaySelectedArgument(selectedArgument, elementState);
