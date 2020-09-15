@@ -63,8 +63,10 @@ class View {
         $("#santeText").removeClass(classes);
         $("#equilibreAlimText").removeClass(classes);
 
+        let bad = 0;
         //display color
         if (impact.frustration > 0) {
+            bad++;
             $("#frustrationCard").addClass("border-left-danger");
             $("#frustrationText").addClass("text-danger");
         };
@@ -89,6 +91,7 @@ class View {
             $("#energieText").addClass("text-info");
         };
         if (impact.sante < 0) {
+            bad++;
             $("#santeCard").addClass("border-left-danger");
             $("#santeText").addClass("text-danger");
         };
@@ -101,6 +104,7 @@ class View {
             $("#santeText").addClass("text-info");
         };
         if (impact.equilibreAlim < 0) {
+            bad++;
             $("#equilibreAlimCard").addClass("border-left-danger");
             $("#equilibreAlimText").addClass("text-danger");
         };
@@ -112,6 +116,32 @@ class View {
             $("#equilibreAlimCard").addClass("border-left-info");
             $("#equilibreAlimText").addClass("text-info");
         };
+
+        //basic arthur success/failure
+        if (bad >= 2) {
+            $("#impactIllu").attr('src', 'img/impacts/échouer.png');
+        } else {
+            $("#impactIllu").attr('src', 'img/impacts/ArthurCostard.png');
+        }
+        if (bad == 0) {
+            $("#impactIllu").attr('src', 'img/impacts/success.png');
+        }
+
+        //impact specific illustration
+        if (argument.motherSituation == 10) {
+            $("#impactIllu").attr('src', 'img/impacts/miam.png');
+        }
+        if (argument.motherSituation == 11 && bad <= 1) {
+            $("#impactIllu").attr('src', 'img/impacts/muscu.png');
+        }
+        if (argument.motherSituation == 11 && bad > 1) {
+            $("#impactIllu").attr('src', 'img/impacts/faceslip.png');
+        }
+        if (argument.enonce.includes("surfait")) {
+            $("#impactIllu").attr('src', 'img/impacts/voiture.png');
+        }
+
+
     }
 
     /**
