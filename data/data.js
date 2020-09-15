@@ -8,7 +8,7 @@ var situations =
                 "enonce": "Il prend un fruit et un yaourt.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage a pris du fromage. La consommation d’un deuxième produit laitier dans le même repas n’est donc pas adaptée, de plus notre personnage est sensible au lait qui lui crée des inconforts digestifs. Les indicateurs santé et équilibre alimentaire ont donc étés affecté par ce choix. Une consommation inadaptée de produit laitiers peut être néfaste car comme tous les produits d’origine animal, ils contiennent une quantité importante d’acides gras saturés.",
+                    "text": "Le personnage a déjà pris pris un du fromage avant son yaourt. La consommation d’un deuxième produit laitier dans le même repas n’est donc pas adaptée. De plus notre personnage est sensible au lait qui lui crée des inconforts digestifs. Les indicateurs santé et équilibre alimentaire ont donc été affectés par ce choix. Une consommation inadaptée de produit laitiers peut être néfaste car comme tous les produits d’origine animale, ils contiennent une quantité importante d’acides gras saturés.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": -5,
@@ -44,7 +44,7 @@ var situations =
                 "enonce": "Il prend un yaourt.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage a pris du fromage. La consommation d’un deuxième produit laitier dans le même repas n’est donc pas adaptée, de plus notre personnage est sensible au lait qui lui créé des inconforts digestifs.  Les indicateurs santé et équilibre alimentaire ont donc étés affecté par ce choix. Une consommation inadaptée de produit laitiers peut être néfaste car comme tous les produits d’origine animal, ils contiennent une quantité importante d’acides gras saturés.",
+                    "text": "Le personnage a déjà pris pris un du fromage avant son yaourt. La consommation d’un deuxième produit laitier dans le même repas n’est donc pas adaptée. De plus notre personnage est sensible au lait qui lui créé des inconforts digestifs.  Les indicateurs santé et équilibre alimentaire ont donc été affectés par ce choix. Une consommation inadaptée de produit laitiers peut être néfaste car comme tous les produits d’origine animale, ils contiennent une quantité importante d’acides gras saturés.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": -5,
@@ -136,7 +136,7 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "Entrecôte, frite & sauce roquefort.",
+                "enonce": "Entrecôte, frites & sauce roquefort.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage mange régulièrement au restaurant. Choisir l’entrecôte sauce roquefort avec des frites va impacter fortement son équilibre alimentaire. Ces produits sont riches en acides gras saturés et LDL cholestérols, ils favorisent la formation d’une plaque d’athérome obstruant les artères. De plus, une surconsommation de viande rouge et de graisse cuite va augmenter le risque de maladies cardiovasculaires. Cependant, sa frustration va diminuer car il va suivre ses envies.",
@@ -172,10 +172,10 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "Formule du jour : (terrine de campagne, entrecôte frite sauce roquefort, pana cotta).",
+                "enonce": "Formule du jour : (terrine de campagne, entrecôte frites sauce roquefort, pana cotta).",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage mange régulièrement au restaurant. Choisir la terrine de campagne, l’entrecôte sauce roquefort avec les frites et la pana cotta vont impacter fortement l’équilibre alimentaire et la santé du personnage.Ces produits sont riches en acides gras saturés et LDL cholestérols, ils favorisent la formation d’une plaque d’athérome obstruant les artères.De plus, une surconsommation de viande rouge et de graisse cuite va augmenter le risque de maladies cardiovasculaires.De plus, manger un repas trop copieux peut engendrer des signes de fatigue au cours de l’après- midi en lien avec les variations de glycémie.Cependant, sa frustration va diminuer car il va succomber à toutes ses envies.",
+                    "text": "Le personnage mange régulièrement au restaurant. Choisir la terrine de campagne, l’entrecôte sauce roquefort avec les frites et la pana cotta vont impacter fortement l’équilibre alimentaire et la santé du personnage. Ces produits sont riches en acides gras saturés et LDL cholestérols, ils favorisent la formation d’une plaque d’athérome obstruant les artères.De plus, une surconsommation de viande rouge et de graisse cuite va augmenter le risque de maladies cardiovasculaires.De plus, manger un repas trop copieux peut engendrer des signes de fatigue au cours de l’après- midi en lien avec les variations de glycémie. Cependant, sa frustration va diminuer car il va succomber à toutes ses envies.",
                     "energiePenality": 0,
                     "frustration": -10,
                     "equilibreAlim": -10,
@@ -234,8 +234,8 @@ var situations =
                 "enonce": "Il a lu dans un article que le lait de brebis était plus simple à digérer, il va donc tenter d’adapter sa recette avec un yaourt au lait de brebis.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage est nostalgique de son petit-déjeuner d’enfance mais étant sensible au lait, il vaut mieux éviter de faire face à des inconforts digestifs. Adapter sa recette avec un aliment inconnu va donc lui demander de l'energie. Le lait de brebis lui permettra néanmoins de ne pas faire face à des inconforts digestifs. Ainsi, les indicateurs frustration, santé et équilibre alimentaire resterons donc stables.",
-                    "energiePenality": -20,
+                    "text": "Le personnage est nostalgique de son petit-déjeuner d’enfance mais étant sensible au lait, il vaut mieux éviter de faire face à des inconforts digestifs. Adapter sa recette avec un aliment inconnu va donc lui demander de l'energie. Le lait de brebis lui permettra néanmoins de ne pas faire face à des inconforts digestifs. Ainsi, les indicateurs frustration, santé et équilibre alimentaire resterons donc corrects.",
+                    "energiePenality": -25,
                     "frustration": 0,
                     "equilibreAlim": 5,
                     "sante": 5
@@ -253,7 +253,7 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Arthur est nostalgique de son petit-déjeuner d’enfance mais étant sensible au lait, il veut éviter de faire face à des inconforts digestifs. Adapter sa recette avec un produit issu du lait de montagne plus digeste que le lait des près va donc lui demander un peu de energie mais cela lui permettra de ne pas faire face à des inconforts digestifs. Et ainsi de diminuer sa frustration, et d’augmenter les indicateurs santé et équilibre alimentaire.",
-                    "energiePenality": -10,
+                    "energiePenality": -20,
                     "frustration": -5,
                     "equilibreAlim": 5,
                     "sante": 5
@@ -308,7 +308,7 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "Arthur se laisse convaincre par son amis mais souhaite poursuivre et étendre ses cultures. Il ne va donc acheter que ce qu’il ne fait pas lui même et continue de se dépenser dans son jardin.",
+                "enonce": "Arthur se laisse convaincre par son ami mais souhaite poursuivre et étendre ses cultures. Il ne va donc acheter que ce qu’il ne fait pas lui même et continue de se dépenser dans son jardin.",
                 "energieNeeded": 50,
                 "success": {
                     "text": "Arthur cultive ses propres légumes s’il ne les trouve pas en supermarché bio, et son ami lui soutient de faire confiance aux producteurs locaux. Étendre ses cultures va demander au personnage de l'energien, mais cela lui permettra de consommer des produits de bonne qualité dont il contrôle le procédé tout en prenant du plaisir à les faire pousser. Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux. Les indicateurs santé et équilibre alimentaire vont donc augmentés, tandis que sa frustration va diminuer.",
@@ -365,7 +365,7 @@ var situations =
                 "enonce": "Pourquoi se casser la tête un légume est un légume...",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage cultive ses propres légumes s’il ne les trouve pas en supermarché bio, et son ami lui soutient de faire confiance aux producteurs locaux. Tous les aliments ne sont pas égaux sur le plan nutritionnel. Les producteurs locaux proposent des produits de saison.Consommer local permet de réduire le transport et donc de favoriser des produits intéressants sur le plan nutritionnel et organoleptique. Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux. Les indicateurs santé et équilibre alimentaire vont nettement diminuer, pénalisés par la suppression de son activité jardinage et ses choix alimentaire.",
+                    "text": "Le personnage cultive ses propres légumes s’il ne les trouve pas en supermarché bio, et son ami lui soutient de faire confiance aux producteurs locaux. Tous les aliments ne sont pas égaux sur le plan nutritionnel. Les producteurs locaux proposent des produits de saison. Consommer local permet de réduire le transport et donc de favoriser des produits intéressants sur le plan nutritionnel et organoleptique. Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux. Les indicateurs santé et équilibre alimentaire vont nettement diminuer, pénalisés par la suppression de son activité jardinage et ses choix alimentaire.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": -10,
@@ -442,7 +442,7 @@ var situations =
                 "enonce": "une sol meunière avec double dose de beurre.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. La sole cuisinée façon meunière permet au personnage d’éviter la frustration. En revanche, une consommation excessive de beurre peut être néfaste car comme tous les produits d’origine animal, ils contiennent une quantité importante d’acides gras saturés. L’indicateur santé va donc être impacté.",
+                    "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. La sole cuisinée façon meunière permet au personnage d’éviter la frustration. En revanche, une consommation excessive de beurre peut être néfaste car comme tous les produits d’origine animale, ils contiennent une quantité importante d’acides gras saturés. L’indicateur santé va donc être impacté.",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": -5,
@@ -501,7 +501,7 @@ var situations =
                 "enonce": "Huile d’arachide.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Allergique à l’arachide, s’il choisit d’utiliser cette huile il s’expose au risque de quelques protéines restées en suspens.Afin d’éviter les problèmes de santé il existe des alternatives.",
+                    "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Allergique à l’arachide, s’il choisit d’utiliser cette huile il s’expose au risque de quelques protéines restées en suspens. Afin d’éviter les problèmes de santé il existe des alternatives.",
                     "energiePenality": 0,
                     "frustration": 0,
                     "equilibreAlim": 0,
@@ -706,7 +706,7 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "il achète un steak végétal",
+                "enonce": "Il achète un steak végétal",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage reçoit des amis végétariens. Il se questionne sur ce qu’il va cuisiner afin de remplacer les protéines de viande. Proposer un steak végétal va impacter sur l’équilibre alimentaire. En effet, cela reste un produit industriel transformé. Le personnage ne pourra donc pas contrôler la liste des ingrédients ainsi que la qualité des produits. Dans ce type de produit, on retrouve souvent beaucoup d’additifs et de protéines texturées, réhydratées. Ces protéines sont difficilement assimilables par notre organisme. Il est donc conseillé de le réaliser fait maison en suivant le procédé de la complémentarité protéique.  Ce procédé correspond à l’association de plusieurs céréales, ou légumineuses qui se complètent au niveau des acides aminés essentiels.",
@@ -742,7 +742,7 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "il prépare un wok de légume au tofu .",
+                "enonce": "Il prépare un wok de légume au tofu .",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage reçoit des amis végétariens. Il se questionne sur ce qu’il va cuisiner afin de remplacer les protéines de viande.  Cuisiner un wok de légumes au tofu permet au personnage de respecter son équilibre alimentaire et sa santé. Ce plat est équilibré et apporte des protéines végétales. Cependant, le tofu n’est pas un aliment qu’il apprécie, ce qui augmente sa frustration.",
@@ -837,7 +837,7 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "Elle sont vraiment bonne ces viennoiserie, j’en prend une seconde.",
+                "enonce": "Elles sont vraiment bonnes ces viennoiseries, j’en prend une seconde.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Régulièrement, les clients du personnage lui proposent une viennoiserie. Le personnage décide d’accepter et d’en prendre plusieurs. Il est essentiel de s’accorder des plaisirs régulièrement, toutefois une consommation excessive de produits sucrés et gras peut avoir un effet néfaste sur la santé. Il est donc important que la consommation de viennoiserie reste occasionnelle. Les indicateurs santé et équilibre alimentaire vont donc être impactés très négativement.",
@@ -860,7 +860,7 @@ var situations =
         "enonce": "Arthur rentre du boulot et fatigué, il n’a pas le courage de faire le repas.",
         "arguments": {
             "1": {
-                "enonce": "Je vais réchauffer un plat cuisiné au micro-onde (sauté de veau et purée)",
+                "enonce": "Il va réchauffer un plat cuisiné au micro-onde (sauté de veau et purée)",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage n’a pas le courage de faire son repas. Réchauffer un plat cuisiné au micro-onde a un impact négatif sur l’équilibre alimentaire et la santé. En effet, il est préférable pour le personnage de cuisiner un plat simple plutôt que de manger un plat dont il ne contrôle ni la qualité des produits ni l’équilibre nutritionnel. De plus, les plats cuisinés sont pour la plupart moins goûteux ce qui va augmenter la frustration du personnage.",
@@ -878,7 +878,7 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "je fais un simple plat de pâtes à la crème, 12 min montre en main.",
+                "enonce": "Il fait un simple plat de pâtes à la crème, douze min montre en main.",
                 "energieNeeded": 30,
                 "success": {
                     "text": "Le personnage n’a pas le courage de faire son repas. Préparer un repas rapide (pâtes à la crème) lui demande de fournir peu d’énergie. De plus, il est préférable pour la santé du personnage de cuisiner. Seul l’indicateur équilibre alimentaire va diminuer. En effet, le repas cuisiné est une assiette composée principalement de glucides. Il n’est donc pas équilibré.",
@@ -896,7 +896,7 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "Aller courage je prend sur moi et je vais faire un vrai repas, j’ai des restes du repas d’hier (ratatouille) avec une omelette et un peu de salade ça fera l’affaire.",
+                "enonce": "Aller courage ! Arthur prend sur soi et va faire un vrai repas, il a des restes du repas d’hier (ratatouille) avec une omelette et un peu de salade ça fera l’affaire.",
                 "energieNeeded": 50,
                 "success": {
                     "text": "Le personnage est fatigué. Décider de faire un vrai repas demande une grande énergie au personnage mais cela impacte positivement sur son équilibre alimentaire et sa santé. En effet, il est préférable pour le personnage de cuisiner plutôt que de manger un plat dont il ne contrôle ni la qualité des produits ni l’équilibre de l’assiette.",
@@ -1027,10 +1027,10 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "l’activité physique, c’est surfait, très peu pour moi.",
+                "enonce": "L’activité physique, c’est surfait, très peu pour moi.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage souhaite améliorer sa condition physique. L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière. En faisant aucune activité, la santé du personnage est fortement impactée.",
+                    "text": "Le personnage souhaite améliorer sa condition physique. L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière. En ne faisant aucune activité, la santé du personnage est fortement impactée.",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": 0,
@@ -1053,8 +1053,8 @@ var situations =
                 "enonce": "carotte, oignon, brocolis, choux rouge, courge, butternut, panais, betterave, poireau.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage se rend au marché pendant l’hiver. Choisir des légumes de saisons va donc lui permettre d’avoir des produits de meilleure qualité nutritionnelle et gustative. En effet, les produits de saison sont plus riches en fibres et micronutriments. Récoltés à maturité, ils possèdent un goût plus prononcé. 2 portions de fruits et 3 portions de légumes nécessaire par jour. Ces produits vont donc permettre de satisfaire les besoins métaboliques de notre personnage. Les indicateurs santé et équilibre alimentaire vont donc nettement augmenter.",
-                    "energiePenality": 0,
+                    "text": "Le personnage se rend au marché pendant l’hiver. Choisir des légumes de saisons va donc lui permettre d’avoir des produits de meilleure qualité nutritionnelle et gustative. En effet, les produits de saison sont plus riches en fibres et micronutriments. Récoltés à maturité, ils possèdent un goût plus prononcé. Deux portions de fruits et trois portions de légumes nécessaire par jour. Ces produits vont donc permettre de satisfaire les besoins métaboliques de notre personnage. Les indicateurs santé et équilibre alimentaire vont donc nettement augmenter.",
+                    "energiePenality": 10,
                     "frustration": 0,
                     "equilibreAlim": 10,
                     "sante": 10
@@ -1072,7 +1072,7 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se rend au marché pendant l’hiver. Les fruits et légumes choisies ne sont pas de saison mais sont des produits qu’il affectionne particulièrement. L’indicateur de frustration va donc diminuer. Ces produits restent bons pour l’équilibre alimentaire et la santé même si leurs propriétés nutritionnelles ne sont pas à leur optimum. De plus, les produits hors saison, ont un goût beaucoup moins marqué. Toutefois, ces produits suffiront à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour.",
-                    "energiePenality": 0,
+                    "energiePenality": 10,
                     "frustration": -5,
                     "equilibreAlim": 0,
                     "sante": 0
@@ -1090,9 +1090,9 @@ var situations =
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se rend au marché pendant l’hiver. Les légumes choisis ne sont pas de saison. Ces produits restent bons pour l’équilibre alimentaire et la santé même si leurs propriétés nutritionnelles ne sont pas à leur maximum. De plus, les produits hors saison, ont un goût beaucoup moins marqué. Ces produits suffiront à combler les recommandations de 3 portions de légumes par jour mais pas les fruits.... Par conséquent, il y aura un impact sur son équilibre alimentaire.",
-                    "energiePenality": 0,
+                    "energiePenality": 10,
                     "frustration": 0,
-                    "equilibreAlim": 0,
+                    "equilibreAlim": -5,
                     "sante": 0
                 },
                 "failure": {
@@ -1107,8 +1107,8 @@ var situations =
                 "enonce": "pomme de terre, oignon, échalote et champignon",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage se rend au marché pendant l’hiver. Ces produits sont de saison mais considérés comme des garnitures aromatiques (oignon, échalote). Bien qu’elle soit vendue chez le maraicher, la pomme de terre est un féculent.Par conséquent, le panier de la semaine ne contient pas de réels légumes.Ces produits ne suffiront pas à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour. L’indicateur équilibre alimentaire va donc diminuer",
-                    "energiePenality": 0,
+                    "text": "Le personnage se rend au marché pendant l’hiver. Ces produits sont de saison mais considérés comme des garnitures aromatiques (oignon, échalote). Bien qu’elle soit vendue chez le maraicher, la pomme de terre est un féculent.Par conséquent, le panier de la semaine ne contient pas de réels légumes. Ces produits ne suffiront pas à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour. L’indicateur équilibre alimentaire va donc diminuer",
+                    "energiePenality": 10,
                     "frustration": -5,
                     "equilibreAlim": 0,
                     "sante": -5
@@ -1125,7 +1125,7 @@ var situations =
                 "enonce": "pfff la flemme, je prendrais des légume en conserve quand j'irai au supermarché.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Les légumes frais sont à privilégier afin d’aider le personnage à couvrir au maximum ses besoins en vitamines et minéraux. En effet, lors de la mise en conserve des légumes, la chaleur du processus provoque une perte pratiquement totale des vitamines thermosensible. De plus, les minéraux contenus dans les aliments se diffuse dans l’eau, et son donc évacuer lors de l’égouttage.Ces produits ne suffiront donc pas à combler les recommandations notamment en vitamines et minéraux. Les indicateurs santé et équilibre alimentaire vont donc nettement diminuer.",
+                    "text": "Les légumes frais sont à privilégier afin d’aider le personnage à couvrir au maximum ses besoins en vitamines et minéraux. En effet, lors de la mise en conserve des légumes, la chaleur du processus provoque une perte pratiquement totale des vitamines thermosensible. De plus, les minéraux contenus dans les aliments se diffuse dans l’eau, et sont donc évacuer lors de l’égouttage. Ces produits ne suffiront donc pas à combler les recommandations notamment en vitamines et minéraux. Les indicateurs santé et équilibre alimentaire vont donc nettement diminuer.",
                     "energiePenality": 0,
                     "frustration": -5,
                     "equilibreAlim": -10,
