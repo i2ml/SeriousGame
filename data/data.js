@@ -857,7 +857,7 @@ var situations =
         }
     },
     10: {
-        "enonce": "Arthur rentre du boulot et fatigué, il n’a pas le courage de faire le repas.",
+        "enonce": "Arthur rentre du travail fatigué, il n’a pas le courage de faire le repas.",
         "arguments": {
             "1": {
                 "enonce": "Il va réchauffer un plat cuisiné au micro-onde (sauté de veau et purée)",
