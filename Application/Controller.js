@@ -27,14 +27,14 @@ $("#voirProfil").click(function () {
  * Désactive le bouton valider si les choix n'ont pas été fait
  */
 $(document).on('click', 'input', function () {
-    const inputList = $("input")
+    const inputList = $("input");
     let first = 0, second = 0;
-    const numberOfArguments = inputList.length / 2;
     for (const key in inputList) {
         if (inputList.hasOwnProperty(key)) {
             const element = inputList[key];
             if ($(element).is(":checked")) {
-                key >= numberOfArguments ? first++ : second++;
+                console.log((key + 1));
+                (parseInt(key) + 1) % 2 == 0 ? first++ : second++;
             }
         }
     }
