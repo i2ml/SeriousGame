@@ -5,42 +5,18 @@ class View {
      * Permet d'afficher une situation
      */
     displaySituation(situation) {
-        const progress = (situation.id - 1) * (100 / 12);
+        const progress = (situation.id) * (100 / 12);
         console.log("progress is :" + progress)
         $("#mainBar").css({ width: progress + '%' });
         $("#enonce").html(situation.enonce);
         $("#situationIllu").attr("src", "img/situations/" + situation.id + ".png");
-        $(".oneargumentList").empty();
-        $(".twoargumentList").empty();
+        $("input").prop("checked", false);
         for (const argumentId in situation.arguments) {
-            $('<div/>', {
-                'class': 'custom-control custom-checkbox',
-                'id': 'onedivArgument' + argumentId
-            }).appendTo('.oneargumentList');
-            $('<input/>', {
-                'type': 'checkbox',
-                'class': 'custom-control-input',
-                'id': 'oneargument' + argumentId,
-            }).appendTo('#onedivArgument' + argumentId);
-            $('<label/>', {
-                'for': 'oneargument' + argumentId,
-                'class': 'custom-control-label text-gray-900',
+            $(".argumentList" + argumentId).empty();
+            $('<p/>', {
+                'class': 'argumentText text-gray-900',
                 'text': situation.arguments[argumentId].enonce,
-            }).appendTo('#onedivArgument' + argumentId);
-            $('<div/>', {
-                'class': 'custom-control custom-checkbox',
-                'id': 'twodivArgument' + argumentId
-            }).appendTo('.twoargumentList');
-            $('<input/>', {
-                'type': 'checkbox',
-                'class': 'custom-control-input',
-                'id': 'twoargument' + argumentId,
-            }).appendTo('#twodivArgument' + argumentId);
-            $('<label/>', {
-                'for': 'twoargument' + argumentId,
-                'class': 'custom-control-label text-gray-900',
-                'text': situation.arguments[argumentId].enonce,
-            }).appendTo('#twodivArgument' + argumentId);
+            }).appendTo('.argumentList' + argumentId);
         };
     }
 
