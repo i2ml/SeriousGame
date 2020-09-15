@@ -14,7 +14,7 @@ class Controller {
 
 let app = new Controller(new Model(), new View());
 app.startGame();
-//$('#resumeModal').modal('show');
+$('#optionsModal').modal('show');
 
 /**
  * écoute le click sur le bouton voir le profil
