@@ -13,8 +13,8 @@ class View {
         $("input").prop("checked", false);
         for (const argumentId in situation.arguments) {
             $(".argumentList" + argumentId).empty();
-            $('<p/>', {
-                'class': 'argumentText text-gray-900',
+            $('<h5/>', {
+                'class': 'argumentText text-gray-900 m-0',
                 'text': situation.arguments[argumentId].enonce,
             }).appendTo('.argumentList' + argumentId);
         };
