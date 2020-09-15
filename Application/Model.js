@@ -51,13 +51,11 @@ class Model {
     choseFinalArgumentId() {
         const inputList = $("input")
         let argumentsList = new Array();
-        const numberOfArguments = inputList.length / 2;
         for (const key in inputList) {
             if (inputList.hasOwnProperty(key)) {
                 const element = inputList[key];
                 if ($(element).is(":checked")) {
-                    let argumentId = key >= numberOfArguments ? parseInt(key) - numberOfArguments : parseInt(key);
-                    argumentId++;
+                    let argumentId = parseInt(element.id.substr(element.id.length - 1));
                     argumentsList.push(argumentId);
                 }
             }
