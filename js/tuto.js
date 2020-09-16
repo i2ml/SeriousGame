@@ -1,0 +1,1 @@
+$('#tutoModal').modal('show');

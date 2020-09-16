@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SeriousGame Nutrition</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="packages\fontawesome-free\css\all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-dark overflow-hidden">
+
+  <!-- Modal tuto -->
+  <div class="modal" id="tutoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <!-- Outer Row -->
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="card o-hidden border-0 shadow-lg my-1">
+                  <div class="card-body p-0">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <div class="pl-5 pt-5 pb-2 my-auto">
+                          <div class="text-center">
+                            <div class="mx-5 ">
+                              <img class="img-fluid" src="img\impacts\échouer.png" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-7">
+                        <div class="card shadow m-5 ml-0 full-height">
+                          <div class="card-body">
+                            <h1 id="argEnonce" class="mb-5">Titre de l'argument choisi</h1>
+                            <p id="impactText" class="text-gray-900">Explication de l'impact</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row m-5">
+
+                      <div class="col-xl-3 col-md-6 mb-4">
+                        <div id="mentalCard" class="card border-left-info shadow h-100 py-2">
+                          <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                              <div class="col mr-2">
+                                <div id="mentalText" class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                  Bien-être mental</div>
+                                <div id="mentalValue" class="h5 mb-0 font-weight-bold text-gray-800">XXXX</div>
+                              </div>
+                              <div class="col-auto">
+                                <i class="fas fa-angry fa-2x text-gray-300"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-md-6 mb-4">
+                        <div id="energieCard" class="card border-left-info shadow h-100 py-2">
+                          <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                              <div class="col mr-2">
+                                <div id="energieText" class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                  Énergie
+                                </div>
+                                <div id="energieValue" class="h5 mb-0 font-weight-bold text-gray-800">XXXX</div>
+                              </div>
+                              <div class="col-auto">
+                                <i class="fas fa-bolt fa-2x text-gray-300"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-md-6 mb-4">
+                        <div id="santeCard" class="card border-left-info shadow h-100 py-2">
+                          <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                              <div class="col mr-2">
+                                <div id="santeText" class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                  Bien-être physique
+                                </div>
+                                <div class="row no-gutters align-items-center">
+                                  <div class="col-auto">
+                                    <div id="santeValue" class="h5 mb-0 mr-3 font-weight-bold text-gray-800">XXXX</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-auto">
+                                <i class="fas fa-notes-medical fa-2x text-gray-300"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-md-6 mb-4">
+                        <div id="equilibreAlimCard" class="card border-left-info shadow h-100 py-2">
+                          <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                              <div class="col mr-2">
+                                <div id="equilibreAlimText"
+                                  class="text-xs font-weight-bold text-info text-uppercase mb-1">Équilibre
+                                  alimentaire
+                                </div>
+                                <div id="equilibreAlimValue" class="h5 mb-0 font-weight-bold text-gray-800">XXXX</div>
+                              </div>
+                              <div class="col-auto">
+                                <i class="fas fa-utensils fa-2x text-gray-300"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                      <button type="button" class="btn btn-primary m-5" data-dismiss="modal">Situation
+                        suivante</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js\tuto.js">
+</script>
+
+</html>
