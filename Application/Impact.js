@@ -5,16 +5,16 @@ class Impact {
             this.text = situations[idSituation].arguments[idArgument].success.text
             this.imageUrl = situations[idSituation].arguments[idArgument].success.imageLink
             this.energiePenality = situations[idSituation].arguments[idArgument].success.energiePenality;
-            this.frustration = situations[idSituation].arguments[idArgument].success.frustration;
+            this.mental = situations[idSituation].arguments[idArgument].success.mental;
             this.equilibreAlim = situations[idSituation].arguments[idArgument].success.equilibreAlim;
-            this.sante = situations[idSituation].arguments[idArgument].success.sante;
+            this.physique = situations[idSituation].arguments[idArgument].success.physique;
         } else {
             this.text = situations[idSituation].arguments[idArgument].failure.text
             this.imageUrl = situations[idSituation].arguments[idArgument].failure.imageLink
             this.energiePenality = situations[idSituation].arguments[idArgument].failure.energiePenality;
-            this.frustration = situations[idSituation].arguments[idArgument].failure.frustration;
+            this.mental = situations[idSituation].arguments[idArgument].failure.mental;
             this.equilibreAlim = situations[idSituation].arguments[idArgument].failure.equilibreAlim;
-            this.sante = situations[idSituation].arguments[idArgument].failure.sante;
+            this.physique = situations[idSituation].arguments[idArgument].failure.physique;
         }
     }
 }
