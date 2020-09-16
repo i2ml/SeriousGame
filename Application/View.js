@@ -193,15 +193,15 @@ class View {
         let bad = 0;
         let good = 0;
         if (player.mental < 40) {
-            good++;
-            $("#mentalBar").addClass("bg-success").css({ width: player.mental + '%' });
+            bad++;
+            $("#mentalBar").addClass("bg-danger").css({ width: player.mental + '%' });
         };
         if (player.mental >= 40 && player.mental <= 60) {
             $("#mentalBar").addClass("bg-warning").css({ width: player.mental + '%' });
         };
         if (player.mental > 60) {
-            bad++;
-            $("#mentalBar").addClass("bg-danger").css({ width: player.mental + '%' });
+            good++;
+            $("#mentalBar").addClass("bg-success").css({ width: player.mental + '%' });
         };
         if (player.energie < 40) {
             bad++;
