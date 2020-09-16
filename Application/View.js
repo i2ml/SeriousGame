@@ -36,47 +36,47 @@ class View {
 
         let energieValue;
         //display raw values
-        if (impact.frustration <= 0) {
+        if (impact.mental >= 0) {
             energieValue = impact.energiePenality + 5;
-            if (impact.frustration < 0) { //additional bonus if frustration is going down
+            if (impact.mental > 0) { //additional bonus if mental is going up
                 energieValue += 5;
             }
         }
-        else { //no bonus if frustration is going up
+        else { //no bonus if mental is going up
             energieValue = impact.energiePenality;
         }
         $("#argEnonce").html(argument.enonce);
         $("#impactText").html(impact.text);
-        $("#frustrationValue").html(impact.frustration);
+        $("#mentalValue").html(impact.mental);
         $("#energieValue").html(energieValue);
-        $("#santeValue").html(impact.sante);
+        $("#santeValue").html(impact.physique);
         $("#equilibreAlimValue").html(impact.equilibreAlim);
 
         //reset colors
         let classes = ["border-left-danger", "border-left-success", "border-left-info", "text-danger", "text-success", "text-info"];
-        $("#frustrationCard").removeClass(classes);
+        $("#mentalCard").removeClass(classes);
         $("#energieCard").removeClass(classes);
         $("#santeCard").removeClass(classes);
         $("#equilibreAlimCard").removeClass(classes);
-        $("#frustrationText").removeClass(classes);
+        $("#mentalText").removeClass(classes);
         $("#energieText").removeClass(classes);
         $("#santeText").removeClass(classes);
         $("#equilibreAlimText").removeClass(classes);
 
         let bad = 0;
         //display color
-        if (impact.frustration > 0) {
+        if (impact.mental < 0) {
             bad++;
-            $("#frustrationCard").addClass("border-left-danger");
-            $("#frustrationText").addClass("text-danger");
+            $("#mentalCard").addClass("border-left-danger");
+            $("#mentalText").addClass("text-danger");
         };
-        if (impact.frustration < 0) {
-            $("#frustrationCard").addClass("border-left-success");
-            $("#frustrationText").addClass("text-success");
+        if (impact.mental > 0) {
+            $("#mentalCard").addClass("border-left-success");
+            $("#mentalText").addClass("text-success");
         };
-        if (impact.frustration == 0) {
-            $("#frustrationCard").addClass("border-left-info");
-            $("#frustrationText").addClass("text-info");
+        if (impact.mental == 0) {
+            $("#mentalCard").addClass("border-left-info");
+            $("#mentalText").addClass("text-info");
         };
         if (energieValue < 0) {
             $("#energieCard").addClass("border-left-danger");
@@ -90,16 +90,16 @@ class View {
             $("#energieCard").addClass("border-left-info");
             $("#energieText").addClass("text-info");
         };
-        if (impact.sante < 0) {
+        if (impact.physique < 0) {
             bad++;
             $("#santeCard").addClass("border-left-danger");
             $("#santeText").addClass("text-danger");
         };
-        if (impact.sante > 0) {
+        if (impact.physique > 0) {
             $("#santeCard").addClass("border-left-success");
             $("#santeText").addClass("text-success");
         };
-        if (impact.sante == 0) {
+        if (impact.physique == 0) {
             $("#santeCard").addClass("border-left-info");
             $("#santeText").addClass("text-info");
         };
@@ -149,18 +149,18 @@ class View {
      */
     updatePlayerInfo(player) {
         let classes = ["bg-success", "bg-warning", "bg-danger"];
-        $("#frustrationBar").removeClass(classes);
+        $("#mentalBar").removeClass(classes);
         $("#energieBar").removeClass(classes);
         $("#santeBar").removeClass(classes);
         $("#equilibreAlimBar").removeClass(classes);
-        if ($("#frustrationValue").text() < 0) {
-            $("#frustrationSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
+        if ($("#mentalValue").text() < 0) {
+            $("#mentalSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
         };
-        if ($("#frustrationValue").text() == 0) {
-            $("#frustrationSpan").html(`<i class="fas fa-grip-lines"></i> Stable.`);
+        if ($("#mentalValue").text() == 0) {
+            $("#mentalSpan").html(`<i class="fas fa-grip-lines"></i> Stable.`);
         };
-        if ($("#frustrationValue").text() > 0) {
-            $("#frustrationSpan").html(`<i class="fas fa-chevron-up"></i> En augmentation.`);
+        if ($("#mentalValue").text() > 0) {
+            $("#mentalSpan").html(`<i class="fas fa-chevron-up"></i> En augmentation.`);
         };
         if ($("#energieValue").text() < 0) {
             $("#energieSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
@@ -192,16 +192,16 @@ class View {
 
         let bad = 0;
         let good = 0;
-        if (player.frustration < 40) {
+        if (player.mental < 40) {
             good++;
-            $("#frustrationBar").addClass("bg-success").css({ width: player.frustration + '%' });
+            $("#mentalBar").addClass("bg-success").css({ width: player.mental + '%' });
         };
-        if (player.frustration >= 40 && player.frustration <= 60) {
-            $("#frustrationBar").addClass("bg-warning").css({ width: player.frustration + '%' });
+        if (player.mental >= 40 && player.mental <= 60) {
+            $("#mentalBar").addClass("bg-warning").css({ width: player.mental + '%' });
         };
-        if (player.frustration > 60) {
+        if (player.mental > 60) {
             bad++;
-            $("#frustrationBar").addClass("bg-danger").css({ width: player.frustration + '%' });
+            $("#mentalBar").addClass("bg-danger").css({ width: player.mental + '%' });
         };
         if (player.energie < 40) {
             bad++;
@@ -214,16 +214,16 @@ class View {
             good++;
             $("#energieBar").addClass("bg-success").css({ width: player.energie + '%' });
         };
-        if (player.sante < 40) {
+        if (player.physique < 40) {
             bad++;
-            $("#santeBar").addClass("bg-danger").css({ width: player.sante + '%' });
+            $("#santeBar").addClass("bg-danger").css({ width: player.physique + '%' });
         };
-        if (player.sante >= 40 && player.sante <= 60) {
-            $("#santeBar").addClass("bg-warning").css({ width: player.sante + '%' });
+        if (player.physique >= 40 && player.physique <= 60) {
+            $("#santeBar").addClass("bg-warning").css({ width: player.physique + '%' });
         };
-        if (player.sante > 60) {
+        if (player.physique > 60) {
             good++;
-            $("#santeBar").addClass("bg-success").css({ width: player.sante + '%' });
+            $("#santeBar").addClass("bg-success").css({ width: player.physique + '%' });
         };
         if (player.equilibreAlim < 40) {
             bad++;

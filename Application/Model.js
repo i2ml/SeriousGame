@@ -86,15 +86,15 @@ class Model {
     setDifficulty(difficulty) {
         if (difficulty == 'hard') {
             this.player.energie = 25;
-            this.player.frustration = 70;
+            this.player.mental = 70;
             this.player.equilibreAlim = 40;
-            this.player.sante = 30;
+            this.player.physique = 30;
         }
         if (difficulty == 'easy') {
             this.player.energie = 65;
-            this.player.frustration = 30;
+            this.player.mental = 30;
             this.player.equilibreAlim = 75;
-            this.player.sante = 70;
+            this.player.physique = 70;
         }
     }
 
