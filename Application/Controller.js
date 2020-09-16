@@ -40,6 +40,20 @@ $(document).on('click', 'input', function () {
     (first > 0 && second > 0) ? $("#valider").removeClass("disabled") : $("#valider").addClass("disabled");
 });
 
+/**
+ * change player values if game is set to hard
+ */
+$("#hard").click(function () {
+    app.model.setDifficulty('hard');
+})
+
+/**
+ * change player value if game is set to easy
+ */
+$("#easy").click(function () {
+    app.model.setDifficulty('easy');
+})
+
 /** 
  * écoute le click sur le bouton valider 
  */
