@@ -30,3 +30,8 @@
 .bigTitle {
 	min-width: 1145px;
 }
+
+.img-tuto {
+	max-width: 200px;
+	max-height: 160px;
+}

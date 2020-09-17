@@ -39,11 +39,90 @@
               <div class="col-12">
                 <div class="card o-hidden border-0 shadow-lg my-1">
                   <div class="card-body p-0">
-                    <div class="row">
+                    <div class="row m-5">
                       <h1 class="mx-auto">Comment jouer :</h1>
                     </div>
                     <div class="row">
-                      <h1 class="mx-auto">Comment jouer :</h1>
+                      <div class="col-7 px-5">
+                        <div class="text-center">
+                          <h2 class="mx-auto">Principes de base :</h2>
+                          <div class=" text-gray-900">
+                            <h4 class="m-3">
+                              - Les indications fournies par les deux équipes aident Arthur à faire <b>son
+                                choix.</b></h4>
+                            <h4 class="m-3"> - Les choix d'Arthur ont un impact sur son état de santé et son moral.
+                            </h4>
+                            <h5 class="m-3 alert alert-info">
+                              <i class="fa fa-info" aria-hidden="true"></i>
+                              Les informations sur son état sont disponibles sur la page "profil" disponible à tout
+                              instant du jeu.
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-5">
+                        <div class="card shadow mx-5 mt-n3">
+                          <div class="card-body">
+                            <h5 class="text-gray-900"><i class="fas fa-laugh fa-1x"></i>
+                              Bien-être moral<span id="moralSpan" class="float-right small"></span>
+                            </h5>
+                            <div class="progress progress-sm mb-4">
+                              <div id="moralBar" class="progress-bar bg-danger" role="progressbar" style="width: 20%"
+                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5 class=" text-gray-900"><i class="fas fa-bolt fa-1x"></i> Énergie<span id="energieSpan"
+                                class="float-right small"></span>
+                            </h5>
+                            <div class="progress progress-sm mb-4">
+                              <div id="energieBar" class="progress-bar bg-warning" role="progressbar" style="width: 40%"
+                                aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5 class="text-gray-900"><i class="fas fa-notes-medical fa-1x"></i>
+                              Bien-être physique<span id="santeSpan" class="float-right small"></span></h5>
+                            <div class="progress progress-sm mb-4">
+                              <div id="santeBar" class="progress-bae bg-success" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5 class="text-gray-900"><i class="fas fa-utensils fa-1x"></i> Équilibre alimentaire<span
+                                id="equilibreAlimSpan" class="float-right small"></span>
+                            </h5>
+                            <div class="progress progress-sm mb-4">
+                              <div id="equilibreAlimBar" class="progress-bar bg-success" role="progressbar"
+                                style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-7 text-gray-900">
+                        <div class="card shadow mb-4 mx-5">
+                          <div class="card-header py-3">
+                            <h5 class="m-0 font-weight-bold text-primary">Quelques conseils importants</h5>
+                          </div>
+                          <div class="card-body">
+                            <h4>Voilà quelques notions de base qui vous aideront à faire vos choix :</h4>
+                            <h4>
+                              <ul>
+                                <li>Le <b>moral</b> d’Arthur ne peut pas augmenter si il est en <b>mauvaise santé.</b>
+                                </li>
+                                <li>Arthur ne gagne pas <b>d'énergie</b> quand son <b>moral diminue.</b></li>
+                                <li>Chaque action nécessitant un effort coûtera à Arthur un peu <b>d'énergie</b></li>
+                              </ul>
+                            </h4>
+                            <h4>Attention aux jauges rouges !</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-5 mt-5">
+                        <div class=" row justify-content-center">
+                          <img class="img-fluid img-tuto" src="img\impacts\voiture.png" />
+                        </div>
+                        <h5 class="m-3 alert alert-primary"><i class="fa fa-exclamation-triangle"
+                            aria-hidden="true"></i>
+                          Attention ! Surveillez attentivement le profil de votre personnage, vous y trouverez des
+                          informations précieuses.</h5>
+                      </div>
                     </div>
                     <div class="row justify-content-center">
                       <a href="game.html">
