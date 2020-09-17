@@ -148,7 +148,8 @@ class View {
      * Display information about the player
      */
     updatePlayerInfo(player) {
-        let classes = ["bg-success", "bg-warning", "bg-danger"];
+        let classes = ["bg-success", "bg-warning", "bg-danger", "text-success", "text-warning", "text-danger"];
+        $("#note").removeClass(classes);
         $("#moralBar").removeClass(classes);
         $("#energieBar").removeClass(classes);
         $("#santeBar").removeClass(classes);
@@ -236,11 +237,22 @@ class View {
             good++;
             $("#equilibreAlimBar").addClass("bg-success").css({ width: player.equilibreAlim + '%' });
         };
-
         if (bad > 0) {
             $("#profilIllu").attr("src", "img/faces/Triste.png");
+            $("#note").addClass("text-danger");
+            $("#note").text("D");
         } else {
+            if (good >= 1) {
+                $("#note").text("B");
+            } else {
+                $("#note").addClass("text-warning");
+                $("#note").text("C");
+            }
             if (good >= 2) {
+                if (good == 4) {
+                    $("#note").addClass("text-success");
+                    $("#note").text("A");
+                }
                 $("#profilIllu").attr("src", "img/faces/Heureux.png");
             } else {
                 $("#profilIllu").attr("src", "img/faces/Normal.png");
