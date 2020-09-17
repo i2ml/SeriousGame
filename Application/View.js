@@ -36,47 +36,47 @@ class View {
 
         let energieValue;
         //display raw values
-        if (impact.mental >= 0) {
+        if (impact.moral >= 0) {
             energieValue = impact.energiePenality + 5;
-            if (impact.mental > 0) { //additional bonus if mental is going up
+            if (impact.moral > 0) { //additional bonus if moral is going up
                 energieValue += 5;
             }
         }
-        else { //no bonus if mental is going up
+        else { //no bonus if moral is going up
             energieValue = impact.energiePenality;
         }
         $("#argEnonce").html(argument.enonce);
         $("#impactText").html(impact.text);
-        $("#mentalValue").html(impact.mental);
+        $("#moralValue").html(impact.moral);
         $("#energieValue").html(energieValue);
         $("#santeValue").html(impact.physique);
         $("#equilibreAlimValue").html(impact.equilibreAlim);
 
         //reset colors
         let classes = ["border-left-danger", "border-left-success", "border-left-info", "text-danger", "text-success", "text-info"];
-        $("#mentalCard").removeClass(classes);
+        $("#moralCard").removeClass(classes);
         $("#energieCard").removeClass(classes);
         $("#santeCard").removeClass(classes);
         $("#equilibreAlimCard").removeClass(classes);
-        $("#mentalText").removeClass(classes);
+        $("#moralText").removeClass(classes);
         $("#energieText").removeClass(classes);
         $("#santeText").removeClass(classes);
         $("#equilibreAlimText").removeClass(classes);
 
         let bad = 0;
         //display color
-        if (impact.mental < 0) {
+        if (impact.moral < 0) {
             bad++;
-            $("#mentalCard").addClass("border-left-danger");
-            $("#mentalText").addClass("text-danger");
+            $("#moralCard").addClass("border-left-danger");
+            $("#moralText").addClass("text-danger");
         };
-        if (impact.mental > 0) {
-            $("#mentalCard").addClass("border-left-success");
-            $("#mentalText").addClass("text-success");
+        if (impact.moral > 0) {
+            $("#moralCard").addClass("border-left-success");
+            $("#moralText").addClass("text-success");
         };
-        if (impact.mental == 0) {
-            $("#mentalCard").addClass("border-left-info");
-            $("#mentalText").addClass("text-info");
+        if (impact.moral == 0) {
+            $("#moralCard").addClass("border-left-info");
+            $("#moralText").addClass("text-info");
         };
         if (energieValue < 0) {
             $("#energieCard").addClass("border-left-danger");
@@ -149,18 +149,18 @@ class View {
      */
     updatePlayerInfo(player) {
         let classes = ["bg-success", "bg-warning", "bg-danger"];
-        $("#mentalBar").removeClass(classes);
+        $("#moralBar").removeClass(classes);
         $("#energieBar").removeClass(classes);
         $("#santeBar").removeClass(classes);
         $("#equilibreAlimBar").removeClass(classes);
-        if ($("#mentalValue").text() < 0) {
-            $("#mentalSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
+        if ($("#moralValue").text() < 0) {
+            $("#moralSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
         };
-        if ($("#mentalValue").text() == 0) {
-            $("#mentalSpan").html(`<i class="fas fa-grip-lines"></i> Stable.`);
+        if ($("#moralValue").text() == 0) {
+            $("#moralSpan").html(`<i class="fas fa-grip-lines"></i> Stable.`);
         };
-        if ($("#mentalValue").text() > 0) {
-            $("#mentalSpan").html(`<i class="fas fa-chevron-up"></i> En augmentation.`);
+        if ($("#moralValue").text() > 0) {
+            $("#moralSpan").html(`<i class="fas fa-chevron-up"></i> En augmentation.`);
         };
         if ($("#energieValue").text() < 0) {
             $("#energieSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
@@ -192,16 +192,16 @@ class View {
 
         let bad = 0;
         let good = 0;
-        if (player.mental < 40) {
+        if (player.moral < 40) {
             bad++;
-            $("#mentalBar").addClass("bg-danger").css({ width: player.mental + '%' });
+            $("#moralBar").addClass("bg-danger").css({ width: player.moral + '%' });
         };
-        if (player.mental >= 40 && player.mental <= 60) {
-            $("#mentalBar").addClass("bg-warning").css({ width: player.mental + '%' });
+        if (player.moral >= 40 && player.moral <= 60) {
+            $("#moralBar").addClass("bg-warning").css({ width: player.moral + '%' });
         };
-        if (player.mental > 60) {
+        if (player.moral > 60) {
             good++;
-            $("#mentalBar").addClass("bg-success").css({ width: player.mental + '%' });
+            $("#moralBar").addClass("bg-success").css({ width: player.moral + '%' });
         };
         if (player.energie < 40) {
             bad++;
