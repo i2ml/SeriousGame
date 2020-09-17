@@ -40,6 +40,20 @@ $(document).on('click', 'input', function () {
     (first > 0 && second > 0) ? $("#valider").removeClass("disabled") : $("#valider").addClass("disabled");
 });
 
+$(document).on('click', '.border-primary', function () {
+    const cadres = $(".border-primary");
+    for (const key in cadres) {
+        if (cadres.hasOwnProperty(key)) {
+            const element = cadres[key];
+            if ($(element).find("input").filter(":checked").length > 0) {
+                $(element).addClass("border")
+            } else {
+                $(element).removeClass("border")
+            }
+        }
+    }
+});
+
 /**
  * change player values if game is set to hard
  */
