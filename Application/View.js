@@ -10,7 +10,7 @@ class View {
         $("#mainBar").css({ width: progress + '%' });
         $(".border-primary").removeClass("border");
         $("#enonce").html(situation.enonce);
-        $("#situationIllu").attr("src", "img/situations/" + situation.id + ".png");
+        $(".situationIllu").attr("src", "img/situations/" + situation.id + ".png");
         $("input").prop("checked", false);
         for (const argumentId in situation.arguments) {
             $(".argumentList" + argumentId).empty();

@@ -804,7 +804,7 @@ var situations =
                 "enonce": "Il ne prend qu’un café (sucré), les goûters sont pour les enfants.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Régulièrement, les clients du personnage lui proposent une viennoiserie. Se priver de collation va provoquer chez le personnage un sentiment de frustration. Une prise de sucre isoler va impacter fortement sa glycémie poussant son corps se réguler. De plus, il risque de faire face à une hypoglycémie réactionnelle provoquant une petite faim quelques heures plus tard. Son équilibre alimentaire et sa santé seront impactés.",
+                    "text": "Régulièrement, les clients du personnage lui proposent une viennoiserie. Se priver de collation va provoquer chez le personnage un sentiment de frustration. Une prise de sucre isolée va impacter fortement sa glycémie poussant son corps se réguler. De plus, il risque de faire face à une hypoglycémie réactionnelle provoquant une petite faim quelques heures plus tard. Son équilibre alimentaire et sa santé seront impactés.",
                     "energiePenality": 0,
                     "moral": -5,
                     "equilibreAlim": -5,
