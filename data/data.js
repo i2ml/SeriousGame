@@ -572,13 +572,13 @@ var situations =
         }
     },
     7: {
-        "enonce": "Arthur est dans son supermarché et doit acheter du jambon cuit pour les amis qui viennent dîner chez lui le soir même. Malheureusement il ne sait pas quel jambon choisir et ne parviens pas à lire les étiquettes à cause de sa conjonctivite...",
+        "enonce": "Arthur est dans son supermarché et achète du steak haché pour dîner. A cause de sa conjonctivite, il n’arrive pas à lire correctement les étiquettes et ne sait pas lequel choisir...",
         "arguments": {
             "1": {
-                "enonce": "Il sort son téléphone avec une appli de type yuka ou open food fact..",
+                "enonce": "Il sort son téléphone avec une appli de type Yuka ou Open food fact...",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Les applications de nutrition peuvent apporter des informations intéressantes mais il faut tout de même garder un esprit critique. Le jambon est un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces applications permettent la mise en avant la présence d’additifs dangereux pour la santé mais certains autres paramètres peuvent être mal interprétés. Le score donné au produit est déterminé par l’application elle-même, la part de point accorder à la composition nutritionnelle, au label, ou aux présences d’additifs est donc variable il faut rester attentifs. De plus il faut replacer les notions de quantité et d’utilisation dans l’importance que l’on accorde au score.",
+                    "text": "Les applications de nutrition peuvent apporter des informations intéressantes mais il faut tout de même garder un esprit critique. Le steak haché est un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces applications permettent la mise en avant la présence d’additifs dangereux pour la santé mais certains autres paramètres peuvent être mal interprétés. Le score donné au produit est déterminé par l’application elle-même, la part de point accorder à la composition nutritionnelle, au label, ou aux présences d’additifs est donc variable il faut rester attentifs. De plus il faut replacer les notions de quantité et d’utilisation dans l’importance que l’on accorde au score.",
                     "energiePenality": 0,
                     "moral": -5,
                     "equilibreAlim": 0,
@@ -593,10 +593,10 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "Il prend le jambon bio pour être sûr de la qualité du produit.",
+                "enonce": "Il prend un steak haché bio pour être sûr de la qualité du produit.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage ne sait pas quel jambon choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. Prendre le jambon bio, permet au personnage d’avoir un produit de qualité. Les produits bio sont donc de meilleure qualité car ils doivent respecter une règlementation plus stricte qui engage les producteurs et protège les consommateurs sur la qualité des produits. Le jambon reste un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux.",
+                    "text": "Le personnage ne sait pas quel steak haché choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. Prendre le steak haché bio, permet au personnage d’avoir un produit de qualité. Les produits bio sont donc de meilleure qualité car ils doivent respecter une règlementation plus stricte qui engage les producteurs et protège les consommateurs sur la qualité des produits. Le steak haché reste un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux.",
                     "energiePenality": 0,
                     "moral": 0,
                     "equilibreAlim": 0,
@@ -611,10 +611,10 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "Il prend le jambon plus cher pour être sûr de la qualité du produit.",
+                "enonce": "Il prend un steak haché Label Rouge, gage de qualité.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage ne sait pas quel jambon choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. Prendre le jambon le plus cher n’est pas forcément gage de qualité. L’indicateur de santé va donc diminuer. Le jambon reste un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux.",
+                    "text": "Le personnage ne sait pas quel steak haché choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. Prendre le steak haché le plus cher n’est pas forcément gage de qualité. L’indicateur de santé va donc diminuer. Le steak haché reste un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux.",
                     "energiePenality": 0,
                     "moral": 0,
                     "equilibreAlim": 0,
@@ -629,10 +629,10 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "Il prend le premier prix, de toute façon cela ne change rien.",
+                "enonce": "Il prend un haché Charol.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Le personnage ne sait pas quel jambon choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. En prenant le jambon premier prix, le personnage aura probablement un produit de moins bonne qualité, avec une quantité plus importante d’additifs. L’indicateur santé va donc diminuer. Le jambon reste un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux. Il est donc important de faire attention à la qualité du produit afin qu’il y ait le moins d’additifs possible.",
+                    "text": "Le personnage ne sait pas quel steak haché choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. En prenant le steak haché premier prix, le personnage aura probablement un produit de moins bonne qualité, avec une quantité plus importante d’additifs. L’indicateur santé va donc diminuer. Le steak haché reste un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux. Il est donc important de faire attention à la qualité du produit afin qu’il y ait le moins d’additifs possible.",
                     "energiePenality": 0,
                     "moral": 0,
                     "equilibreAlim": 0,
@@ -647,17 +647,17 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "Il se rend à la boucherie de son supermarché et achète son jambon à la découpe.",
+                "enonce": "Il n’y voit vraiment rien et décide d’aller chez son boucher qui saura le conseiller.",
                 "energieNeeded": 50,
                 "success": {
-                    "text": "Le personnage ne sait pas quel jambon choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. Acheter son jambon à la découpe en boucherie permet au personnage d’être mieux conseillé et d’avoir un produit de qualité, mais cela demande un peu d’énergie. Le jambon est un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux. Excellent choix !",
+                    "text": "Le personnage ne sait pas quel steak haché choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. Acheter son steak haché à la découpe en boucherie permet au personnage d’être mieux conseillé et d’avoir un produit de qualité, mais cela demande un peu d’énergie. Le steak haché est un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux. Excellent choix !",
                     "energiePenality": -10,
                     "moral": 5,
                     "equilibreAlim": 5,
                     "physique": 5
                 },
                 "failure": {
-                    "text": "Le personnage ne sait pas quel jambon choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. Acheter son jambon à la découpe en boucherie permet au personnage d’être mieux conseillé et d’avoir un produit de qualité, mais cela demande un peu d’énergie et de motivation. Arthur n'est pas très en forme en ce moment et décide de se rabattre sur le premier prix. Le jambon est un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux.  Il est donc important de faire attention à la qualité du produit afin qu’il y ait le moins d’additifs possible.",
+                    "text": "Le personnage ne sait pas quel steak haché choisir et ne parvient pas à lire les étiquettes à cause de sa conjonctivite. Acheter son steak haché à la découpe en boucherie permet au personnage d’être mieux conseillé et d’avoir un produit de qualité, mais cela demande un peu d’énergie et de motivation. Arthur n'est pas très en forme en ce moment et décide de se rabattre sur le premier prix. Le steak haché est un produit ultra-transformé dans lequel on peut retrouver des additifs qui permettent de conserver le produit, de préserver sa couleur ou sa texture. Ces composés, à long terme peuvent impacter la santé, il faut donc préférer les produits artisanaux.  Il est donc important de faire attention à la qualité du produit afin qu’il y ait le moins d’additifs possible.",
                     "energiePenality": -10,
                     "moral": -5,
                     "equilibreAlim": 0,
