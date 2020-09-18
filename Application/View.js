@@ -8,6 +8,7 @@ class View {
         const progress = (situation.id) * (100 / 12);
         console.log("progress is :" + progress)
         $("#mainBar").css({ width: progress + '%' });
+        $(".border-primary").removeClass("border");
         $("#enonce").html(situation.enonce);
         $("#situationIllu").attr("src", "img/situations/" + situation.id + ".png");
         $("input").prop("checked", false);
