@@ -382,10 +382,10 @@ var situations =
         }
     },
     5: {
-        "enonce": "Arthur se trouve chez son poissonnier pour prendre du poisson, il hésite entre plusieurs options...",
+        "enonce": "Arthur se rend chez son poissonnier, il hésite entre plusieurs options ...",
         "arguments": {
             "1": {
-                "enonce": "Un peu de saumon il parait que c’est riche en oméga 3.",
+                "enonce": "Un peu de saumon, il parait que c’est riche en oméga 3.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. Le saumon est un poisson riche en oméga 3. Ces nutriments jouent un rôle essentiel dans le développement et l’entretien du système nerveux agissant ainsi sur la mémoire. De plus, l’apport en oméga 3 est insuffisant dans la population française, il est donc intéressant d’inclure ce type de produit dans notre alimentation. Toutefois, le saumon comme le thon et les autres gros « poissons gras » son particulièrement exposé aux polluants et métaux lourds. Si la consommation et trop fréquente elle impactera la santé. Il faudra préférer les petit poisson type maquereau ou sardine tout aussi riche en Omega 3 mais moins exposés aux xénobiotiques.",
@@ -439,7 +439,7 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "une sol meunière avec double dose de beurre.",
+                "enonce": "Une sole meunière avec double dose de beurre, ça c’est bien gourmand.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. La sole cuisinée façon meunière permet au personnage d’éviter la frustration. En revanche, une consommation excessive de beurre peut être néfaste car comme tous les produits d’origine animale, ils contiennent une quantité importante d’acides gras saturés. L’indicateur santé va donc être impacté.",
@@ -457,7 +457,7 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "une papillotte aux petit légume du soleil.",
+                "enonce": "Une papillote de daurade aux petit légume du soleil, ça c’est le Sud.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se questionne sur le choix à faire chez son poissonnier. Choisir la papillote aux petits légumes va contribuer à un bon équilibre alimentaire et une bonne santé. En effet, ce mode de cuisson limite l’ajout excessif de matières grasses et préserve la qualité des aliments.",
@@ -956,7 +956,7 @@ var situations =
         "arguments": {
             "1": {
                 "enonce": "A partir de maintenant, Arthur ira au travail à vélo ou à pied (10/30 minutes de trajet)",
-                "energieNeeded": 50,
+                "energieNeeded": 30,
                 "success": {
                     "text": "Le personnage souhaite améliorer sa condition physique. Aller au travail à vélo améliore nettement la santé du personnage tout en nécessitant peu d’énergie. En effet, l’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière.",
                     "energiePenality": -10,
@@ -977,8 +977,8 @@ var situations =
                 "energieNeeded": 50,
                 "success": {
                     "text": "Le personnage souhaite améliorer sa condition physique. Aller à la salle de sport 3h/ semaine nécessite beaucoup d’énergie, ce qui impacte sur la frustration. En revanche, l’indicateur de santé va fortement augmenter. En effet, l’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière.",
-                    "energiePenality": -20,
-                    "moral": -10,
+                    "energiePenality": -30,
+                    "moral": 0,
                     "equilibreAlim": 0,
                     "physique": 10
                 },
@@ -995,14 +995,14 @@ var situations =
                 "energieNeeded": 50,
                 "success": {
                     "text": "Le personnage souhaite améliorer sa condition physique. Faire un footing le samedi matin permet au personnage d’améliorer sa santé. En effet, l’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière mais cela demande beaucoup d’énergie. L’indicateur de frustration va donc augmenter.",
-                    "energiePenality": -30,
-                    "moral": -5,
+                    "energiePenality": -20,
+                    "moral": 5,
                     "equilibreAlim": 0,
                     "physique": 5
                 },
                 "failure": {
                     "text": "Le personnage souhaite améliorer sa condition physique. L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière. Malheureusement, le personnage n’a plus assez d’énergie pour réaliser une activité physique. Sa santé va donc être fortement impactée.",
-                    "energiePenality": -30,
+                    "energiePenality": -20,
                     "moral": -10,
                     "equilibreAlim": 0,
                     "physique": -10
@@ -1010,11 +1010,11 @@ var situations =
             },
             "4": {
                 "enonce": "Arthur prend désormais les escalier et favorise la marche quand il le peut.",
-                "energieNeeded": 50,
+                "energieNeeded": 25,
                 "success": {
                     "text": "Le personnage souhaite améliorer sa condition physique. Prendre les escaliers et favoriser la marche quand il le peut, permet au personnage d’améliorer sa santé tout en nécessitant très peu d’énergie et sans affecter sa frustration. L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière.",
                     "energiePenality": -10,
-                    "moral": 5,
+                    "moral": 0,
                     "equilibreAlim": 0,
                     "physique": 5
                 },
@@ -1032,7 +1032,7 @@ var situations =
                 "success": {
                     "text": "Le personnage souhaite améliorer sa condition physique. L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière. En ne faisant aucune activité, la santé du personnage est fortement impactée.",
                     "energiePenality": 0,
-                    "moral": 5,
+                    "moral": 0,
                     "equilibreAlim": 0,
                     "physique": -10
                 },
@@ -1047,10 +1047,10 @@ var situations =
         }
     },
     12: {
-        "enonce": "En hiver Arthur se rend au marché, quel panier choisis t’il pour ses repas de la semaine ?",
+        "enonce": "En hiver Arthur se rend au marché. Quel panier choisit-t-il pour ses repas de la semaine ?",
         "arguments": {
             "1": {
-                "enonce": "carotte, oignon, brocolis, choux rouge, courge, butternut, panais, betterave, poireau.",
+                "enonce": "Carottes, oignons, brocolis, choux rouge, butternut, panais, betterave, poireaux, pommes, orange, poires.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se rend au marché pendant l’hiver. Choisir des légumes de saisons va donc lui permettre d’avoir des produits de meilleure qualité nutritionnelle et gustative. En effet, les produits de saison sont plus riches en fibres et micronutriments. Récoltés à maturité, ils possèdent un goût plus prononcé. Deux portions de fruits et trois portions de légumes nécessaire par jour. Ces produits vont donc permettre de satisfaire les besoins métaboliques de notre personnage. Les indicateurs santé et équilibre alimentaire vont donc nettement augmenter.",
@@ -1068,7 +1068,7 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "tomate, aubergine, courgette, melon, fraise.",
+                "enonce": "Tomates, aubergines, courgettes, avocats, cébettes, basilic, melon, fraise, figues.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se rend au marché pendant l’hiver. Les fruits et légumes choisies ne sont pas de saison mais sont des produits qu’il affectionne particulièrement. L’indicateur de frustration va donc diminuer. Ces produits restent bons pour l’équilibre alimentaire et la santé même si leurs propriétés nutritionnelles ne sont pas à leur optimum. De plus, les produits hors saison, ont un goût beaucoup moins marqué. Toutefois, ces produits suffiront à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour.",
@@ -1086,7 +1086,7 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "Haricot vert, petit pois, épinard, courgette, poivron.",
+                "enonce": "Haricots verts, petits pois, épinards, courgettes, poivrons, fenouil, mangues, ananas, fruits rouges.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se rend au marché pendant l’hiver. Les légumes choisis ne sont pas de saison. Ces produits restent bons pour l’équilibre alimentaire et la santé même si leurs propriétés nutritionnelles ne sont pas à leur maximum. De plus, les produits hors saison, ont un goût beaucoup moins marqué. Ces produits suffiront à combler les recommandations de 3 portions de légumes par jour mais pas les fruits.... Par conséquent, il y aura un impact sur son équilibre alimentaire.",
@@ -1104,7 +1104,7 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "pomme de terre, oignon, échalote et champignon",
+                "enonce": "Pommes de terre, oignons, échalotes, champignons.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage se rend au marché pendant l’hiver. Ces produits sont de saison mais considérés comme des garnitures aromatiques (oignon, échalote). Bien qu’elle soit vendue chez le maraicher, la pomme de terre est un féculent.Par conséquent, le panier de la semaine ne contient pas de réels légumes. Ces produits ne suffiront pas à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour. L’indicateur équilibre alimentaire va donc diminuer",
@@ -1122,7 +1122,7 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "pfff la flemme, je prendrais des légume en conserve quand j'irai au supermarché.",
+                "enonce": "Pfff la flemme, je prendrai des légumes en conserve quand j'irai au supermarché.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Les légumes frais sont à privilégier afin d’aider le personnage à couvrir au maximum ses besoins en vitamines et minéraux. En effet, lors de la mise en conserve des légumes, la chaleur du processus provoque une perte pratiquement totale des vitamines thermosensible. De plus, les minéraux contenus dans les aliments se diffuse dans l’eau, et sont donc évacuer lors de l’égouttage. Ces produits ne suffiront donc pas à combler les recommandations notamment en vitamines et minéraux. Les indicateurs santé et équilibre alimentaire vont donc nettement diminuer.",
