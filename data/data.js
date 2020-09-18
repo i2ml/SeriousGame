@@ -477,10 +477,10 @@ var situations =
         }
     },
     6: {
-        "enonce": "Arthur réalise des pommes de terres sautées, quelle matière grasse va-t-il utiliser ?",
+        "enonce": "Ce soir c’est pomme de terre sautées ! Quelle matière grasse utiliser ?",
         "arguments": {
             "1": {
-                "enonce": "Beurre",
+                "enonce": "Du beurre, parce que c’est bon.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Il s’agit d’une cuisson à haute température le beurre, matière grasse issue du lait, contient des traces restantes de protéines. Ces éléments vont bruler à la cuisson et former des composés cancérigènes. Les indicateurs santé et équilibre alimentaire vont donc être impactés.",
@@ -498,7 +498,7 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "Huile d’arachide.",
+                "enonce": "De l’huile d’arachide, mais c’est quand même la sienne",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Allergique à l’arachide, s’il choisit d’utiliser cette huile il s’expose au risque de quelques protéines restées en suspens. Afin d’éviter les problèmes de santé il existe des alternatives.",
@@ -516,7 +516,7 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "Huile d’olive extra.",
+                "enonce": "De l’huile d’olive extra, parce que c’est extra.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. L’huile d’olive extra est composée d’acide gras mono insaturé, excellent pour la santé en utilisation à basse température, ils sont inadaptés à une cuisson sautée. De plus, l’huile extra est peu raffinée, une cuisson forte entraine la formation de composé cancérigène en brulant. L’huile extra est parfaite pour la salade mais pour les cuissons préférez une huile raffinée.",
@@ -534,7 +534,7 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "Huile de tournesol raffinée bio.",
+                "enonce": "De l’huile de tournesol raffinée bio, parce que c’est raffiné.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Utiliser l’huile de tournesol raffinée bio va permettre aux indicateurs santé et équilibre alimentaire d’augmenter. En effet, le raffinage permet d’éliminer les impuretés dans l’huile limitant ainsi la formation de composes cancérigène. De plus le gras captant les polluant volatile une huile bio préserve le personnage de leur exposition.",
@@ -552,7 +552,7 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "Huile de tournesol bio non raffinée.",
+                "enonce": "De l’huile de tournesol non raffinée bio, le raffinement c’est pas son truc.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage hésite sur le choix de la matière grasse à utiliser pour réaliser des pommes de terre sautées. Utiliser l’huile de tournesol non raffinée bio va permettre à l’indicateur santé d’augmenter. Cette huile est bio, le gras captant les polluant volatile une huile bio préserve le personnage de leur exposition. En revanche, l’huile est non raffinée or le raffinage permet d’éliminer les impuretés de l’huile limitant ainsi la formation de composes cancérigène.",
