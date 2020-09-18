@@ -192,17 +192,17 @@ var situations =
         }
     },
     3: {
-        "enonce": "Arthur se rend au supermarché proche de chez lui, passant devant le rayon il se rappelle le petit-déjeuner que lui préparer sa mère un petit suisse avec du miel, un fruit, une infusion verveine et une tartine de confiture . Nostalgique de cette époque il se demande comment refaire ce petit-déjeuner sans faire face à des inconforts digestifs…",
+        "enonce": "Arthur souhaite améliorer son petit-déjeuner. Sa diététicienne lui a conseillé : un verre de lait, un fruit et une tartine de pain complet avec un petit peu de beurre et de confiture. Connaissant ses inconforts digestifs…",
         "arguments": {
             "1": {
-                "enonce": "Pas de yaourt au petit-déjeuner, le jeu n’en vaut pas la chandelle.",
+                "enonce": "Pas de lait au petit-déjeuner, le jeu n’en vaut pas la chandelle.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage est nostalgique de son petit-déjeuner d’enfance mais étant sensible au lait, il veut éviter de faire face à des inconforts digestifs. Le priver de yaourt va donc augmenter sa frustration, mais il ne subira aucun inconfort digestif ce qui n’impactera pas sur sa santé.",
                     "energiePenality": 0,
-                    "moral": -10,
+                    "moral": -5,
                     "equilibreAlim": -5,
-                    "physique": 0
+                    "physique": -5
                 },
                 "failure": {
                     "text": "Issue impossible",
@@ -213,13 +213,13 @@ var situations =
                 }
             },
             "2": {
-                "enonce": "Tant pis pour les inconfort, un pack de petits suisses comme à l’époque.",
+                "enonce": "Tant pis pour les inconforts, il conserve le verre de lait.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage est nostalgique de son petit-déjeuner d’enfance. Notre personnage étant sensible au lait, la prise d’un petit suisse, va provoquer des inconforts digestifs qui affectes sa santé. En revanche sa frustration va nettement diminuer car il va satisfaire son envie.",
                     "energiePenality": 0,
                     "moral": 10,
-                    "equilibreAlim": 0,
+                    "equilibreAlim": 5,
                     "physique": -10
                 },
                 "failure": {
@@ -231,12 +231,12 @@ var situations =
                 }
             },
             "3": {
-                "enonce": "Il a lu dans un article que le lait de brebis était plus simple à digérer, il va donc tenter d’adapter sa recette avec un yaourt au lait de brebis.",
+                "enonce": "La diététicienne lui apprend que le lait de brebis est plus simple à digérer, il suit ses conseils.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Le personnage est nostalgique de son petit-déjeuner d’enfance mais étant sensible au lait, il vaut mieux éviter de faire face à des inconforts digestifs. Adapter sa recette avec un aliment inconnu va donc lui demander de l'energie. Le lait de brebis lui permettra néanmoins de ne pas faire face à des inconforts digestifs. Ainsi, les indicateurs frustration, santé et équilibre alimentaire resterons donc corrects.",
-                    "energiePenality": -25,
-                    "moral": 0,
+                    "energiePenality": 0,
+                    "moral": -5,
                     "equilibreAlim": 5,
                     "physique": 5
                 },
@@ -249,11 +249,11 @@ var situations =
                 }
             },
             "4": {
-                "enonce": "Ce même article présenter les bénéfices sur la digestibilité  d’une consommation de produits issus du lait de montagne.",
+                "enonce": "La diététicienne l’informe également que le lait de montagne et le yaourt sont plus digestes, il suit ses conseils.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Arthur est nostalgique de son petit-déjeuner d’enfance mais étant sensible au lait, il veut éviter de faire face à des inconforts digestifs. Adapter sa recette avec un produit issu du lait de montagne plus digeste que le lait des près va donc lui demander un peu de energie mais cela lui permettra de ne pas faire face à des inconforts digestifs. Et ainsi de diminuer sa frustration, et d’augmenter les indicateurs santé et équilibre alimentaire.",
-                    "energiePenality": -20,
+                    "energiePenality": -10,
                     "moral": 5,
                     "equilibreAlim": 5,
                     "physique": 5
@@ -267,14 +267,14 @@ var situations =
                 }
             },
             "5": {
-                "enonce": "Dommage pour la nostalgie il y a d’autre produit laitiers, je mangerai du fromage.",
+                "enonce": "Il s’oriente sur du fromage.",
                 "energieNeeded": 0,
                 "success": {
                     "text": "Arthur est nostalgique de son petit-déjeuner d’enfance mais étant sensible au lait, il veut éviter de faire face à des inconforts digestifs. Remplacer son petit-suisse par du fromage va lui permettre de ne pas être atteint d’inconforts digestifs, mais sa frustration va d’autant plus augmenter de ne pas avoir pu répondre à ses envies.",
-                    "energiePenality": 0,
-                    "moral": -5,
-                    "equilibreAlim": 5,
-                    "physique": 5
+                    "energiePenality": -5,
+                    "moral": 0,
+                    "equilibreAlim": 0,
+                    "physique": -5
                 },
                 "failure": {
                     "text": "Issue impossible",
