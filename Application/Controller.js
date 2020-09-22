@@ -14,7 +14,8 @@ class Controller {
 
 let app = new Controller(new Model(), new View());
 app.startGame();
-$('#optionsModal').modal('show');
+
+$('#teamnameModal').modal('show');
 
 /**
  * écoute le click sur le bouton voir le profil
@@ -22,6 +23,17 @@ $('#optionsModal').modal('show');
 $("#voirProfil").click(function () {
     app.view.updatePlayerInfo(app.model.player);
 });
+
+/**
+ * écoute le click sur le bouton de fermeture de l'écran du nom des équipes
+ */
+$("#nameSelected").click(function () {
+    $('#optionsModal').modal('show');
+    $('#nameMoral').html($('#moralName').val())
+    $('#nameEquilibre').html($('#equilibreName').val())
+});
+
+
 
 /**
  * Désactive le bouton valider si les choix n'ont pas été fait
