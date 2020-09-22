@@ -4,7 +4,7 @@
 
 # SeriousGame
 
-Ce projet, s'inscrit dans un objectif de prévention en santé publique et prend la forme d'un serious-game ayant pour objectif l'apprentissage du bon comportement aliemntaire de manière ludique. Ce jeu, conçu avec un diététicien, sera utilisé lors d'animations afin d'accompagner les acteurs du vieillissement sur le thème de la nutrition. Les conseils nutritionnels fournis par le jeu sont adaptés à un public âgé de 50 ans et plus. Le jeu a été co-construit en collaboration avec les habitants de la résidence seniors Domitys à Nîmes.
+Ce projet, s'inscrit dans un objectif de prévention en santé publique et prend la forme d'un serious-game ayant pour objectif l'apprentissage du bon comportement alimentaire de manière ludique. Ce jeu, conçu avec un diététicien, sera utilisé lors d'animations afin d'accompagner les acteurs du vieillissement sur le thème de la nutrition. Les conseils nutritionnels fournis par le jeu sont adaptés à un public âgé de 50 ans et plus. Le jeu a été co-construit en collaboration avec les habitants de la résidence seniors Domitys à Nîmes.
 
 [![](https://img.shields.io/github/stars/i2ml/SeriousGame.svg?label=Stars&style=social)](https://github.com/i2ml/SeriousGame)
 
