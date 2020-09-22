@@ -37,6 +37,12 @@ $(document).on('click', 'input', function () {
             }
         }
     }
+    if (app.model.moralIsLocked()) {
+        second = 1;
+    }
+    if (app.model.equilibreIsLocked()) {
+        first = 1;
+    }
     (first > 0 && second > 0) ? $("#valider").removeClass("disabled") : $("#valider").addClass("disabled");
 });
 
