@@ -10,7 +10,7 @@ Ce projet, s'inscrit dans un objectif de prévention en santé publique et prend
 
 ## Comment jouer
 
-Le jeu se joue par équipe. Deux équipes guident le personnage dans ses choix sous les directive d'un maître du jeu qui peut s'appuyer sur le jeu pour transmettre des conseils supplémentaires. Nous mettons à la disposition du maitre du jeu, un guide complet pour le guider dans sa tâche.
+Le jeu se joue par équipe. Deux équipes guident le personnage dans ses choix sous les directives d'un maître du jeu qui peut s'appuyer sur le jeu pour transmettre des conseils supplémentaires. Nous mettons à la disposition du maitre du jeu, un guide complet pour l'aider dans sa tâche.
 
 Le guide est disponible en suivant ce lien : https://fondation-i2ml.gitbook.io/seriousgame-nutrition/
 
