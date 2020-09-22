@@ -29,4 +29,28 @@ class Player {
         }
     }
 
+    /**
+     * get the points of a player if close to 0 , the player is balanced
+     */
+    getPoints() {
+        let points = 0;
+        if (this.energie >= 40)
+            points++;
+        if (this.energie >= 60)
+            points++;
+        if (this.moral >= 40)
+            points++;
+        if (this.moral >= 60)
+            points++;
+        if (this.equilibreAlim >= 40)
+            points--;
+        if (this.equilibreAlim >= 60)
+            points--;
+        if (this.physique >= 40)
+            points--;
+        if (this.physique >= 60)
+            points--;
+        return points;
+    }
+
 }
