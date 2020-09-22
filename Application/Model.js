@@ -46,6 +46,25 @@ class Model {
     }
 
     /**
+     * Rend le controle à l'équipe ene difficulté
+     */
+    disableInputs() {
+        if (this.player.getPoints() > 1) {
+            //la team équilibre alim est dans le mal
+            $(".moralInput").attr("disabled", true)
+        } else {
+            $(".moralInput").attr("disabled", false)
+        }
+        if (this.player.getPoints() < 1) {
+            //la team moral alim est dans le mal
+            $(".equilibreInput").attr("disabled", true)
+        } else {
+            $(".equilibreInput").attr("disabled", false)
+        }
+    }
+
+
+    /**
      * Choisi aléatoirement un argument parmis ceux selectionnés.
      */
     choseFinalArgumentId() {
@@ -77,6 +96,7 @@ class Model {
         }
         this.player.applyStats(impact);
         this.updateChart();
+        this.disableInputs();
         return impact;
     }
 
