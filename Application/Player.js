@@ -36,19 +36,19 @@ class Player {
         let points = 0;
         if (this.energie >= 40)
             points++;
-        if (this.energie >= 60)
+        if (this.energie > 60)
             points++;
         if (this.moral >= 40)
             points++;
-        if (this.moral >= 60)
+        if (this.moral > 60)
             points++;
         if (this.equilibreAlim >= 40)
             points--;
-        if (this.equilibreAlim >= 60)
+        if (this.equilibreAlim > 60)
             points--;
         if (this.physique >= 40)
             points--;
-        if (this.physique >= 60)
+        if (this.physique > 60)
             points--;
         return points;
     }
