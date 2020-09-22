@@ -50,7 +50,9 @@ class Player {
             points--;
         if (this.physique > 60)
             points--;
+        console.log(this, points)
         return points;
+
     }
 
 }

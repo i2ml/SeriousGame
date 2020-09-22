@@ -55,7 +55,7 @@ class Model {
         } else {
             $(".moralInput").attr("disabled", false)
         }
-        if (this.player.getPoints() < 1) {
+        if (this.player.getPoints() < -1) {
             //la team moral alim est dans le mal
             $(".equilibreInput").attr("disabled", true)
         } else {
@@ -63,6 +63,19 @@ class Model {
         }
     }
 
+    /**
+     * Renvoi vrai si l'équipe équilibre est bloquée
+     */
+    equilibreIsLocked() {
+        return $(".equilibreInput").filter(":disabled").length > 2
+    }
+
+    /**
+     * Revoi vrai si l'équipe moral est bloquée
+     */
+    moralIsLocked() {
+        return $(".moralInput").filter(":disabled").length > 2
+    }
 
     /**
      * Choisi aléatoirement un argument parmis ceux selectionnés.
