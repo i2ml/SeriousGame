@@ -47,20 +47,20 @@
                     <img src="img\situations\1.png" class="situationIllu situationIlluTop" />
                   </div>
                   <div class="col-9 col-xl-12">
-                    <div class="text-center mt-5">
-                      <h1 id="enonce" class="h3 text-gray-900 mb-4 font-weight-bold">énoncé</h1>
+                    <div class="text-center">
+                      <h1 id=" enonce" class="text-gray-900 mb-4 font-weight-bold">énoncé</h1>
                     </div>
                   </div>
                 </div>
                 <div class="row mt-3">
                   <div class="col-3">
-                    <h1 class="h5 text-gray-900 mx-5">Fitness</h1>
+                    <h3 id="nameMoral" class=" mx-5 text-primary">Moral</h3>
                   </div>
                   <div class="col-6">
 
                   </div>
                   <div class="col-3">
-                    <h1 class="h5 text-gray-900 mx-5">Gourmandise</h1>
+                    <h3 id="nameEquilibre" class=" mx-5 text-primary">Equilibre</h3>
                   </div>
                 </div>
                 <div class="card shadow m-2">
@@ -379,6 +379,124 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal teamname -->
+<div class="modal" id="teamnameModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container-fluid">
+          <!-- Outer Row -->
+          <div class="row m-3">
+            <h1 class="mx-auto text-primary"><b>Présentation d'Arthur et choix des noms d'équipe</b>
+            </h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 text-gray-900">
+              <div class="card o-hidden border-0 shadow-lg my-1">
+                <div class="card-body p-0">
+                  <div class="row pt-5">
+                    <div class="col-xl-3 col-4">
+                      <div class="row m-3">
+                        <h2 class="mx-auto">Equipe "Moral"
+                        </h2>
+                      </div>
+                      <div class="card shadow m-5 ">
+                        <div class="card-body">
+                          <h5 class="text-gray-900"><i class="fas fa-laugh fa-1x"></i>
+                            Bien-être moral<span id="moralSpan" class="float-right small"></span>
+                          </h5>
+                          <div class="progress progress-sm mb-4">
+                            <div id="moralBar" class="progress-bar bg-warning" role="progressbar" style="width: 50%"
+                              aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <h5 class="text-gray-900"><i class="fas fa-bolt fa-1x"></i> Énergie<span
+                              id="equilibreAlimSpan" class="float-right small"></span>
+                          </h5>
+                          <div class="progress progress-sm mb-4">
+                            <div id="equilibreAlimBar" class="progress-bar bg-warning" role="progressbar"
+                              style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center m-3">
+                        <h5>L'objectif de cette équipe sera de maintenir Arthur en forme en se concentrant
+                          principalement sur son moral et son énergie.
+                        </h5>
+                        <input type="text" class="form-control mr-5 my-5" id="moralName"
+                          placeholder="Entrez un nom d'équipe...">
+                      </div>
+                    </div>
+                    <div class="col-xl-3 d-none d-xl-block">
+                      <div class="pt-5 pb-2 my-auto">
+                        <div class="text-center">
+                          <div class="">
+                            <img id="profilIllu" class="center-block img-fluid" src="img\faces\Normal.png" />
+                          </div>
+                          <h1 class="h3 text-gray-900 p-3">Arthur</h1>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-4">
+                      <div class="card shadow mb-4  mt-5 full-height">
+                        <div class="card-body text-gray-900">
+                          <p><b>Âge :</b> <br>57 ans</p>
+                          <p><b>Profession :</b><br>Commercial</p>
+                          <p> <b>Plats préférés :</b> <br>Aïoli, poisson, fromage</p>
+                          <p> <b>Spécialités culinaires :</b> <br>Soupe de poisson, aligot, bouillabaisse</p>
+                          <p> <b>Allergies :</b> <br>Arachide, inconfort quand il mange du lait cru.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-4">
+                      <div class="row m-3">
+                        <h2 class="mx-auto">Equipe "Equilibre"
+                        </h2>
+                      </div>
+                      <div class="card shadow m-5 ">
+                        <div class="card-body">
+                          <h5 class="text-gray-900"><i class="fas fa-utensils fa-1x"></i> Équilibre alimentaire<span
+                              id="equilibreAlimSpan" class="float-right small"></span>
+                          </h5>
+                          <div class="progress progress-sm mb-4">
+                            <div id="energieBar" class="progress-bar bg-warning" role="progressbar" style="width: 50%"
+                              aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <h5 class="text-gray-900"><i class="fas fa-notes-medical fa-1x"></i>
+                            Bien-être physique<span id="santeSpan" class="float-right small"></span></h5>
+                          <div class="progress progress-sm mb-4">
+                            <div id="santeBar" class="progress-bae bg-warning" role="progressbar" style="width: 50%"
+                              aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center m-3">
+                        <h5>L'objectif de cette équipe sera de maintenir Arthur en forme en se concentrant
+                          principalement sur son équilibre alimentaire et sa forme physique.
+                        </h5>
+                        <input type="text" class="form-control mr-5 my-5" id="equilibreName"
+                          placeholder="Entrez un nom d'équipe...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="text-center">
+                <button id="nameSelected" type="button" class="btn btn-primary m-5 pt-3 pb-2 px-3" data-dismiss="modal">
+                  <h3><b>Continuer !
+                    </b></h3>
+                </button>
               </div>
             </div>
           </div>

@@ -4,6 +4,8 @@ class Model {
         this.player = new Player();
         this.situation = new Situation(1);
         this.chart = getChart();
+        this.moralTeamName;
+        this.equilibreTeamName;
     }
 
     /**
