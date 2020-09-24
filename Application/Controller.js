@@ -8,6 +8,7 @@ class Controller {
      * Start the game
      */
     startGame() {
+        console.log("Serious-game démarre");
         this.view.displaySituation(this.model.situation);
     }
 }
@@ -28,9 +29,14 @@ $("#voirProfil").click(function () {
  * écoute le click sur le bouton de fermeture de l'écran du nom des équipes
  */
 $("#nameSelected").click(function () {
-    $('#optionsModal').modal('show');
-    $('#nameMoral').html($('#moralName').val())
-    $('#nameEquilibre').html($('#equilibreName').val())
+    if ($('#moralName').val() == "" || $('#equilibreName').val() == "") {
+        alert("Veuillez choisir un nom pour les équipes.")
+    } else {
+        $('#teamnameModal').modal('hide');
+        $('#optionsModal').modal('show');
+        $('#nameMoral').html($('#moralName').val())
+        $('#nameEquilibre').html($('#equilibreName').val())
+    }
 });
 
 
