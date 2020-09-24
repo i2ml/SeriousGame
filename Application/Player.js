@@ -15,14 +15,14 @@ class Player {
         this.physique += impact.physique;
         if (this.physique < 40 || this.equilibreAlim < 40) {
             //malus si en mauvaise santé
-            this.energie += impact.energiePenality;
-            if (impact.moral < 0) {
+            this.energie += impact.energiePenality; //energie is given as raw
+            if (impact.moral < 0) { //moral can only lower until health is good
                 this.moral += impact.moral;
             }
         } else {
             if (impact.moral == 0)
                 this.energie += 5;
-            if (impact.moral < 0)
+            if (impact.moral > 0)
                 this.energie += 10;
             this.moral += impact.moral;
             this.energie += impact.energiePenality;
