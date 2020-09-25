@@ -18,6 +18,8 @@ app.startGame();
 
 $('#teamnameModal').modal('show');
 
+
+
 /**
  * écoute le click sur le bouton voir le profil
  */
