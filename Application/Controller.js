@@ -34,10 +34,14 @@ $("#nameSelected").click(function () {
     if ($('#moralName').val() == "" || $('#equilibreName').val() == "") {
         alert("Veuillez choisir un nom pour les équipes.")
     } else {
-        $('#teamnameModal').modal('hide');
-        $('#optionsModal').modal('show');
-        $('#nameMoral').html($('#moralName').val())
-        $('#nameEquilibre').html($('#equilibreName').val())
+        if ($('#moralName').val().length > 10 || $('#equilibreName').val().length > 10) {
+            alert("Les noms des équipes ne doivent pas dépasser les 10 caractères de long")
+        } else {
+            $('#teamnameModal').modal('hide');
+            $('#optionsModal').modal('show');
+            $('#nameMoral').html($('#moralName').val())
+            $('#nameEquilibre').html($('#equilibreName').val())
+        }
     }
 });
 
