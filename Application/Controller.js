@@ -39,8 +39,10 @@ $("#nameSelected").click(function () {
         } else {
             $('#teamnameModal').modal('hide');
             $('#optionsModal').modal('show');
-            $('#nameMoral').html($('#moralName').val())
-            $('#nameEquilibre').html($('#equilibreName').val())
+            app.model.moralTeamName = $('#moralName').val();
+            $('#nameMoral').html(app.model.moralTeamName);
+            app.model.equilibreTeamName = $('#equilibreName').val()
+            $('#nameEquilibre').html(app.model.equilibreTeamName);
         }
     }
 });
