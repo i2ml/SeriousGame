@@ -537,7 +537,7 @@ var situations =
                 "enonce": "De l’huile de tournesol raffinée bio, parce que c’est raffiné.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "Utiliser l’huile de tournesol raffinée bio va permettre aux indicateurs équilibre alimentaire et bien-être physique d’augmenter. En effet, le raffinage permet d’éliminer les impuretés dans l’huile limitant ainsi la formation de composes cancérigène. De plus le gras captant les polluant volatile une huile bio préserve le personnage de leur exposition.",
+                    "text": "Utiliser l’huile de tournesol raffinée bio va permettre aux indicateurs équilibre alimentaire et bien-être physique d’augmenter. En effet, le raffinage permet d’éliminer les impuretés dans l’huile limitant ainsi la formation de composés cancérigènes. De plus le gras captant les polluants volatiles une huile bio préserve le personnage de leur exposition.",
                     "energiePenality": 0,
                     "moral": 0,
                     "equilibreAlim": 5,
@@ -555,7 +555,7 @@ var situations =
                 "enonce": "De l’huile de tournesol non raffinée bio, le raffinement c’est pas son truc.",
                 "energieNeeded": 0,
                 "success": {
-                    "text": "La cuisson des aliments peut provoquer l’émission de composés organiques volatils nocifs pour la santé. Cette pollution est renforcée lorsque les aliments ont une teneur élevée en graisse et lors de la cuisson à l’huile à haute température. Cette huile étant bio, elle permet donc de préserver le personnage de leur exposition. En revanche, l’huile est non raffinée or le raffinage permet d’éliminer les impuretés de l’huile limitant ainsi la formation de composés cancérigènes.",
+                    "text": "La cuisson des aliments peut provoquer l’émission de composés organiques volatiles nocifs pour la santé. Cette pollution est renforcée lorsque les aliments ont une teneur élevée en graisse et lors de la cuisson à l’huile à haute température. Cette huile étant bio, elle permet donc de préserver le personnage de leur exposition. En revanche, l’huile est non raffinée or le raffinage permet d’éliminer les impuretés de l’huile limitant ainsi la formation de composés cancérigènes.",
                     "energiePenality": 0,
                     "moral": 0,
                     "equilibreAlim": -10,
