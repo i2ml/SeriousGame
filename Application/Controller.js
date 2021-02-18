@@ -19,7 +19,6 @@ app.startGame();
 $('#teamnameModal').modal('show');
 
 
-
 /**
  * écoute le click sur le bouton voir le profil
  */
@@ -31,7 +30,7 @@ $("#voirProfil").click(function () {
  * écoute le click sur le bouton de fermeture de l'écran du nom des équipes
  */
 $("#nameSelected").click(function () {
-    if ($('#moralName').val() == "" || $('#equilibreName').val() == "") {
+    if ($('#moralName').val() === "" || $('#equilibreName').val() === "") {
         alert("Veuillez choisir un nom pour les équipes.")
     } else {
         if ($('#moralName').val().length > 10 || $('#equilibreName').val().length > 10) {
@@ -48,7 +47,6 @@ $("#nameSelected").click(function () {
 });
 
 
-
 /**
  * Désactive le bouton valider si les choix n'ont pas été fait
  */
@@ -59,7 +57,7 @@ $(document).on('click', 'input', function () {
         if (inputList.hasOwnProperty(key)) {
             const element = inputList[key];
             if ($(element).is(":checked")) {
-                (parseInt(key) + 1) % 2 == 0 ? first++ : second++;
+                (parseInt(key) + 1) % 2 === 0 ? first++ : second++;
             }
         }
     }
@@ -100,8 +98,8 @@ $("#easy").click(function () {
     app.model.setDifficulty('easy');
 })
 
-/** 
- * écoute le click sur le bouton valider 
+/**
+ * écoute le click sur le bouton valider
  */
 $("#valider").click(function () {
     if ($("#valider").hasClass("disabled")) {
@@ -112,7 +110,7 @@ $("#valider").click(function () {
     const selectedArgument = app.model.getSelectedArgument();
     const elementState = app.model.applyArgument(selectedArgument);
     app.view.displaySelectedArgument(selectedArgument, elementState);
-    if (app.model.situation.id == 12) {
+    if (app.model.situation.id === 12) {
         app.view.displayEndGame();
     } else {
         app.model.loadNextSituation();
@@ -120,7 +118,7 @@ $("#valider").click(function () {
     }
 })
 
-/** 
+/**
  * Faire danser arthur
  */
 $("#impactIllu").click(function () {
