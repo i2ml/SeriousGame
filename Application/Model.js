@@ -29,8 +29,7 @@ class Model {
      * Allow to add the current weight to the chart
      */
     updateChart() {
-        const months = new Array(
-            'Janvier',
+        const months = ['Janvier',
             'Février',
             'Mars',
             'Avril',
@@ -41,8 +40,7 @@ class Model {
             'Septembre',
             'Octobre',
             'Novembre',
-            'Décembre'
-        );
+            'Décembre'];
         this.chart.data.labels.push(months[this.situation.id - 1]);
         this.chart.update();
     }
@@ -84,7 +82,7 @@ class Model {
      */
     choseFinalArgumentId() {
         const inputList = $("input")
-        let argumentsList = new Array();
+        let argumentsList = [];
         for (const key in inputList) {
             if (inputList.hasOwnProperty(key)) {
                 const element = inputList[key];
@@ -119,13 +117,13 @@ class Model {
      * Read and apply difficulty
      */
     setDifficulty(difficulty) {
-        if (difficulty == 'hard') {
+        if (difficulty === 'hard') {
             this.player.energie = 25;
             this.player.moral = 30;
             this.player.equilibreAlim = 40;
             this.player.physique = 30;
         }
-        if (difficulty == 'easy') {
+        if (difficulty === 'easy') {
             this.player.energie = 65;
             this.player.moral = 70;
             this.player.equilibreAlim = 75;
