@@ -20,7 +20,7 @@ class Player {
                 this.moral += impact.moral;
             }
         } else {
-            if (impact.moral == 0)
+            if (impact.moral === 0)
                 this.energie += 5;
             if (impact.moral > 0)
                 this.energie += 10;

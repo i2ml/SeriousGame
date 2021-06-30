@@ -75,7 +75,7 @@ class View {
             $("#moralCard").addClass("border-left-success");
             $("#moralText").addClass("text-success");
         }
-        if (impact.moral == 0) {
+        if (impact.moral === 0) {
             $("#moralCard").addClass("border-left-info");
             $("#moralText").addClass("text-info");
         }
@@ -87,7 +87,7 @@ class View {
             $("#energieCard").addClass("border-left-success");
             $("#energieText").addClass("text-success");
         }
-        if (energieValue == 0) {
+        if (energieValue === 0) {
             $("#energieCard").addClass("border-left-info");
             $("#energieText").addClass("text-info");
         }
@@ -100,7 +100,7 @@ class View {
             $("#santeCard").addClass("border-left-success");
             $("#santeText").addClass("text-success");
         }
-        if (impact.physique == 0) {
+        if (impact.physique === 0) {
             $("#santeCard").addClass("border-left-info");
             $("#santeText").addClass("text-info");
         }
@@ -113,7 +113,7 @@ class View {
             $("#equilibreAlimCard").addClass("border-left-success");
             $("#equilibreAlimText").addClass("text-success");
         }
-        if (impact.equilibreAlim == 0) {
+        if (impact.equilibreAlim === 0) {
             $("#equilibreAlimCard").addClass("border-left-info");
             $("#equilibreAlimText").addClass("text-info");
         }
@@ -124,18 +124,18 @@ class View {
         } else {
             $("#impactIllu").attr('src', 'img/impacts/ArthurCostard.png');
         }
-        if (bad == 0) {
+        if (bad === 0) {
             $("#impactIllu").attr('src', 'img/impacts/success.png');
         }
 
         //impact specific illustration
-        if (argument.motherSituation == 10) {
+        if (argument.motherSituation === 10) {
             $("#impactIllu").attr('src', 'img/impacts/miam.png');
         }
-        if (argument.motherSituation == 11 && bad <= 1) {
+        if (argument.motherSituation === 11 && bad <= 1) {
             $("#impactIllu").attr('src', 'img/impacts/muscu.png');
         }
-        if (argument.motherSituation == 11 && bad > 1) {
+        if (argument.motherSituation === 11 && bad > 1) {
             $("#impactIllu").attr('src', 'img/impacts/faceslip.png');
         }
         if (argument.enonce.includes("surfait")) {
@@ -158,7 +158,7 @@ class View {
         if ($("#moralValue").text() < 0) {
             $("#moralSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
         }
-        if ($("#moralValue").text() == 0) {
+        if ($("#moralValue").text() === 0) {
             $("#moralSpan").html(`<i class="fas fa-grip-lines"></i> Stable.`);
         }
         if ($("#moralValue").text() > 0) {
@@ -167,7 +167,7 @@ class View {
         if ($("#energieValue").text() < 0) {
             $("#energieSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
         }
-        if ($("#energieValue").text() == 0) {
+        if ($("#energieValue").text() === 0) {
             $("#energieSpan").html(`<i class="fas fa-grip-lines"></i> Stable.`);
         }
         if ($("#energieValue").text() > 0) {
@@ -176,7 +176,7 @@ class View {
         if ($("#santeValue").text() < 0) {
             $("#santeSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
         }
-        if ($("#santeValue").text() == 0) {
+        if ($("#santeValue").text() === 0) {
             $("#santeSpan").html(`<i class="fas fa-grip-lines"></i> Stable.`);
         }
         if ($("#santeValue").text() > 0) {
@@ -185,7 +185,7 @@ class View {
         if ($("#equilibreAlimValue").text() < 0) {
             $("#equilibreAlimSpan").html(`<i class="fas fa-chevron-down"></i> En diminution.`);
         }
-        if ($("#equilibreAlimValue").text() == 0) {
+        if ($("#equilibreAlimValue").text() === 0) {
             $("#equilibreAlimSpan").html(`<i class="fas fa-grip-lines"></i> Stable.`);
         }
         if ($("#equilibreAlimValue").text() > 0) {
@@ -250,7 +250,7 @@ class View {
                 $("#note").text("C");
             }
             if (good >= 2) {
-                if (good == 4) {
+                if (good === 4) {
                     $("#note").addClass("text-success");
                     $("#note").text("A");
                 }
