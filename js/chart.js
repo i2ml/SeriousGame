@@ -24,7 +24,7 @@ let getChart = function () {
         pointHoverBorderColor: "rgba(78, 115, 223, 1)",
         pointHitRadius: 10,
         pointBorderWidth: 2,
-        data: [77, 79, 78, 77, 76, 75, 77, 78, 80, 82, 88, 95, 97, 85, 82],
+        data: [81, 81.4, 80.9, 79.8, 80.1, 79.9, 80.1, 80.7, 79.9, 79.9, 79.2, 80, 79, 78.5, 78.8],
       }],
     },
     options: {
