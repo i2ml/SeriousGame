@@ -7,25 +7,43 @@ class Player {
         this.physique = 50;
     }
 
+    addMoral(value){
+        console.log("unzefjhouizehfouizehjoiuf")
+        this.moral = Math.max(Math.min(this.moral + value, 100), 0);
+    }
+
+    addPhysique(value){
+        this.physique = Math.max(Math.min(this.physique + value, 100), 0);
+    }
+
+    addEquilibreAlim(value){
+        this.equilibreAlim = Math.max(Math.min(this.equilibreAlim + value, 100), 0);
+    }
+
+    addEnergie(value){
+        this.energie = Math.max(Math.min(this.energie + value, 100), 0);
+    }
+
+
     /**
      * Allow to apply the effects of an impact on the player
      */
     applyStats(impact) {
-        this.equilibreAlim += impact.equilibreAlim;
-        this.physique += impact.physique;
+        this.addEquilibreAlim(impact.equilibreAlim);
+        this.addPhysique(impact.physique)
         if (this.physique < 40 || this.equilibreAlim < 40) {
             //malus si en mauvaise santé
-            this.energie += impact.energiePenality; //energie is given as raw
+            this.addEnergie(impact.energiePenality); //energie is given as raw
             if (impact.moral < 0) { //moral can only lower until health is good
-                this.moral += impact.moral;
+               this.addMoral(impact.moral);
             }
         } else {
             if (impact.moral === 0)
-                this.energie += 5;
+                this.addEnergie(5)
             if (impact.moral > 0)
-                this.energie += 10;
-            this.moral += impact.moral;
-            this.energie += impact.energiePenality;
+                this.addEnergie(10)
+            this.addMoral(impact.moral);
+            this.addEnergie(impact.energiePenality);
         }
     }
 
