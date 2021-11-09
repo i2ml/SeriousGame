@@ -7,7 +7,6 @@ class View {
      */
     displaySituation(situation) {
         const progress = (situation.id) * (100 / 12);
-        console.log("progress is :" + progress)
         $("#mainBar").css({width: progress + '%'});
         $(".border-primary").removeClass("border");
         $("#enonce").html(situation.enonce);

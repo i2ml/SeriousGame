@@ -13,7 +13,6 @@ class Model {
      */
     getSelectedArgument() {
         const argumentToLoad = this.choseFinalArgumentId();
-        console.log("The chosen argument is " + argumentToLoad)
         return new Argument(this.situation.id, argumentToLoad);
     }
 
@@ -101,10 +100,8 @@ class Model {
     applyArgument(argument) {
         let impact;
         if (this.player.energie >= argument.energieNeeded) {
-            console.log("success of the argument");
             impact = argument.success;
         } else {
-            console.log("failure of the argument");
             impact = argument.failure;
         }
         this.player.applyStats(impact);

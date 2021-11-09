@@ -8,7 +8,6 @@ class Controller {
      * Start the game
      */
     startGame() {
-        console.log("Serious-game démarre");
         this.view.displaySituation(this.model.situation);
     }
 }

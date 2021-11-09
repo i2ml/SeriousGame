@@ -8,7 +8,6 @@ class Player {
     }
 
     addMoral(value){
-        console.log("unzefjhouizehfouizehjoiuf")
         this.moral = Math.max(Math.min(this.moral + value, 100), 0);
     }
 
@@ -68,7 +67,6 @@ class Player {
             points--;
         if (this.physique > 60)
             points--;
-        console.log(this, points)
         return points;
 
     }
