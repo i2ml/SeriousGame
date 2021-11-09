@@ -192,13 +192,13 @@ var situations =
             }
         },
         3: {
-            "enonce": "Arthur souhaite améliorer son petit-déjeuner. Sa diététicienne lui a conseillé : un verre de lait, un fruit et une tartine de pain complet avec un petit peu de beurre et de confiture. Arthur a l'habitude de boire du lait de vache mais est sujet à des infonforts digestifs depuis peu.",
+            "enonce": "Arthur souhaite améliorer son petit-déjeuner. Sa diététicienne lui a conseillé : un verre de lait, un fruit et une tartine de pain complet avec un petit peu de beurre et de confiture. Arthur a l'habitude de boire du lait de vache mais est sujet à des inconforts digestifs depuis peu.",
             "arguments": {
                 "1": {
                     "enonce": "Pas de lait au petit-déjeuner, le jeu n’en vaut pas la chandelle.",
                     "energieNeeded": 0,
                     "success": {
-                        "text": "Le priver de lait va augmenter sa frustration, son moral va donc diminuer. De plus, l’absence de produit laitier, et donc de produit riche en protéines, au petit-déjeuner va impacter son équilibre alimentaire et son bien-être physique. Les protéines étants satiétogènes, il s’expose à un risque de petit creux de 10 heures.",
+                        "text": "Le priver de lait va augmenter sa frustration, son moral va donc diminuer. De plus, l’absence de produit laitier, et donc de produit riche en protéines, au petit-déjeuner va impacter son équilibre alimentaire et son bien-être physique. Les protéines étant satiétogènes, il s’expose à un risque de petit creux de 10 heures.",
                         "energiePenality": 0,
                         "moral": -5,
                         "equilibreAlim": -5,
@@ -311,14 +311,14 @@ var situations =
                     "enonce": "Arthur se laisse convaincre par son ami mais souhaite poursuivre et étendre ses cultures. Il décide d'acheter ce qu’il ne fait pas lui même et continue de se dépenser dans son jardin.",
                     "energieNeeded": 60,
                     "success": {
-                        "text": "Étendre ses cultures va demander au personnage de l'energie, mais cela lui permettra de consommer des produits de bonne qualité dont il contrôle le procédé tout en prenant du plaisir à les faire pousser. Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux. Les indicateurs bien-être physique et moral, et équilibre alimentaire vont donc augmentés.",
+                        "text": "Étendre ses cultures va demander au personnage de l'énergie, mais cela lui permettra de consommer des produits de bonne qualité dont il contrôle le procédé tout en prenant du plaisir à les faire pousser. Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux. Les indicateurs bien-être physique et moral, et équilibre alimentaire vont donc augmentés.",
                         "energiePenality": -20,
                         "moral": 10,
                         "equilibreAlim": 10,
                         "physique": 10
                     },
                     "failure": {
-                        "text": "Étendre ses cultures lui permettrait d’accroitre sa consommation de produits de bonne qualité. Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux. Malheureusement, le personnage n’a plus assez de energie pour étendre ses cultures, épuisé, il abandonne son potager. Par conséquent, son bien-être moral et physique vont diminuer à cause de cette diminution d’activité physique.",
+                        "text": "Étendre ses cultures lui permettrait d’accroitre sa consommation de produits de bonne qualité. Le respect des délais de maturation sur la plante permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux. Malheureusement, le personnage n’a plus assez d'énergie pour étendre ses cultures, épuisé, il abandonne son potager. Par conséquent, son bien-être moral et physique vont diminuer à cause de cette diminution d’activité physique.",
                         "energiePenality": 0,
                         "moral": -5,
                         "equilibreAlim": -5,
