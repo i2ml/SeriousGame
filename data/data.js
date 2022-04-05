@@ -899,14 +899,14 @@ var situations =
                     "enonce": "Aller courage ! Arthur prend sur soi et va faire un vrai repas, il a des restes du repas d’hier (ratatouille) avec une omelette et un peu de salade ça fera l’affaire.",
                     "energieNeeded": 70,
                     "success": {
-                        "text": "Le personnage est fatigué. Décider de faire un vrai repas demande une grande énergie au personnage mais cela impacte positivement sur son équilibre alimentaire et son  bien-être physique. En effet, il est préférable pour le personnage de cuisiner plutôt que de manger un plat dont il ne contrôle ni la qualité des produits ni l’équilibre de l’assiette.",
+                        "text": "Le personnage est fatigué. Décider de faire un vrai repas demande une grande énergie au personnage mais cela impacte positivement son équilibre alimentaire et son  bien-être physique. En effet, il est préférable pour le personnage de cuisiner plutôt que de manger un plat dont il ne contrôle ni la qualité des produits ni l’équilibre de l’assiette.",
                         "energiePenality": -15,
                         "moral": 0,
                         "equilibreAlim": 10,
                         "physique": 5
                     },
                     "failure": {
-                        "text": "Le personnage est fatigué. Décider de faire un vrai repas demande une grande énergie. Malheureusement, Arthur n’en possède pas assez pour effectuer tant d’efforts. Il va donc devoir trouver une autre solution de dernière minute, qui impactera sur son équilibre alimentaire.",
+                        "text": "Le personnage est fatigué. Décider de faire un vrai repas demande une grande énergie. Malheureusement, Arthur n’en possède pas assez pour effectuer tant d’efforts. Il va donc devoir trouver une autre solution de dernière minute, qui impactera son équilibre alimentaire.",
                         "energiePenality": -10,
                         "moral": 0,
                         "equilibreAlim": -5,
@@ -978,7 +978,7 @@ var situations =
                     "success": {
                         "text": "Aller à la salle de sport 3h/ semaine nécessite beaucoup d’énergie, ce qui impacte sur le bien-être moral d'Arthur. En revanche, l’indicateur de bien-être physique va fortement augmenter. En effet, l’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière.",
                         "energiePenality": -30,
-                        "moral": 0,
+                        "moral": -5,
                         "equilibreAlim": 0,
                         "physique": 10
                     },
@@ -991,7 +991,7 @@ var situations =
                     }
                 },
                 "3": {
-                    "enonce": "Arthur décide qu’à partir de maintenant, il fera un footing tous les samedis matin.",
+                    "enonce": "Arthur décide qu’à partir de maintenant, il fera un footing tous les samedis matins.",
                     "energieNeeded": 60,
                     "success": {
                         "text": "Faire un footing le samedi matin permet au personnage d’améliorer son bien-être physique. En effet, l’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière mais cela demande beaucoup d’énergie. Son bien-être moral va donc diminuer.",
@@ -1030,30 +1030,30 @@ var situations =
                     "enonce": "L’activité physique, c’est surfait, très peu pour moi.",
                     "energieNeeded": 0,
                     "success": {
-                        "text": "L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière. En ne faisant aucune activité, le bien-être physique du personnage est fortement impacté",
+                        "text": "L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière. En ne faisant aucune activité, le bien-être physique du personnage est fortement impacté.",
                         "energiePenality": 0,
                         "moral": 0,
                         "equilibreAlim": 0,
                         "physique": -10
                     },
                     "failure": {
-                        "text": "L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress, l’anxiété. Il est donc indispensable qu’elle soit régulière. Malheureusement, le personnage n’a plus assez d’énergie pour réaliser une activité physique. Son bien-être physique va donc être fortement impacté.",
-                        "energiePenality": 0,
+                        "text": "L’activité physique permet de prévenir de l’apparition de nombreuses maladies tels que les maladies cardiovasculaires. Elle peut également aider à équilibrer le taux de sucre dans le sang afin de réduire le risque de diabète et contribuer à lutter contre le stress et l’anxiété. Il est donc indispensable qu’elle soit régulière. Malheureusement, le personnage n’a plus assez d’énergie pour réaliser une activité physique. Son bien-être physique va donc être fortement impacté.",
+                        "energiePenality": -20,
                         "moral": 0,
-                        "equilibreAlim": 0,
-                        "physique": 0
+                        "equilibreAlim": -10,
+                        "physique": -10
                     }
                 }
             }
         },
         12: {
-            "enonce": "En hiver Arthur se rend au marché. Quel panier choisit-t-il pour ses repas de la semaine ?",
+            "enonce": "En hiver Arthur se rend au marché. Quel panier choisit-il pour ses repas de la semaine ?",
             "arguments": {
                 "1": {
                     "enonce": "Carottes, oignons, brocolis, choux rouge, butternut, panais, betteraves, poireaux, pommes, oranges, poires.",
                     "energieNeeded": 0,
                     "success": {
-                        "text": "Choisir des légumes de saisons va donc lui permettre d’avoir des produits de meilleure qualité nutritionnelle et gustative. En effet, les produits de saison sont plus riches en fibres et micronutriments. Récoltés à maturité, ils possèdent un goût plus prononcé. Deux portions de fruits et trois portions de légumes nécessaire par jour. Ces produits vont donc permettre de satisfaire les besoins métaboliques de notre personnage.",
+                        "text": "Choisir des légumes de saisons va donc lui permettre d’avoir des produits de meilleure qualité nutritionnelle et gustative. En effet, les produits de saison sont plus riches en fibres et micronutriments. Récoltés à maturité, ils possèdent un goût plus prononcé. Deux portions de fruits et trois portions de légumes sont nécessaires par jour. Ces produits vont donc permettre de satisfaire les besoins métaboliques de notre personnage.",
                         "energiePenality": 10,
                         "moral": 0,
                         "equilibreAlim": 10,
@@ -1071,7 +1071,7 @@ var situations =
                     "enonce": "Tomates, aubergines, courgettes, avocats, cébettes, basilic, melons, fraises, figues.",
                     "energieNeeded": 0,
                     "success": {
-                        "text": "Les fruits et légumes choisies ne sont pas de saison mais sont des produits qu’il affectionne particulièrement. Son bien-être moral va donc augmenter. Ces produits restent bons pour l’équilibre alimentaire et le bien-être physique même si leurs propriétés nutritionnelles ne sont pas à leur optimum. De plus, les produits hors saison, ont un goût beaucoup moins marqué. Toutefois, ces produits suffiront à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour.",
+                        "text": "Les fruits et légumes choisis ne sont pas de saison mais sont des produits qu’il affectionne particulièrement. Son bien-être moral va donc augmenter. Ces produits restent bons pour l’équilibre alimentaire et le bien-être physique même si leurs propriétés nutritionnelles ne sont pas à leur optimum. De plus, les produits hors saison, ont un goût beaucoup moins marqué. Toutefois, ces produits suffiront à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour.",
                         "energiePenality": 10,
                         "moral": 5,
                         "equilibreAlim": 0,
@@ -1107,7 +1107,7 @@ var situations =
                     "enonce": "Pommes de terre, oignons, échalotes, champignons.",
                     "energieNeeded": 0,
                     "success": {
-                        "text": "Ces produits sont de saison mais considérés comme des garnitures aromatiques (oignon, échalote). Bien qu’elle soit vendue chez le maraicher, la pomme de terre est un féculent.Par conséquent, le panier de la semaine ne contient pas de réels légumes. Ces produits ne suffiront pas à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour. L’indicateur équilibre alimentaire va donc diminuer",
+                        "text": "Ces produits sont de saison mais considérés comme des garnitures aromatiques (oignon, échalote). Bien qu’elle soit vendue chez le maraicher, la pomme de terre est un féculent. Par conséquent, le panier de la semaine ne contient pas de réels légumes. Ces produits ne suffiront pas à combler les recommandations de 2 portions de fruits et 3 portions de légumes par jour. L’indicateur équilibre alimentaire va donc diminuer",
                         "energiePenality": 10,
                         "moral": 5,
                         "equilibreAlim": 0,
