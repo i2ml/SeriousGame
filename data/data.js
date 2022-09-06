@@ -936,7 +936,7 @@ var situations =
                     "enonce": "Il commande un fast-food. ",
                     "energieNeeded": 0,
                     "success": {
-                        "text": "personnage. En effet, les produits proposés sont de mauvaise qualité et ont très peu d’intérêt sur le plan nutritionnel.",
+                        "text": "Commander un fast Food a un fort impact sur l’équilibre alimentaire et la santé du personnage.  En effet, les produits proposés sont de mauvaise qualité et ont très peu d’intérêt sur le plan nutritionnel.",
                         "energiePenality": 0,
                         "moral": 10,
                         "equilibreAlim": -10,
