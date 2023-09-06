@@ -2,7 +2,7 @@ var situations =
     {
         1:
             {
-                "enonce": "Il est 13 heures et Arthur sort de table. Après son fromage, il lui reste une petite place pour un dessert. La tête dans son frigo, il hésite entre plusieurs options : ",
+                "enonce": "Il est 12h30, Arthur sort de table. Après son fromage, il lui reste une place pour un dessert. Il hésite entre plusieurs options : ",
                 "arguments": {
                     "1": {
                         "enonce": "Prendre un fruit et un yaourt. ",
@@ -59,12 +59,12 @@ var situations =
                         }
                     },
                     "4": {
-                        "enonce": "Ne rien prendre. ",
+                        "enonce": "Prendre la dernière part de tarte au citron meringuée du frigo. ",
                         "energieNeeded": 0,
                         "success": {
-                            "text": "Dans cette situation, Arthur souhaite consommer un aliment supplémentaire pour terminer son repas. S’il décide de ne rien prendre, Arthur ne ressentira pas la satiété et terminera donc son repas sur une sensation de frustration. Cela aura donc un impact sur le bien-être du personnage, et le poussera à grignoter dans l’après-midi.",
+                            "text": "Il est essentiel de s’accorder des plaisirs régulièrement. Toutefois, une consommation excessive de produits sucrés peut avoir un effet néfaste sur la santé. Il est donc important de faire attention aux quantités et à la fréquence de ces prises sucrées. ",
                             "energiePenality": 0,
-                            "moral": -5,
+                            "moral": 10,
                             "equilibreAlim": -5,
                             "physique": -5
                         },
@@ -76,13 +76,13 @@ var situations =
                             "physique": 0
                         }
                     },
-                    "5": {
-                        "enonce": "Prendre la dernière part de tarte au citron meringuée du frigo. ",
+                    "5": {                        
+                        "enonce": "Ne rien prendre. ",
                         "energieNeeded": 0,
                         "success": {
-                            "text": "Il est essentiel de s’accorder des plaisirs régulièrement. Toutefois, une consommation excessive de produits sucrés peut avoir un effet néfaste sur la santé. Il est donc important de faire attention aux quantités et à la fréquence de ces prises sucrées. ",
+                            "text": "Dans cette situation, Arthur souhaite consommer un aliment supplémentaire pour terminer son repas. S’il décide de ne rien prendre, Arthur ne ressentira pas la satiété et terminera donc son repas sur une sensation de frustration. Cela aura donc un impact sur le bien-être du personnage, et le poussera à grignoter dans l’après-midi.",
                             "energiePenality": 0,
-                            "moral": 10,
+                            "moral": -5,
                             "equilibreAlim": -5,
                             "physique": -5
                         },
@@ -100,24 +100,6 @@ var situations =
             "enonce": "Comme chaque jour de travail, Arthur mange au restaurant lors de sa pause déjeuner. Il hésite entre plusieurs choix à la carte du restaurant.",
             "arguments": {
                 "1": {
-                    "enonce": "La formule du jour complète (salade de pousses d’épinards, filet de dorade, riz & julienne de légumes de saison, salade de fruits). ",
-                    "energieNeeded": 0,
-                    "success": {
-                        "text": "Choisir la formule complète permet à notre personnage de manger un repas équilibré respectant son bien-être physique et moral. En effet, en mangeant à sa faim, Arthur évite la frustration et couvre ses besoins nutritionnels.",
-                        "energiePenality": 0,
-                        "moral": 5,
-                        "equilibreAlim": 10,
-                        "physique": 5
-                    },
-                    "failure": {
-                        "text": "Issue impossible",
-                        "energiePenality": 0,
-                        "moral": 0,
-                        "equilibreAlim": 0,
-                        "physique": 0
-                    }
-                },
-                "2": {
                     "enonce": "Un plat unique : une salade César. ",
                     "energieNeeded": 0,
                     "success": {
@@ -135,8 +117,8 @@ var situations =
                         "physique": 0
                     }
                 },
-                "3": {
-                    "enonce": "Une entrecôte, avec frites & sauce roquefort.",
+                "2": {
+                    "enonce": "Un plat unique complet : une entrecôte, avec frites & sauce roquefort.",
                     "energieNeeded": 0,
                     "success": {
                         "text": "Choisir l’entrecôte sauce roquefort avec des frites va impacter son équilibre alimentaire. En effet, Arthur mange tous les midis au restaurant, il est donc important de varier ses choix et de respecter un certain équilibre. Le repas choisit est riche en acides gras saturés qui favorisent la formation d’une plaque d’athérome obstruant les artères, augmentant le risque de maladies cardiovasculaires. Son moral, quant à lui, sera en hausse. Il reste important de s’accorder des plaisirs.",
@@ -152,9 +134,9 @@ var situations =
                         "equilibreAlim": 0,
                         "physique": 0
                     }
+                
                 },
-                "4": {
-                    "enonce": "La formule du jour : plat/dessert (filet de dorade, riz & julienne de légumes de saison, salade de fruits).",
+                "3": {"enonce": "Plat/Dessert : filet de dorade, riz & julienne de légumes de saison, salade de fruits.",
                     "energieNeeded": 0,
                     "success": {
                         "text": "Choisir une formule plat/dessert permet à notre personnage de participer à la couverture de ses besoins en respectant l’équilibre alimentaire. En effet, le plat est complet, composé à la fois d’une portion de protéines, de légumes et de féculents. Concernant le dessert, il s’agit de crudités, apportant fibres crues, vitamines et minéraux. Il faut cependant s’assurer qu’Arthur mange à sa faim, afin d’éviter la frustration.",
@@ -170,9 +152,29 @@ var situations =
                         "equilibreAlim": 0,
                         "physique": 0
                     }
+                    
+                },
+                "4": {
+                    "enonce": "Entrée/Plat/Dessert : salade de pousses d’épinards, filet de dorade, riz & julienne de légumes de saison, salade de fruits. ",
+                    "energieNeeded": 0,
+                    "success": {
+                        "text": "Choisir la formule complète permet à notre personnage de manger un repas équilibré respectant son bien-être physique et moral. En effet, en mangeant à sa faim, Arthur évite la frustration et couvre ses besoins nutritionnels.",
+                        "energiePenality": 0,
+                        "moral": 5,
+                        "equilibreAlim": 10,
+                        "physique": 5
+                    },
+                    "failure": {
+                        "text": "Issue impossible",
+                        "energiePenality": 0,
+                        "moral": 0,
+                        "equilibreAlim": 0,
+                        "physique": 0
+                    }
+                    
                 },
                 "5": {
-                    "enonce": "Formule du jour complète : (terrine de campagne, entrecôte frites sauce roquefort, panna cotta).",
+                    "enonce": "Entrée/Plat/Dessert complet : terrine de campagne, entrecôte frites sauce roquefort, panna cotta.",
                     "energieNeeded": 0,
                     "success": {
                         "text": "Cette formule du jour propose des aliments très riches en acides gras saturés qui favorisent la formation d’une plaque d’athérome obstruant les artères, augmentant le risque de maladies cardiovasculaires. De plus, manger un repas trop copieux entraînent des variations de glycémie pouvant contribuer à de la fatigue, ou un manque de concentration au cours de l’après-midi.",
@@ -195,24 +197,6 @@ var situations =
             "enonce": "Arthur souhaite améliorer son petit-déjeuner. Sa diététicienne lui conseille : un verre de lait, un fruit et une tartine de pain complet avec un peu de beurre et de confiture. Connaissant ses inconforts digestifs, il opte pour :",
             "arguments": {
                 "1": {
-                    "enonce": "Pas de lait au petit déjeuner, le jeu n’en vaut pas la chandelle.",
-                    "energieNeeded": 0,
-                    "success": {
-                        "text": "L’absence au petit-déjeuner d’un produit laitier, riche en protéines et calcium, va impacter son équilibre alimentaire et son bien-être physique. De plus, priver Arthur de consommer un verre de lait comme à son habitude impactera son moral.",
-                        "energiePenality": 0,
-                        "moral": -5,
-                        "equilibreAlim": -5,
-                        "physique": -5
-                    },
-                    "failure": {
-                        "text": "Issue impossible",
-                        "energiePenality": 0,
-                        "moral": 0,
-                        "equilibreAlim": 0,
-                        "physique": 0
-                    }
-                },
-                "2": {
                     "enonce": "Tant pis pour les inconforts, il conserve le verre de lait.",
                     "energieNeeded": 0,
                     "success": {
@@ -230,8 +214,26 @@ var situations =
                         "physique": 0
                     }
                 },
+                "2": {
+                    "enonce": "Pas de lait au petit déjeuner, le jeu n’en vaut pas la chandelle.",
+                    "energieNeeded": 0,
+                    "success": {
+                        "text": "L’absence au petit-déjeuner d’un produit laitier, riche en protéines et calcium, va impacter son équilibre alimentaire et son bien-être physique. De plus, priver Arthur de consommer un verre de lait comme à son habitude impactera son moral.",
+                        "energiePenality": 0,
+                        "moral": -5,
+                        "equilibreAlim": -5,
+                        "physique": -5
+                    },
+                    "failure": {
+                        "text": "Issue impossible",
+                        "energiePenality": 0,
+                        "moral": 0,
+                        "equilibreAlim": 0,
+                        "physique": 0
+                    }
+                },
                 "3": {
-                    "enonce": "Arthur se tourne vers du lait de chèvre / brebis, plus simple à digérer.",
+                    "enonce": "Arthur se tourne vers du lait de chèvre / brebis, c'est meilleur pour la santé.",
                     "energieNeeded": 0,
                     "success": {
                         "text": "Ce choix peut limiter l’impact du produit laitier sur son organisme. Contrairement à la composition du lait de vache, le lait de chèvre ou de brebis est plus digeste et permet de conserver les mêmes intérêts nutritionnels (protéines, calcium et vitamines B12, D). Ainsi, Arthur garde son habitude de boire un verre de lait mais évite les inconforts associés. Il faut cependant faire attention au moral de notre personnage, qui risque de ne pas apprécier le goût plus prononcé du produit. ",
@@ -249,10 +251,10 @@ var situations =
                     }
                 },
                 "4": {
-                    "enonce": "La diététicienne l’informe également que le lait de montagne et le yaourt sont plus digestes, il suit ses conseils.",
+                    "enonce": "Arthur se tourne vers du lait de montagne, c'est plus simple à digérer.",
                     "energieNeeded": 0,
                     "success": {
-                        "text": "Le lait de montagne apporte protéines, calcium, vitamines B12 et D à l’organisme, et se révèle plus digeste par l’organisme.  A contrario du lait de brebis ou de chèvre, le lait de montagne a un goût moins prononcé. Concernant les yaourts, lors de la création du produits, une partie du lactose est hydrolysé par les bactéries, le rendant plus digeste également. ",
+                        "text": "Le lait de montagne apporte protéines, calcium, vitamines B12 et D à l’organisme, et se révèle plus digeste par l’organisme.  A contrario du lait de brebis ou de chèvre, le lait de montagne a un goût moins prononcé.",
                         "energiePenality": -10,
                         "moral": 5,
                         "equilibreAlim": 5,
@@ -267,10 +269,10 @@ var situations =
                     }
                 },
                 "5": {
-                    "enonce": "Il s’oriente vers du fromage.",
+                    "enonce": "Il s’oriente vers du fromage ou un yaourt.",
                     "energieNeeded": 0,
                     "success": {
-                        "text": "Remplacer son verre de lait par du fromage va permettre à Arthur de ne pas être atteint d’inconforts digestifs. Cependant il est recommandé de ne pas dépasser la consommation d’une portion de fromage par jour (environ 30 grammes) en raison de la teneur en acides gras saturés, qui en excès, favorisent les maladies cardiovasculaires.",
+                        "text": "Remplacer son verre de lait par du fromage va permettre à Arthur de ne pas être atteint d’inconforts digestifs. Cependant il est recommandé de ne pas dépasser la consommation d’une portion de fromage par jour (environ 30 grammes) en raison de la teneur en acides gras saturés, qui en excès, favorisent les maladies cardiovasculaires. Concernant les yaourts, lors de la création du produits, une partie du lactose est hydrolysé par les bactéries, le rendant plus digeste également. ",
                         "energiePenality": -5,
                         "moral": -5,
                         "equilibreAlim": 0,
@@ -287,17 +289,17 @@ var situations =
             }
         },
         4: {
-            "enonce": "Pendant qu’Arthur cultive son potager, un ami passe lui rendre visite et un débat s’entame autour de l’agriculture biologique et des producteurs locaux. Arthur, lui, a l’habitude de cultiver lui-même les légumes qu’il ne trouve pas dans son supermarché en bio. ",
+            "enonce": "Arthur a l’habitude de cultiver lui-même les légumes qu’il ne trouve pas dans son supermarché en bio. Pendant qu’il cultive son potager, un ami passe lui rendre visite. Un débat s’entame autour de l’agriculture biologique et des producteurs locaux.",
             "arguments": {
                 "1": {
-                    "enonce": "Arthur décide de laisser tomber son potager et de faire confiance uniquement aux producteurs locaux.",
+                    "enonce": "Arthur continue son potager modérément, comme actuellement, et se sert en bio au supermarché ainsi que chez les producteurs locaux pour compléter.",
                     "energieNeeded": 0,
                     "success": {
-                        "text": "Les producteurs locaux proposent des produits de saison, plus intéressants sur le plan nutritionnel et organoleptique. Le respect des délais de maturation permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux. En revanche, notre personnage prend du plaisir à cultiver son potager, l’en empêcher va donc diminuer son bien-être moral.",
+                        "text": "En continuant à faire son potager modérément et en complétant par des produits locaux, cela permet au personnage de consommer des produits de qualité et intéressants sur le plan nutritionnel et organoleptique. L’activité physique du personnage est également conservée.",
                         "energiePenality": 0,
-                        "moral": -5,
+                        "moral": 10,
                         "equilibreAlim": 10,
-                        "physique": -5
+                        "physique": 10
                     },
                     "failure": {
                         "text": "Issue impossible",
@@ -308,7 +310,7 @@ var situations =
                     }
                 },
                 "2": {
-                    "enonce": "Arthur décide d’étendre ses cultures et de ne se fier ni à l’agriculture biologique, ni aux producteurs locaux.",
+                    "enonce": "Arthur décide d’étendre ses cultures sans se fier à l’agriculture biologique ou aux producteurs locaux.",
                     "energieNeeded": 60,
                     "success": {
                         "text": "Étendre ses cultures permettra au personnage de consommer des produits dont il contrôle la qualité, tout en prenant plaisir à jardiner. Cependant, étendre les cultures va demander au personnage de l’énergie, sachant que les producteurs locaux et l’agriculture biologique permettent d’avoir des produits de qualité et/ou sans pesticide.",
@@ -326,14 +328,14 @@ var situations =
                     }
                 },
                 "3": {
-                    "enonce": "Arthur continue son potager modérément, comme actuellement, et se sert en bio au supermarché ainsi que chez les producteurs locaux pour compléter.",
+                    "enonce": "Arthur décide de laisser tomber son potager et de faire confiance uniquement aux producteurs locaux.",
                     "energieNeeded": 0,
                     "success": {
-                        "text": "En continuant à faire son potager modérément et en complétant par des produits locaux, cela permet au personnage de consommer des produits de qualité et intéressants sur le plan nutritionnel et organoleptique. L’activité physique du personnage est également conservée.",
+                        "text": "Les producteurs locaux proposent des produits de saison, plus intéressants sur le plan nutritionnel et organoleptique. Le respect des délais de maturation permet aux fruits et aux légumes d’acquérir plus de nutriments, fibres, vitamines et minéraux. En revanche, notre personnage prend du plaisir à cultiver son potager, l’en empêcher va donc diminuer son bien-être moral.",
                         "energiePenality": 0,
-                        "moral": 10,
+                        "moral": -5,
                         "equilibreAlim": 10,
-                        "physique": 10
+                        "physique": -5
                     },
                     "failure": {
                         "text": "Issue impossible",
@@ -477,7 +479,7 @@ var situations =
             }
         },
         6: {
-            "enonce": "Ce soir c’est pommes de terre sautées ! Quelle matière grasse utiliser ?  ",
+            "enonce": "Ce soir, c’est pommes de terre sautées ! Quelle matière grasse utiliser ?  ",
             "arguments": {
                 "1": {
                     "enonce": "Du beurre.",
@@ -572,17 +574,17 @@ var situations =
             }
         },
         7: {
-            "enonce": "Arthur se rend au supermarché pour acheter un steak haché pour le dîner. Il n’arrive pas à comprendre les étiquettes et ne sait pas lequel choisir...",
+            "enonce": "Arthur se rend au supermarché faire ses courses. Il n’arrive pas à comprendre les étiquettes et ne sait pas quel steak haché choisir...",
             "arguments": {
                 "1": {
-                    "enonce": "Il sort son téléphone avec une application qui lit les étiquettes à sa place : yuka/ open food fact.",
+                    "enonce": "Arthur prend un steak haché Label rouge, gage de qualité.",
                     "energieNeeded": 0,
                     "success": {
-                        "text": "Les applications de nutrition peuvent apporter des informations intéressantes mais il faut tout de même garder un esprit critique. Ces applications permettent la mise en avant de la présence d’additifs dangereux pour la santé mais certains autres paramètres peuvent être mal interprétés, voir non pris en compte. De plus, il faut replacer les notions de quantité et d’utilisation dans l’importance que l’on accorde au score affiché.",
-                        "energiePenality": -10,
+                        "text": "Un label permet d’avoir un produit de qualité supérieure aux produits courants de comparaison et respectant un certain savoir-faire. ",
+                        "energiePenality": 0,
                         "moral": 0,
-                        "equilibreAlim": 0,
-                        "physique": 0
+                        "equilibreAlim": 5,
+                        "physique": 5
                     },
                     "failure": {
                         "text": "Issue impossible",
@@ -591,6 +593,7 @@ var situations =
                         "equilibreAlim": 0,
                         "physique": 0
                     }
+                    
                 },
                 "2": {
                     "enonce": "Il prend un steak haché bio, pour être sûr de la qualité du produit.",
@@ -611,14 +614,14 @@ var situations =
                     }
                 },
                 "3": {
-                    "enonce": "Arthur prend un steak haché Label rouge, gage de qualité.",
+                    "enonce": "Il prend un steak haché premier prix, ils sont tous de même qualité de toute façon.",
                     "energieNeeded": 0,
                     "success": {
-                        "text": "Un label permet d’avoir un produit de qualité supérieure aux produits courants de comparaison et respectant un certain savoir-faire. ",
+                        "text": "En prenant le steak haché premier prix, le personnage aura probablement un produit de moins bonne qualité, avec une quantité plus importante d’additifs. L’indicateur bien-être physique va donc diminuer. Il est donc important de faire attention à la qualité du produit afin qu’il y ait le moins d’additifs possible.",
                         "energiePenality": 0,
                         "moral": 0,
-                        "equilibreAlim": 5,
-                        "physique": 5
+                        "equilibreAlim": 0,
+                        "physique": -5
                     },
                     "failure": {
                         "text": "Issue impossible",
@@ -629,14 +632,14 @@ var situations =
                     }
                 },
                 "4": {
-                    "enonce": "Il prend un steak haché premier prix, ils sont tous de même qualité de toute façon.",
+                    "enonce": "Il sort son téléphone avec une application qui lit les étiquettes à sa place : yuka / open food fact.",
                     "energieNeeded": 0,
                     "success": {
-                        "text": "En prenant le steak haché premier prix, le personnage aura probablement un produit de moins bonne qualité, avec une quantité plus importante d’additifs. L’indicateur bien-être physique va donc diminuer. Il est donc important de faire attention à la qualité du produit afin qu’il y ait le moins d’additifs possible.",
-                        "energiePenality": 0,
+                        "text": "Les applications de nutrition peuvent apporter des informations intéressantes mais il faut tout de même garder un esprit critique. Ces applications permettent la mise en avant de la présence d’additifs dangereux pour la santé mais certains autres paramètres peuvent être mal interprétés, voir non pris en compte. De plus, il faut replacer les notions de quantité et d’utilisation dans l’importance que l’on accorde au score affiché.",
+                        "energiePenality": -10,
                         "moral": 0,
                         "equilibreAlim": 0,
-                        "physique": -5
+                        "physique": 0
                     },
                     "failure": {
                         "text": "Issue impossible",
@@ -783,6 +786,24 @@ var situations =
                     }
                 },
                 "2": {
+                    "enonce": "ll accepte la viennoiserie et décide même d’en prendre une seconde.",
+                    "energieNeeded": 0,
+                    "success": {
+                        "text": "Il est essentiel de s’accorder des plaisirs régulièrement, toutefois il est important de s’interroger sur les quantités. La consommation d’une seule viennoiserie est suffisante pour apporter le plaisir recherché.",
+                        "energiePenality": 0,
+                        "moral": 10,
+                        "equilibreAlim": -10,
+                        "physique": -5
+                    },
+                    "failure": {
+                        "text": "Issue impossible",
+                        "energiePenality": 0,
+                        "moral": 0,
+                        "equilibreAlim": 0,
+                        "physique": 0
+                    }
+                },
+                "3": {
                     "enonce": "Il refuse, Arthur avait déjà prévu un fruit et des oléagineux.",
                     "energieNeeded": 0,
                     "success": {
@@ -800,7 +821,7 @@ var situations =
                         "physique": 0
                     }
                 },
-                "3": {
+                "4": {
                     "enonce": " Il ne prend qu’un café (sucré), le goûter c'est pour les enfants.",
                     "energieNeeded": 0,
                     "success": {
@@ -818,7 +839,7 @@ var situations =
                         "physique": 0
                     }
                 },
-                "4": {
+                "5": {
                     "enonce": "Un verre d’eau suffira, merci.",
                     "energieNeeded": 0,
                     "success": {
@@ -827,24 +848,6 @@ var situations =
                         "moral": -10,
                         "equilibreAlim": -5,
                         "physique": 0
-                    },
-                    "failure": {
-                        "text": "Issue impossible",
-                        "energiePenality": 0,
-                        "moral": 0,
-                        "equilibreAlim": 0,
-                        "physique": 0
-                    }
-                },
-                "5": {
-                    "enonce": "ll accepte la viennoiserie et décide même d’en prendre une seconde.",
-                    "energieNeeded": 0,
-                    "success": {
-                        "text": "Il est essentiel de s’accorder des plaisirs régulièrement, toutefois il est important de s’interroger sur les quantités. La consommation d’une seule viennoiserie est suffisante pour apporter le plaisir recherché.",
-                        "energiePenality": 0,
-                        "moral": 10,
-                        "equilibreAlim": -10,
-                        "physique": -5
                     },
                     "failure": {
                         "text": "Issue impossible",
@@ -952,6 +955,101 @@ var situations =
             }
         },
         11: {
+            "enonce": "En hiver, Arthur se rend au marché. Quel panier choisit-il pour ses repas de la semaine ?",
+            "arguments": {
+                "1": {
+                    "enonce": "Carottes, brocolis, poireaux, pommes, oranges, poires.",
+                    "energieNeeded": 0,
+                    "success": {
+                        "text": "Choisir des légumes de saisons va permettre à Arthur d’avoir des produits de meilleure qualité nutritionnelle et gustative. En effet, les produits de saison sont plus riches en fibres et micronutriments. Récoltés à maturité, ils possèdent un goût plus prononcé. 2 portions de fruits et 3 portions de légumes sont nécessaires par jour.",
+                        "energiePenality": 10,
+                        "moral": 0,
+                        "equilibreAlim": 10,
+                        "physique": 10
+                    },
+                    "failure": {
+                        "text": "Issue impossible",
+                        "energiePenality": 0,
+                        "moral": 0,
+                        "equilibreAlim": 0,
+                        "physique": 0
+                    }
+                },
+                "2": {
+                    "enonce": "Tomates, aubergines, courgettes, melons, fraises, pêches.",
+                    "energieNeeded": 0,
+                    "success": {
+                        "text": "Les fruits et légumes choisies ne sont pas de saisons. Ils restent bons pour l’équilibre alimentaire et le bien-être physique même si leurs propriétés nutritionnelles et gustatives ne sont pas à leur optimum.",
+                        "energiePenality": 10,
+                        "moral": 5,
+                        "equilibreAlim": 0,
+                        "physique": 0
+                    },
+                    "failure": {
+                        "text": "Issue impossible",
+                        "energiePenality": 0,
+                        "moral": 0,
+                        "equilibreAlim": 0,
+                        "physique": 0
+                    }
+                },
+                "3": {
+                    "enonce": "Asperges, poireaux, petits pois, épinards, courgettes, tomates.",
+                    "energieNeeded": 0,
+                    "success": {
+                        "text": "Les fruits et légumes choisis ne sont là non plus de saison, leurs propriétés nutritionnelles et organoleptiques sont donc diminuées. De plus, ces produits suffiront à combler les recommandations de 3 portions de légumes par jour mais pas de fruits...",
+                        "energiePenality": 0,
+                        "moral": 5,
+                        "equilibreAlim": -5,
+                        "physique": 0
+                    },
+                    "failure": {
+                        "text": "Issue impossible",
+                        "energiePenality": 0,
+                        "moral": 0,
+                        "equilibreAlim": 0,
+                        "physique": 0
+                    }
+                },
+                "4": {
+                    "enonce": "Pommes de terre, oignons, échalotes et champignons.",
+                    "energieNeeded": 0,
+                    "success": {
+                        "text": "Ces produits sont de saison mais considérés comme des garnitures aromatiques (oignons, échalotes). Concernant la pomme de terre, bien qu’elle soit vendue chez le maraîcher, ce n’est pas un légume mais un féculent. Par conséquent, le panier de la semaine ne permettra pas de couvrir les besoins nutritionnels de notre personnage.",
+                        "energiePenality": 10,
+                        "moral": 5,
+                        "equilibreAlim": 0,
+                        "physique": -5
+                    },
+                    "failure": {
+                        "text": "Issue impossible",
+                        "energiePenality": 0,
+                        "moral": 0,
+                        "equilibreAlim": 0,
+                        "physique": 0
+                    }
+                },
+                "5": {
+                    "enonce": "Je prendrais des légumes en conserve au supermarché, c’est amplement suffisant.",
+                    "energieNeeded": 0,
+                    "success": {
+                        "text": "Les légumes frais sont à privilégier afin d’aider le personnage à couvrir au maximum ses besoins en vitamines et minéraux. En effet, lors de la mise en conserve des légumes, le processus thermique provoque une perte notamment en vitamines. De plus, les minéraux contenus dans les aliments se diffusent dans l’eau, et sont donc évacués lors de l’égouttage. Ces produits ne suffiront donc pas à combler les besoins en vitamines et minéraux. ",
+                        "energiePenality": 0,
+                        "moral": 0,
+                        "equilibreAlim": -10,
+                        "physique": -10
+                    },
+                    "failure": {
+                        "text": "Issue impossible",
+                        "energiePenality": 0,
+                        "moral": 0,
+                        "equilibreAlim": 0,
+                        "physique": 0
+                    }
+                }
+            }
+        },
+        12: {
             "enonce": "Arthur souhaite améliorer sa condition physique. ",
             "arguments": {
                 "1": {
@@ -1034,101 +1132,6 @@ var situations =
                         "energiePenality": 0,
                         "moral": 0,
                         "equilibreAlim": 0,
-                        "physique": -10
-                    },
-                    "failure": {
-                        "text": "Issue impossible",
-                        "energiePenality": 0,
-                        "moral": 0,
-                        "equilibreAlim": 0,
-                        "physique": 0
-                    }
-                }
-            }
-        },
-        12: {
-            "enonce": "En hiver Arthur se rend au marché. Quel panier choisit-il pour ses repas de la semaine ?",
-            "arguments": {
-                "1": {
-                    "enonce": "Carottes, brocolis, poireaux, pommes, oranges, poires.",
-                    "energieNeeded": 0,
-                    "success": {
-                        "text": "Choisir des légumes de saisons va permettre à Arthur d’avoir des produits de meilleure qualité nutritionnelle et gustative. En effet, les produits de saison sont plus riches en fibres et micronutriments. Récoltés à maturité, ils possèdent un goût plus prononcé. 2 portions de fruits et 3 portions de légumes sont nécessaires par jour.",
-                        "energiePenality": 10,
-                        "moral": 0,
-                        "equilibreAlim": 10,
-                        "physique": 10
-                    },
-                    "failure": {
-                        "text": "Issue impossible",
-                        "energiePenality": 0,
-                        "moral": 0,
-                        "equilibreAlim": 0,
-                        "physique": 0
-                    }
-                },
-                "2": {
-                    "enonce": "Tomates, aubergines, courgettes, melons, fraises, pêches.",
-                    "energieNeeded": 0,
-                    "success": {
-                        "text": "Les fruits et légumes choisies ne sont pas de saisons. Ils restent bons pour l’équilibre alimentaire et le bien-être physique même si leurs propriétés nutritionnelles et gustatives ne sont pas à leur optimum.",
-                        "energiePenality": 10,
-                        "moral": 5,
-                        "equilibreAlim": 0,
-                        "physique": 0
-                    },
-                    "failure": {
-                        "text": "Issue impossible",
-                        "energiePenality": 0,
-                        "moral": 0,
-                        "equilibreAlim": 0,
-                        "physique": 0
-                    }
-                },
-                "3": {
-                    "enonce": "Asperges, poireaux, petits pois, épinards, courgettes, tomates.",
-                    "energieNeeded": 0,
-                    "success": {
-                        "text": "Les fruits et légumes choisis ne sont là non plus de saison, leurs propriétés nutritionnelles et organoleptiques sont donc diminuées. De plus, ces produits suffiront à combler les recommandations de 3 portions de légumes par jour mais pas de fruits...",
-                        "energiePenality": 0,
-                        "moral": 5,
-                        "equilibreAlim": -5,
-                        "physique": 0
-                    },
-                    "failure": {
-                        "text": "Issue impossible",
-                        "energiePenality": 0,
-                        "moral": 0,
-                        "equilibreAlim": 0,
-                        "physique": 0
-                    }
-                },
-                "4": {
-                    "enonce": "Pommes de terre, oignons, échalotes et champignons.",
-                    "energieNeeded": 0,
-                    "success": {
-                        "text": "Ces produits sont de saison mais considérés comme des garnitures aromatiques (oignons, échalotes). Concernant la pomme de terre, bien qu’elle soit vendue chez le maraîcher, ce n’est pas un légume mais un féculent. Par conséquent, le panier de la semaine ne permettra pas de couvrir les besoins nutritionnels de notre personnage.",
-                        "energiePenality": 10,
-                        "moral": 5,
-                        "equilibreAlim": 0,
-                        "physique": -5
-                    },
-                    "failure": {
-                        "text": "Issue impossible",
-                        "energiePenality": 0,
-                        "moral": 0,
-                        "equilibreAlim": 0,
-                        "physique": 0
-                    }
-                },
-                "5": {
-                    "enonce": "Je prendrais des légumes en conserve au supermarché, c’est amplement suffisant.",
-                    "energieNeeded": 0,
-                    "success": {
-                        "text": "Les légumes frais sont à privilégier afin d’aider le personnage à couvrir au maximum ses besoins en vitamines et minéraux. En effet, lors de la mise en conserve des légumes, le processus thermique provoque une perte notamment en vitamines. De plus, les minéraux contenus dans les aliments se diffusent dans l’eau, et sont donc évacués lors de l’égouttage. Ces produits ne suffiront donc pas à combler les besoins en vitamines et minéraux. ",
-                        "energiePenality": 0,
-                        "moral": 0,
-                        "equilibreAlim": -10,
                         "physique": -10
                     },
                     "failure": {
